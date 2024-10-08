@@ -1,4 +1,4 @@
-# Gulp + WebPack сборка для верстки сайтов
+# Gulp + WebPack (ГК Лазеры)
 
 - HTML,
 - SCSS,
@@ -19,5 +19,5 @@ gulp
 
 Собрать версию для публикации:
 ```
-gulp docs
+gulp prod
 ```
