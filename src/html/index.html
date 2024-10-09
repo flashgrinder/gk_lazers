@@ -1,14 +1,71 @@
+@@include('blocks/header.html')
 
-
-
-	@@include('blocks/header.html')
-
-		<section>
-			<div class="container">
-				<h1 class="title-1">Gulp сборка для верстки сайтов</h1>
-				<p>Понятная Gulp сборка которая ускорит твою верстку в разы.</p>
-				<p>Документация по возможностям с примерами использования <a href="./docs.html">здесь</a>.</p>
+<section class="main-screen">
+	<video class="main-screen__video" autoplay muted loop playsinline poster="./img/poster-main-screen.jpg">
+		<source src="./img/video-laser.mp4" type="video/mp4">
+		<source src="./img/video-laser.webm" type="video/webm">
+	</video>
+	<div class="main-screen__body container">
+		<div class="main-screen__wrap">
+			<h1 class="main-screen__title title title--big title--white title--w-bold">
+				Разрабатываем и производим
+				промышленное лазерное оборудование с 1998 года
+			</h1>
+			<div class="main-screen__actions d-flex">
+				<a href="#main-form" class="main-screen__button button button--primary">
+					Отправить заявку
+				</a>
+				<a href="javascript:;" class="main-screen__button button button--secondary">
+					Выбрать решение
+				</a>
 			</div>
-		</section>
+		</div>
+	</div>
+</section>
 
-	@@include('blocks/footer.html')
+<section class="features b-padding-80 bg-primary">
+	<div class="features__body container">
+		<div class="features__items">
+			<div class="features__item">
+				<h2>Более <span class="red">25</span> лет</h2>
+				<p>опыт разработок и производства промышленного лазерного оборудования</p>
+			</div>
+			<div class="features__items-inner-wrap">
+				<div class="features__item">
+					<h2>Около <span class="red">400</span></h2>
+					<p>предприятий-заказчиков, эксплуатирующих оборудование нашего производства</p>
+				</div>
+				<div class="features__item">
+					<h2>Более <span class="red">800</span></h2>
+					<p>станков в России и за рубежом</p>
+				</div>
+				<div class="features__item">
+					<h2>Более <span class="red">150</span></h2>
+					<p>квалифицированных сотрудников</p>
+				</div>
+				<div class="features__item">
+					<h2><span class="red">52</span> патента</h2>
+					<p>и свидетельства на изобретения и полезные модели</p>
+				</div>
+				<div class="features__item">
+					<h2><span class="red">90</span>%</h2>
+					<p>локализации оборудования и компонентов</p>
+				</div>
+				<div class="features__item">
+					<h2><span class="red">40</span>%</h2>
+					<p>доля НИОКР в части компонент, систем и технологий</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="video-about">
+	<div class="video-about__body">
+		<a href="./img/video-laser.webm" class="video-about__look title title--large title--white title--w-bold" data-fancybox="video">
+			Смотреть видео
+		</a>
+	</div>
+</div>
+
+@@include('blocks/footer.html')

@@ -1,0 +1,51 @@
+.main-screen {
+  position: relative;
+  padding: 245px 0 215px;
+  overflow: hidden;
+  @include mobile {
+    padding: 252px 0;
+  }
+}
+
+.main-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000003D;
+  z-index: 1;
+}
+
+.main-screen__video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.main-screen__wrap {
+  position: relative;
+  z-index: 10;
+  max-width: 883px;
+}
+
+.main-screen__actions {
+  margin-top: 44px;
+  gap: 32px;
+  @include mobile {
+    margin-top: 64px;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.main-screen__button {
+  max-width: 296px;
+  width: 100%;
+  @include mobile {
+    max-width: 100%;
+  }
+}

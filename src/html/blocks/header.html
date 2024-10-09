@@ -1,16 +1,88 @@
 @@include('head.html')
-<header class="header">
-    <div class="container">
-        <div class="header__row">
-            <nav class="header__nav nav">
-                <ul class="nav__list">
-                    <li><a href="index.html" class="active">Главная</a></li>
-		            <li><a href="docs.html">Документация</a></li>
+<!--<header class="header">-->
+<!--    <div class="container">-->
+<!--        <div class="header__row">-->
+<!--            <nav class="header__nav nav">-->
+<!--                <ul class="nav__list">-->
+<!--                    <li><a href="index.html" class="active">Главная</a></li>-->
+<!--		            <li><a href="docs.html">Документация</a></li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--            <button class="mobile-nav-btn">-->
+<!--                <div class="nav-icon"></div>-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</header>-->
+<header class="header header--dark">
+    <div class="header__outer">
+        <div class="header__body container">
+            <div class="header__top d-flex flex-justify-sb flex-align-center">
+                <a href="/" class="header__logo">
+                    <img src="./img/logo.svg" alt="" class="header__logo-img">
+                </a>
+                <form action="" class="header__form-search">
+                    <div class="header__form-field">
+                        <input class="header__form-input" type="text" value="" name="q" placeholder="Поиск" data-catalog-search-q="">
+                        <button class="header__form-btn" type="submit">
+                            <svg class="header__form-svg-search" width="24px" height="25px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="header__contacts text text--normal text--primary text--w-regular d-flex d-flex-column">
+                    <a href="tel:+7 (495) 877-41-28" class="header__contact">
+                        +7 (495) 877-41-28
+                    </a>
+                    <a href="mailto:sales@laser-app.ru" class="header__contact">
+                        sales@laser-app.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom js-menu">
+        <div class="header__menu-wrap container">
+            <nav class="header__menu menu">
+                <ul class="header__menu-list menu__list">
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Оборудование
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Отрасли
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Технологии
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Сервис
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Контакты
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button>
         </div>
     </div>
 </header>
