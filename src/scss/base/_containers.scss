@@ -54,8 +54,12 @@
 		(100% - var(--container-width)) / 2 + var(--container-padding)
 	);
 
-	@include tablet {
-		padding-left: var(--container-padding);
+	@include mobile {
+		margin: 0 auto;
+		padding: 0 var(--container-padding);
+
+		max-width: var(--container-width);
+		width: 100%;
 	}
 }
 

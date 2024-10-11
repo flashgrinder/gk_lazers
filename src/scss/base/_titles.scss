@@ -65,5 +65,8 @@
 }
 
 .title--indent {
-	margin: 0 0 35px;
+	margin-bottom: 48px;
+	@include mobile {
+		margin-bottom: 24px;
+	}
 }

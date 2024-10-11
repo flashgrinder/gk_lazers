@@ -1,0 +1,59 @@
+.popular {
+  @include mobile {
+    background-color: var(--secondary-bg);
+  }
+}
+
+.popular__splide-track.splide__track {
+  padding: 10px 0 10px 0;
+}
+
+.popular__splide-list .splide__slide {
+  margin-left: 6px;
+}
+
+.popular__splide {
+  margin-top: 10px;
+}
+
+.popular__item {
+  background-color: var(--primary-bg);
+}
+
+.popular__item:hover {
+  box-shadow: var(--small-shadow);
+}
+
+.popular__item:hover .popular__item-img {
+  transform: scale(1.1);
+}
+
+.popular__item-pic {
+  padding: 0 30px;
+  overflow: hidden;
+  @include mobile {
+    padding: 0 16px;
+  }
+}
+
+.popular__item-img {
+  transition: transform var(--hover-time) ease-out;
+  margin: 0 auto;
+}
+
+.popular__item-info {
+  padding: 0 24px 16px;
+  @include mobile {
+    padding: 0 16px 16px;
+  }
+}
+
+.popular__item-name,
+.popular__item-description {
+  margin-top: 16px;
+}
+
+.popular__navigation-slider {
+  position: relative;
+  max-width: 1200px;
+}

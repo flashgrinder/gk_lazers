@@ -1,0 +1,18 @@
+.slider-nav .slider-nav__splide-arrow {
+  border-radius: 0;
+  background-color: transparent;
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.slider-nav .slider-nav__arrow-icon {
+  fill: transparent;
+  stroke: var(--secondary-font-color);
+  width: 24px;
+  height: 24px;
+}
+
+.slider-nav .slider-nav__splide-arrow--prev .slider-nav__arrow-icon {
+  transform: rotate(0deg);
+}
