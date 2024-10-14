@@ -27,7 +27,8 @@ function popularSlider () {
                 768: {
                     perPage: 1,
                     gap: '8px',
-                    arrows: false
+                    arrows: false,
+                    autoWidth: true,
                 },
             }
         } );

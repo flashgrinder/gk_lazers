@@ -495,19 +495,22 @@
 </section>
 
 <section class="technology b-padding-80 bg-secondary">
-    <div class="technology__heading-wrap d-flex flex-justify-sb flex-align-center">
-        <h3 class="technology__heading title title--big title--primary title--w-regular title--decor title--indent">
+    <div class="technology__heading-wrap d-flex flex-justify-sb flex-align-center container">
+        <h3 class="technology__heading title title--big title--primary title--w-regular title--decor">
             Технологии/Применения
         </h3>
-        <a href="/technology.html" class="technology__more-button">
+        <a href="/technology.html" class="technology__more-button button button--icon button--icon-right">
             Все технологии
+            <svg class="button__arrow" width="24px" height="16px">
+                <use href="./img/svgsprite/sprite.symbol.svg#icon-arrow-right"></use>
+            </svg>
         </a>
     </div>
     <div class="technology__body container-right">
         <div class="technology__splide splide js-technology-slider-init">
             <div class="technology__splide-track splide__track">
                 <div class="technology__splide-list splide__list">
-                    <a href="/product.html" class="popular__splide-slide splide__slide">
+                    <a href="/product.html" class="technology__splide-slide splide__slide">
                         <div class="technology__item" style="background-image: url('./img/other/technology.jpeg')">
                             <div class="technology__item-info">
                                 <h3 class="technology__item-name text text--medium text--white text--w-bold">
@@ -516,7 +519,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="/product.html" class="popular__splide-slide splide__slide">
+                    <a href="/product.html" class="technology__splide-slide splide__slide">
                         <div class="technology__item" style="background-image: url('./img/other/technology-1.jpeg')">
                             <div class="technology__item-info">
                                 <h3 class="technology__item-name text text--medium text--white text--w-bold">
@@ -525,7 +528,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="/product.html" class="popular__splide-slide splide__slide">
+                    <a href="/product.html" class="technology__splide-slide splide__slide">
                         <div class="technology__item" style="background-image: url('./img/other/technology-1.jpeg')">
                             <div class="technology__item-info">
                                 <h3 class="technology__item-name text text--medium text--white text--w-bold">
@@ -534,7 +537,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="/product.html" class="popular__splide-slide splide__slide">
+                    <a href="/product.html" class="technology__splide-slide splide__slide">
                         <div class="technology__item" style="background-image: url('./img/other/technology-1.jpeg')">
                             <div class="technology__item-info">
                                 <h3 class="technology__item-name text text--medium text--white text--w-bold">
@@ -543,7 +546,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="/product.html" class="popular__splide-slide splide__slide">
+                    <a href="/product.html" class="technology__splide-slide splide__slide">
                         <div class="technology__item" style="background-image: url('./img/other/technology-2.jpeg')">
                             <div class="technology__item-info">
                                 <h3 class="technology__item-name text text--medium text--white text--w-bold">
@@ -570,6 +573,11 @@
                 <ul class="features__splide-pagination splide__pagination slider-pagination-line"></ul>
             </div>
         </div>
+        <div class="technology__action">
+            <a href="/technology.html" class="technology__button button button--secondary">
+                Все технологии
+            </a>
+        </div>
     </div>
 </section>
 
@@ -580,6 +588,304 @@
         </a>
     </div>
 </div>
+
+<section class="news b-padding-80 bg-secondary">
+    <div class="news__body container">
+        <div class="news__heading-wrap d-flex flex-justify-sb flex-align-center">
+            <h3 class="news__heading title title--big title--primary title--w-regular title--decor">
+                Новости
+            </h3>
+            <a href="/technology.html" class="news__more-button button button--icon button--icon-right">
+                Все новости
+                <svg class="button__arrow" width="24px" height="16px">
+                    <use href="./img/svgsprite/sprite.symbol.svg#icon-arrow-right"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="news__splide splide js-news-big-slider-init">
+            <div class="news__splide-track splide__track">
+                <div class="news__splide-list splide__list">
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__post">
+                            <a href="/news-detail.html" class="news__post-link">
+                                <div class="news__post-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__post-img">
+                                </div>
+                                <div class="news__post-info">
+                                    <time class="news__post-date text text--normal text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                    <h3 class="news__post-title text text--large text--primary text--w-bold">
+                                        Приглашаем на&#160;наш стенд на&#160;&#171;Металлообработке&#187;!
+                                    </h3>
+                                    <p class="news__post-excerpt text text--large text--primary text--w-regular">
+                                        20&#8211;24&#160;мая ждем Вас на&#160;стенде 21С32 (Павильон 2.1.) на&#160;выставке &#171;Металообработка&#187; в&#160;&#171;Экспоцентре&#187; на&#160;Красной Пресне.
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__post">
+                            <a href="/news-detail.html" class="news__post-link">
+                                <div class="news__post-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__post-img">
+                                </div>
+                                <div class="news__post-info">
+                                    <time class="news__post-date text text--normal text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                    <h3 class="news__post-title text text--large text--primary text--w-bold">
+                                        Приглашаем на&#160;наш стенд на&#160;&#171;Металлообработке&#187;!
+                                    </h3>
+                                    <p class="news__post-excerpt text text--large text--primary text--w-regular">
+                                        20&#8211;24&#160;мая ждем Вас на&#160;стенде 21С32 (Павильон 2.1.) на&#160;выставке &#171;Металообработка&#187; в&#160;&#171;Экспоцентре&#187; на&#160;Красной Пресне.
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__post">
+                            <a href="/news-detail.html" class="news__post-link">
+                                <div class="news__post-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__post-img">
+                                </div>
+                                <div class="news__post-info">
+                                    <time class="news__post-date text text--normal text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                    <h3 class="news__post-title text text--large text--primary text--w-bold">
+                                        Приглашаем на&#160;наш стенд на&#160;&#171;Металлообработке&#187;!
+                                    </h3>
+                                    <p class="news__post-excerpt text text--large text--primary text--w-regular">
+                                        20&#8211;24&#160;мая ждем Вас на&#160;стенде 21С32 (Павильон 2.1.) на&#160;выставке &#171;Металообработка&#187; в&#160;&#171;Экспоцентре&#187; на&#160;Красной Пресне.
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__post">
+                            <a href="/news-detail.html" class="news__post-link">
+                                <div class="news__post-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__post-img">
+                                </div>
+                                <div class="news__post-info">
+                                    <time class="news__post-date text text--normal text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                    <h3 class="news__post-title text text--large text--primary text--w-bold">
+                                        Приглашаем на&#160;наш стенд на&#160;&#171;Металлообработке&#187;!
+                                    </h3>
+                                    <p class="news__post-excerpt text text--large text--primary text--w-regular">
+                                        20&#8211;24&#160;мая ждем Вас на&#160;стенде 21С32 (Павильон 2.1.) на&#160;выставке &#171;Металообработка&#187; в&#160;&#171;Экспоцентре&#187; на&#160;Красной Пресне.
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__post">
+                            <a href="/news-detail.html" class="news__post-link">
+                                <div class="news__post-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__post-img">
+                                </div>
+                                <div class="news__post-info">
+                                    <time class="news__post-date text text--normal text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                    <h3 class="news__post-title text text--large text--primary text--w-bold">
+                                        Приглашаем на&#160;наш стенд на&#160;&#171;Металлообработке&#187;!
+                                    </h3>
+                                    <p class="news__post-excerpt text text--large text--primary text--w-regular">
+                                        20&#8211;24&#160;мая ждем Вас на&#160;стенде 21С32 (Павильон 2.1.) на&#160;выставке &#171;Металообработка&#187; в&#160;&#171;Экспоцентре&#187; на&#160;Красной Пресне.
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__post">
+                            <a href="/news-detail.html" class="news__post-link">
+                                <div class="news__post-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__post-img">
+                                </div>
+                                <div class="news__post-info">
+                                    <time class="news__post-date text text--normal text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                    <h3 class="news__post-title text text--large text--primary text--w-bold">
+                                        Приглашаем на&#160;наш стенд на&#160;&#171;Металлообработке&#187;!
+                                    </h3>
+                                    <p class="news__post-excerpt text text--large text--primary text--w-regular">
+                                        20&#8211;24&#160;мая ждем Вас на&#160;стенде 21С32 (Павильон 2.1.) на&#160;выставке &#171;Металообработка&#187; в&#160;&#171;Экспоцентре&#187; на&#160;Красной Пресне.
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav news__slider-nav-big splide__arrows">
+                <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                    <svg class="slider-nav__arrow-icon" width="24px" height="24px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-left-check"></use>
+                    </svg>
+                </button>
+                <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                    <svg class="slider-nav__arrow-icon" width="24px" height="24px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#arrow-right-check"></use>
+                    </svg>
+                </button>
+            </div>
+            <ul class="news__splide-pagination splide__pagination slider-pagination-line"></ul>
+        </div>
+    </div>
+    <div class="news__outer-wrap container-right">
+        <div class="news__splide splide js-news-mini-slider-init">
+            <div class="news__splide-track splide__track">
+                <div class="news__splide-list splide__list">
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__item">
+                            <a href="news-detail.html" class="news__item-link">
+                                <div class="news__item-info">
+                                    <h3 class="news__item-title text text--small text--primary text--w-regular">
+                                        Приглашаем на&#160;наш стенд
+                                        на&#160;выставке &#171;ЭкспоЭлектроника&#187;!
+                                    </h3>
+                                    <time class="news__item-date text text--small text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                </div>
+                                <div class="news__item-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__item-img">
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__item">
+                            <a href="news-detail.html" class="news__item-link">
+                                <div class="news__item-info">
+                                    <h3 class="news__item-title text text--small text--primary text--w-regular">
+                                        Приглашаем на&#160;наш стенд
+                                        на&#160;выставке &#171;ЭкспоЭлектроника&#187;!
+                                    </h3>
+                                    <time class="news__item-date text text--small text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                </div>
+                                <div class="news__item-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__item-img">
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__item">
+                            <a href="news-detail.html" class="news__item-link">
+                                <div class="news__item-info">
+                                    <h3 class="news__item-title text text--small text--primary text--w-regular">
+                                        Приглашаем на&#160;наш стенд
+                                        на&#160;выставке &#171;ЭкспоЭлектроника&#187;!
+                                    </h3>
+                                    <time class="news__item-date text text--small text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                </div>
+                                <div class="news__item-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__item-img">
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__item">
+                            <a href="news-detail.html" class="news__item-link">
+                                <div class="news__item-info">
+                                    <h3 class="news__item-title text text--small text--primary text--w-regular">
+                                        Приглашаем на&#160;наш стенд
+                                        на&#160;выставке &#171;ЭкспоЭлектроника&#187;!
+                                    </h3>
+                                    <time class="news__item-date text text--small text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                </div>
+                                <div class="news__item-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__item-img">
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__item">
+                            <a href="news-detail.html" class="news__item-link">
+                                <div class="news__item-info">
+                                    <h3 class="news__item-title text text--small text--primary text--w-regular">
+                                        Приглашаем на&#160;наш стенд
+                                        на&#160;выставке &#171;ЭкспоЭлектроника&#187;!
+                                    </h3>
+                                    <time class="news__item-date text text--small text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                </div>
+                                <div class="news__item-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__item-img">
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="news__splide-slide splide__slide">
+                        <article class="news__item">
+                            <a href="news-detail.html" class="news__item-link">
+                                <div class="news__item-info">
+                                    <h3 class="news__item-title text text--small text--primary text--w-regular">
+                                        Приглашаем на&#160;наш стенд
+                                        на&#160;выставке &#171;ЭкспоЭлектроника&#187;!
+                                    </h3>
+                                    <time class="news__item-date text text--small text--secondary text--w-regular"
+										  datetime="2022-12-12">
+                                        12.12.2022
+                                    </time>
+                                </div>
+                                <div class="news__item-pic">
+                                    <img src="./img/other/news.png" alt="" class="news__item-img">
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="news__navigation-slider-mini">
+                <div class="slider-nav splide__arrows">
+                    <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                        <svg class="slider-nav__arrow-icon" width="24px" height="24px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-left-check"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                        <svg class="slider-nav__arrow-icon" width="24px" height="24px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#arrow-right-check"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="news__splide-pagination splide__pagination slider-pagination-line"></ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 </main>
 

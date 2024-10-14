@@ -16,3 +16,11 @@
 .slider-nav .slider-nav__splide-arrow--prev .slider-nav__arrow-icon {
   transform: rotate(0deg);
 }
+
+.slider-nav__splide-arrow--prev.splide__arrow--prev {
+  left: -10px;
+}
+
+.slider-nav__splide-arrow--next.splide__arrow--next {
+  right: -2px;
+}

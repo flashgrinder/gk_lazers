@@ -14,7 +14,7 @@
   z-index: 10;
   outline: var(--primary);
   background: transparent;
-  transition: background .3s ease-out, color .3s ease-out, border .3s ease-out;
+  transition: background .3s ease-out, color .3s ease-out, border .3s ease-out, opacity .3s ease-out;
   overflow: hidden;
   text-transform: uppercase;
 }
@@ -43,6 +43,10 @@
 .button--secondary {
   background-color: var(--focus-bg);
   color: var(--primary);
+  @include mobile {
+    font-size: 14px;
+    width: 100%;
+  }
 }
 
 .button--secondary:hover,
@@ -80,4 +84,54 @@
 
 .button--text:disabled {
   color: var(--disabled);
+}
+
+.button--icon {
+  color: var(--secondary-font-color);
+  opacity: .5;
+  line-height: 1;
+}
+
+.button--icon-right {
+  padding: 8px 44px 8px 12px;
+}
+
+.button--icon-left {
+  padding: 8px 12px 8px 44px;
+}
+
+.button--icon-right .button__arrow,
+.button--icon-left .button__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  stroke: var(--secondary-font-color);
+  fill: transparent;
+  opacity: .5;
+  transition: opacity var(--hover-time) ease-out, stroke var(--hover-time) ease-out;
+}
+
+.button--icon-right .button__arrow {
+  right: 10px;
+}
+
+.button--icon-left .button__arrow {
+  left: 10px;
+}
+
+.button--icon:hover,
+.button--icon:focus,
+.button--icon:target,
+.button--icon:hover .button__arrow,
+.button--icon:focus .button__arrow,
+.button--icon:target .button__arrow {
+  color: var(--secondary-hover);
+  stroke: var(--secondary-hover);
+  opacity: 1;
+}
+
+.button--icon:active,
+.button--icon:active .button__arrow {
+  color: var(--secondary-pressed);
+  stroke: var(--secondary-pressed);
 }

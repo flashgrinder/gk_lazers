@@ -55,6 +55,19 @@
 </symbol><symbol viewBox="0 0 24 24" id="home" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9L12 2L21 9V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V9Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M9 22V12H15V22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 24 17" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.5">
+        <path d="M21.5 8.5H2.5" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+        <path d="M6 12.5L2 8.5L6 4.5" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+    </g>
+</symbol><symbol viewBox="0 0 25 17" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.75195 8.5H21.752" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+    <path d="M18.252 12.5L22.252 8.5L18.252 4.5" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+</symbol><symbol viewBox="0 0 25 17" id="icon-arrow-right1" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.5">
+        <path d="M2.75195 8.5H21.752" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+        <path d="M18.252 12.5L22.252 8.5L18.252 4.5" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+    </g>
 </symbol><symbol viewBox="0 0 24 24" id="info" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M12 16V12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

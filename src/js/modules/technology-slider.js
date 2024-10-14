@@ -10,7 +10,7 @@ function technologySlider () {
             height: 'auto',
             perPage: 4.9,
             autoWidth: true,
-            // perMove: 1,
+            perMove: 1,
             focus: 0,
             trimSpace: false,
             autoplay: true,
@@ -28,7 +28,7 @@ function technologySlider () {
                 768: {
                     perPage: 1,
                     gap: '8px',
-                    arrows: false
+                    arrows: false,
                 },
             }
         } );

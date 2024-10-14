@@ -1,5 +1,30 @@
+.technology {
+  @include mobile {
+    background-color: var(--primary-bg);
+  }
+}
+
+.technology__heading-wrap {
+  margin-bottom: 48px;
+  @include mobile {
+    margin-bottom: 32px;
+  }
+}
+
+.technology__more-button {
+  @include mobile {
+    display: none;
+  }
+}
+
 .technology__splide {
   margin-top: 48px;
+}
+
+.technology__splide-slide {
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .technology__item {
@@ -12,6 +37,11 @@
   border-radius: 10px;
   max-width: 296px;
   width: 296px;
+  @include mobile {
+    width: 100%;
+    max-width: 100%;
+    min-height: 530px;
+  }
 }
 
 .technology__item::before,
@@ -53,6 +83,15 @@
 
 .technology__navigation-slider {
   position: relative;
-  max-width: 1200px;
+  max-width: 1280px;
   margin-top: 48px;
+}
+
+.technology__action {
+  display: none;
+  @include mobile {
+    display: block;
+    margin-top: 32px;
+    text-align: center;
+  }
 }

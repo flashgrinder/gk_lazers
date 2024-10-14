@@ -3,7 +3,8 @@
   font-style: normal;
   margin: 0;
   &--large {
-    font-size: 24px;
+    font-size: responsive 20px 24px;
+    font-range: 576px 1024px;
   }
   &--medium {
     font-size: 20px;
