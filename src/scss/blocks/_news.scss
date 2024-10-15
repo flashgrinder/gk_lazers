@@ -1,5 +1,8 @@
 .news {
   border-top: 15px solid var(--separator-bg);
+  @include mobile {
+    background-color: var(--primary-bg);
+  }
 }
 
 .news__heading-wrap {
@@ -20,6 +23,9 @@
   background-color: var(--primary-bg);
   border-radius: 10px;
   overflow: hidden;
+  @include mobile {
+    box-shadow: var(--small-shadow);
+  }
 }
 
 .news__post-link {
@@ -85,6 +91,15 @@
   right: -40px;
 }
 
+.news__action-mobile {
+  display: none;
+  text-align: center;
+  margin-top: 32px;
+  @include mobile {
+    display: block;
+  }
+}
+
 .news__outer-wrap {
   margin-top: 32px;
   @include mobile {
@@ -103,16 +118,23 @@
   color: var(--secondary-hover);
 }
 
-.news__splide .splide__track--nav>.splide__list>.news__splide-slide {
+.news__splide-slide .splide__track--nav>.splide__list>.news__splide-slide {
   border: none;
-  width: 100%;
 }
 
-.news__splide-slide.splide__slide {
+.news__splide--big.splide .splide__slide {
   width: 100%;
+  @include mobile {
+    padding: 5px;
+  }
 }
 
 .news__splide .splide__track--nav>.splide__list>.news__splide-slide.is-active {
+  border: none;
+  box-shadow: var(--small-shadow);
+}
+
+.news__splide .splide__track--nav>.splide__list>.news__splide-slide {
   border: none;
   box-shadow: var(--small-shadow);
 }

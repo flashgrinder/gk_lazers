@@ -23,6 +23,9 @@
   background-color: var(--primary);
   color: var(--primary-bg);
   border: 1px solid transparent;
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .button--primary:hover,
@@ -61,6 +64,33 @@
 }
 
 .button--secondary:disabled {
+  background-color: var(--disabled);
+  color: var(--secondary-bg);
+}
+
+.button--thirty {
+  background-color: var(--focus-bg);
+  color: var(--primary);
+  border: 1px solid #0053391A;
+  @include mobile {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+.button--thirty:hover,
+.button--thirty:focus,
+.button--thirty:target {
+  background-color: var(--focus-bg);
+  color: var(--primary-hover);
+  border: 1px solid #81AA9D1A;
+}
+
+.button--thirty:active {
+  color: var(--primary-pressed);
+}
+
+.button--thirty:disabled {
   background-color: var(--disabled);
   color: var(--secondary-bg);
 }
