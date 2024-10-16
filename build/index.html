@@ -27,6 +27,7 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</header>-->
+<!-- Просто убираешь класс header--dark и меню менят цвета на те что в макете -->
 <header class="header header--dark">
     <div class="header__outer">
         <div class="header__body container">
@@ -34,7 +35,7 @@
                 <a href="/" class="header__logo">
                     <img src="./img/logo.svg" alt="" class="header__logo-img">
                 </a>
-                <form action="" class="header__form-search">
+                <form action="" class="header__form-search header__form-search--desktop">
                     <div class="header__form-field">
                         <input class="header__form-input" type="text" value="" name="q" placeholder="Поиск" data-catalog-search-q="">
                         <button class="header__form-btn" type="submit">
@@ -44,7 +45,7 @@
                         </button>
                     </div>
                 </form>
-                <div class="header__contacts text text--normal text--primary text--w-regular d-flex d-flex-column">
+                <div class="header__contacts header__contacts--desktop text text--normal text--primary text--w-regular d-flex d-flex-column">
                     <a href="tel:+7 (495) 877-41-28" class="header__contact">
                         +7&#160;495&#160;877-41-28
                     </a>
@@ -53,6 +54,18 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="header__search-wrap-mobile container">
+            <form action="" class="header__form-search header__form-search--mobile">
+                <div class="header__form-field">
+                    <input class="header__form-input" type="text" value="" name="q" placeholder="Поиск" data-catalog-search-q="">
+                    <button class="header__form-btn" type="submit">
+                        <svg class="header__form-svg-search" width="24px" height="25px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="header__bottom js-menu">
@@ -73,6 +86,53 @@
                         <a href="" class="header__menu-link menu__link">
                             Отрасли
                         </a>
+                        <ul class="menu__sub-menu">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Авиостроение
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Авиационное двигателестроение
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Атомная энергетика
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Вертолётостроение
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Газовые турбины
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Инструментальная промышленность
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Космос
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Микроэлектроника
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Медицинское оборудование
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__menu-item menu__item">
                         <a href="" class="header__menu-link menu__link">
