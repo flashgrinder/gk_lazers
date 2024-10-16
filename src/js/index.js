@@ -5,12 +5,14 @@ import popularSlider from "./modules/popular-slider";
 import technologySlider from "./modules/technology-slider";
 import newsSliders from "./modules/news-sliders";
 import purchaseSlider from "./modules/purchase-slider";
+import industrySliders from "./modules/industry-sliders";
 import mobileNav from './modules/mobile-nav.js';
 document.addEventListener('DOMContentLoaded', ()=> {
 
     // mobileNav();
     featuresSlider();
     popularSlider();
+    industrySliders();
     technologySlider();
     newsSliders();
     purchaseSlider();
