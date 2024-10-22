@@ -6,10 +6,12 @@ import technologySlider from "./modules/technology-slider";
 import newsSliders from "./modules/news-sliders";
 import purchaseSlider from "./modules/purchase-slider";
 import industrySliders from "./modules/industry-sliders";
+import searchActionMobile from "./modules/show-hide-form-search";
 import mobileNav from './modules/mobile-nav.js';
 document.addEventListener('DOMContentLoaded', ()=> {
 
-    // mobileNav();
+    mobileNav();
+    searchActionMobile();
     featuresSlider();
     popularSlider();
     industrySliders();
