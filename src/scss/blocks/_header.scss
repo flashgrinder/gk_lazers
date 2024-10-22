@@ -185,7 +185,6 @@
 	position: absolute;
 	bottom: -49px;
 	width: 100%;
-	height: calc(100vh - 71px);
 	z-index: 10;
 	transition: left var(--hover-time) ease-out;
 	@include mobile {
@@ -193,6 +192,7 @@
 		top: 100%;
 		left: -100%;
 		bottom: auto;
+		height: calc(100vh - 71px);
 
 	}
 }
