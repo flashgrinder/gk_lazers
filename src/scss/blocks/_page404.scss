@@ -1,0 +1,62 @@
+.page-404__outer {
+  @include mobile {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.page-404__pic {
+  width: 100%;
+  margin-right: -400px;
+  @include mobile {
+    margin-right: 0;
+  }
+}
+
+.page-404__info {
+  max-width: 606px;
+  padding-bottom: 48px;
+  align-self: flex-end;
+  @include mobile {
+    padding-bottom: 0;
+    align-self: center;
+  }
+}
+
+.page-404__title,
+.page-404__subtitle {
+  display: block;
+  text-align: center;
+  @include mobile {
+    text-align: left;
+  }
+}
+
+.page-404__subtitle {
+  margin-top: 24px;
+  @include mobile {
+    margin-top: 16px;
+  }
+}
+
+.page-404__text-error {
+  display: block;
+  text-align: center;
+  margin-top: 24px;
+  @include mobile {
+    margin-top: 16px;
+  }
+}
+
+.page-404__actions {
+  margin: 48px 0 24px;
+  gap: 32px;
+  @include mobile {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.page-404__button {
+  width: 100%;
+}

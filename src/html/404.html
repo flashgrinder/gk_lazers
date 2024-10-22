@@ -1,0 +1,53 @@
+@@include('blocks/header.html')
+
+<section class="page-head">
+    <div class="page-head__body container">
+        <div class="page-head__breadcrumbs breadcrumbs">
+            <nav class="breadcrumbs__nav d-flex flex-align-center">
+                <a href="/">
+                    <svg class="breadcrumbs__icon-home" width="16px" height="16px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#home"></use>
+                    </svg>
+                </a>
+                <a href="/catalog/">Каталог</a>
+                <a href="/catalog/zapchasti_dlya_turbin/">Трубы</a>
+                <span>Отводы для труб</span>
+            </nav>
+        </div>
+        <h1 class="page-head__title title title--big title--primary title--w-bold">
+            Страница не найдена
+        </h1>
+    </div>
+</section>
+
+<section class="page-404 b-padding-48">
+    <div class="page-404__body container">
+        <div class="page-404__outer d-flex">
+            <div class="page-404__pic">
+                <img src="./img/other/404.svg" alt="" class="page-404__img">
+            </div>
+            <div class="page-404__info">
+                <h3 class="page-404__title title title--large title--primary title--w-bold">
+                    Идут ремонтные работы...
+                </h3>
+                <p class="page-404__subtitle text text--large text--primary text--w-regular">
+                    Но у нас есть много другой полезной
+                    и интересной информации
+                </p>
+                <div class="page-404__actions d-flex flex-align-center">
+                    <a href="/" class="page-404__button button button--primary">
+                        На главную
+                    </a>
+                    <a href="/news.html" class="page-404__button button button--secondary">
+                        Новости
+                    </a>
+                </div>
+                <a href="javascript:;" class="page-404__text-error text text--normal text--secondary text--w-regular" data-hystmodal="#error">
+                    Сообщить об ошибке
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('blocks/footer.html')

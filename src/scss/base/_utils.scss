@@ -51,6 +51,10 @@
 	align-items: center;
 }
 
+.b-padding-48 {
+	padding: var(--padding-block-48);
+}
+
 .b-padding-80 {
 	padding: var(--padding-block-80);
 	@include mobile {

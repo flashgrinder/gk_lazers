@@ -1,28 +1,52 @@
 .breadcrumbs {
-  font-family: var(--font-inter);
+  font-family: var(--font-main);
   padding-bottom: 32px;
+}
+
+.breadcrumbs__icon-home {
+  fill: transparent;
+  stroke: var(--primary);
+}
+
+.breadcrumbs a:first-child::before {
+  content: none;
+  margin-bottom: -2px;
 }
 
 .breadcrumbs a,
 .breadcrumbs span {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
 }
 
 .breadcrumbs span {
-  color: #525663;
+  position: relative;
+  font-weight: 700;
+  color: var(--primary);
 }
 
 .breadcrumbs a {
-  color: var(--color-gray-400);
-  padding-right: 10px;
+  position: relative;
+  color: #B0BEC5;
+  font-weight: 500;
   white-space: nowrap;
   text-decoration: underline;
 }
 
-.breadcrumbs a::after {
-  content: '/';
+.breadcrumbs a {
+  margin-right: 24px;
+}
+
+.breadcrumbs span::before,
+.breadcrumbs a::before {
+  content: '';
   display: inline-block;
-  padding-left: 8px;
-  color: var(--accent);
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: #B0BEC5;
+  border-radius: 50%;
 }
