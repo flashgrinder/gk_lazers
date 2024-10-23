@@ -3,15 +3,16 @@ import '@splidejs/splide/css';
 
 const mediaQuery = window.matchMedia('(max-width: 768px)')
 
-function featuresSlider () {
+function sidebarNewsSlider () {
 
-    const featuresSliderTrue = document.querySelector('.js-features-slider-init');
-    if (featuresSliderTrue) {
-        const featuresSlider = new Splide( '.js-features-slider-init', {
+    const newsSidebarSliderTrue = document.querySelector('.js-sidebar-news-slider');
+    if (newsSidebarSliderTrue) {
+        const sidebarNewsSlider = new Splide( '.js-sidebar-news-slider', {
             type   : 'loop',
             height: 'auto',
             perPage: 1,
             perMove: 1,
+            gap: '16px',
             autoplay: true,
             arrows: false,
             classes: {
@@ -21,12 +22,12 @@ function featuresSlider () {
         } );
 
         if(mediaQuery.matches) {
-            featuresSlider.mount();
+            sidebarNewsSlider.mount();
         } else {
-            featuresSlider.destroy();
+            sidebarNewsSlider.destroy();
         }
     }
 
 }
 
-export default featuresSlider;
+export default sidebarNewsSlider;

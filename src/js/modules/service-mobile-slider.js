@@ -3,15 +3,16 @@ import '@splidejs/splide/css';
 
 const mediaQuery = window.matchMedia('(max-width: 768px)')
 
-function featuresSlider () {
+function serviceMobileSlider () {
 
-    const featuresSliderTrue = document.querySelector('.js-features-slider-init');
-    if (featuresSliderTrue) {
-        const featuresSlider = new Splide( '.js-features-slider-init', {
+    const serviceMobileSliderTrue = document.querySelector('.js-service-mobile-slider-init');
+    if (serviceMobileSliderTrue) {
+        const serviceMobileSlider = new Splide( '.js-service-mobile-slider-init', {
             type   : 'loop',
             height: 'auto',
             perPage: 1,
             perMove: 1,
+            gap: '16px',
             autoplay: true,
             arrows: false,
             classes: {
@@ -21,12 +22,12 @@ function featuresSlider () {
         } );
 
         if(mediaQuery.matches) {
-            featuresSlider.mount();
+            serviceMobileSlider.mount();
         } else {
-            featuresSlider.destroy();
+            serviceMobileSlider.destroy();
         }
     }
 
 }
 
-export default featuresSlider;
+export default serviceMobileSlider;

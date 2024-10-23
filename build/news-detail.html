@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лазеры и&#160;аппаратура</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+<body>
+<!--<header class="header">-->
+<!--    <div class="container">-->
+<!--        <div class="header__row">-->
+<!--            <nav class="header__nav nav">-->
+<!--                <ul class="nav__list">-->
+<!--                    <li><a href="index.html" class="active">Главная</a></li>-->
+<!--		            <li><a href="docs.html">Документация</a></li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--            <button class="mobile-nav-btn">-->
+<!--                <div class="nav-icon"></div>-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</header>-->
+<!-- Убираешь класс header--dark и меняет цвета на белый -->
+<header class="header js-header-mobile header--dark">
+    <div class="header__search-wrap-mobile container js-form-search-mobile">
+        <form action="" class="header__form-search header__form-search--mobile">
+            <div class="header__form-field">
+                <input class="header__form-input" type="text" value="" name="q" placeholder="Поиск" data-catalog-search-q="">
+                <button class="header__form-btn" type="submit">
+                    <svg class="header__form-svg-search" width="24px" height="25px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="header__outer js-header-outer">
+        <div class="header__body container">
+            <div class="header__top d-flex flex-justify-sb flex-align-center">
+                <a href="/" class="header__logo">
+                    <img src="./img/logo.svg" alt="" class="header__logo-img">
+                </a>
+                <form action="" class="header__form-search header__form-search--desktop">
+                    <div class="header__form-field">
+                        <input class="header__form-input" type="text" value="" name="q" placeholder="Поиск" data-catalog-search-q="">
+                        <button class="header__form-btn" type="submit">
+                            <svg class="header__form-svg-search" width="24px" height="25px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="header__search-btn js-search-btn">
+                    <svg class="header__search-icon" width="30px" height="30px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                    </svg>
+                </div>
+                <button class="mobile-nav-btn burger js-mobile-nav-burger">
+                    <div class="nav-icon burger__icon"></div>
+                </button>
+                <div class="header__contacts header__contacts--desktop text text--normal text--primary text--w-regular d-flex d-flex-column">
+                    <a href="tel:+7 (495) 877-41-28" class="header__contact">
+                        +7&#160;495&#160;877-41-28
+                    </a>
+                    <a href="mailto:sales@laser-app.ru" class="header__contact">
+                        sales@laser-app.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header__bottom js-menu">
+        <div class="header__menu-wrap container">
+            <nav class="header__menu menu">
+                <ul class="header__menu-list menu__list">
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            О&#160;компании
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Оборудование
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Отрасли
+                        </a>
+                        <ul class="menu__sub-menu">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Авиостроение
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Авиационное двигателестроение
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Атомная энергетика
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Вертолётостроение
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Газовые турбины
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Инструментальная промышленность
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Космос
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Микроэлектроника
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Медицинское оборудование
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Технологии
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Сервис
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts header__contacts--mobile header__contacts--desktop text text--medium text--primary text--w-bold d-flex d-flex-column">
+                <a href="tel:+7 (495) 877-41-28" class="header__contact">
+                    +7&#160;495&#160;877-41-28
+                </a>
+                <a href="mailto:sales@laser-app.ru" class="header__contact">
+                    sales@laser-app.ru
+                </a>
+            </div>
+            <div class="header__socials header__socials--mobile socials d-flex flex-justify-center flex-align-center">
+                <a href="" class="header__socials-link socials__link">
+                    <img src="./img/icons/vk.svg" alt="" class="footer__social-icon socials__icon">
+                </a>
+                <a href="" class="header__socials-link socials__link">
+                    <img src="./img/icons/youtube.svg" alt="" class="footer__social-icon socials__icon">
+                </a>
+                <a href="" class="header__socials-link socials__link">
+                    <img src="./img/icons/tg.svg" alt="" class="footer__social-icon socials__icon">
+                </a>
+                <a href="" class="header__socials-link socials__link">
+                    <img src="./img/icons/dzen.svg" alt="" class="footer__social-icon socials__icon">
+                </a>
+                <a href="" class="header__socials-link socials__link">
+                    <img src="./img/icons/rt.svg" alt="" class="footer__social-icon socials__icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobile-nav">
+    <ul class="mobile-nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="docs.html">Документация</a></li>
+    </ul>
+</div>
+
+<main>
+
+<section class="page-head">
+    <div class="page-head__body container">
+        <div class="page-head__breadcrumbs breadcrumbs">
+            <nav class="breadcrumbs__nav d-flex flex-align-center">
+                <a href="/">
+                    <svg class="breadcrumbs__icon-home" width="16px" height="16px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#home"></use>
+                    </svg>
+                </a>
+                <a href="">Новости компании</a>
+                <span>Промышленный 3D-принтер МЛ6 работает в&#160;первом в&#160;России Центре аддитивных технологий общего доступа</span>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="news-detail">
+    <div class="news-detail__body container">
+        <div class="news-detail__inner d-flex flex-justify-sb">
+            <div class="news-detail__wrapper">
+                <h1 class="news-detail__title title title--big title--primary title--w-bold title--indent">
+                    Промышленный 3D-принтер МЛ6 работает в&#160;первом в&#160;России Центре аддитивных технологий общего доступа
+                </h1>
+                <picture class="news-detail__picture">
+                    <img src="./img/other/image.png" alt="" class="news-detail__detail-img">
+                </picture>
+                <div class="news-detail__content wysiwyg">
+
+                    <p>
+                        Группа компаний &#171;Лазеры и&#160;аппаратура&#187; оснастила первый в&#160;России Центр аддитивных технологий общего доступа (ЦАТОД) в&#160;Ижевске промышленным 3D-принтером для печати металлическими порошками&#160;МЛ6. ЦАТОД открылся на&#160;базе Удмуртского государственного университета (УдГУ) 26&#160;сентября этого года.
+                    </p>
+                    <p>
+                        На&#160;лазерной установке, установленной в&#160;ЦАТОД, будут отрабатываться аддитивные технологии и&#160;проводиться подготовка студентов и&#160;технических специалистов промышленных предприятий региона.
+                        Деятельность ЦАТОД в&#160;Ижевске будет направлена на&#160;выполнение как производственных, так и&#160;образовательных задач Росатома и&#160;региона в&#160;области аддитивных технологий. Как&#160;отметил&#160;на&#160;церемонии открытия ЦАТОД генеральный директор компании-интегратора российской атомной отрасли &#171;Русатом&#160;&#8212; Аддитивные технологии&#187; (ООО&#160;&#171;РусАТ&#187;, входит в&#160;Топливную компанию Росатома &#171;ТВЭЛ&#187;) Илья Кавелашвили, интегратор планирует открывать такие центры по&#160;всей стране, чтобы совершенствовать технологические возможности отечественного 3D-оборудования и&#160;материалов совместно с&#160;ведущими вузами и&#160;промышленными предприятиями России и&#160;демонстрировать результаты нашей работы потенциальным заказчикам, в&#160;частности посредством проведения различных мастер-классов. Это будет способствовать комплексному развитию аддитивных технологий в&#160;регионах, укреплению их&#160;промышленного и&#160;инновационного потенциала.
+                    </p>
+                    <p>
+                        &#171;Работа по&#160;развитию и&#160;внедрению современного высокотехнологичного оборудования на&#160;промышленных предприятиях, на&#160;наш взгляд, наилучшим образом может осуществляться именно в&#160;системе &#8222;производитель оборудования&#160;&#8212; университет&#160;&#8212; промышленное предприятие&#8220;. Поскольку мы&#160;часто поставляем оборудование вместе с&#160;разработкой технологии, то&#160;видим, что для конечных потребителей наличие такого рода центров, оснащенных российским оборудованием, как открывшийся ЦАТОД в&#160;Ижевске, дает возможность быстрее и&#160;эффективнее внедрять современные технологии в&#160;производство&#187;,&#160;&#8212; отмечает исполнительный директор группы компаний &#171;Лазеры и&#160;аппаратура&#187; Анна Цыганцова.
+                        МЛ6&#160;&#8212; российский серийный 3D-принтер для послойной печати металлических изделий. Установка предназначена для изготовления изделий из&#160;металлических порошков методом послойного выращивания (SLM). При работе используются порошки нержавеющих сталей, никелевых сплавов, кобальт-хромовых сплавов, алюминия, бронзы. Отличительной особенностью лазерных машин МЛ6 является открытое программное обеспечение, дающее возможность пользователю производить собственные настройки технологических режимов сплавления и&#160;обеспечивать возможность работы с&#160;различными типами металлических порошков любых производителей.
+                    </p>
+                    <p>
+                        Группа компаний Лазеры и&#160;аппаратура&#187; разрабатывает и&#160;производит промышленное лазерное оборудование с&#160;1998 года. Локализация производства станков составляет более 80%, что является самым высоким показателем в&#160;России среди производителей лазерного оборудования. На&#160;сегодняшний день в&#160;России и&#160;за&#160;рубежом работает более 800 станков производства ГК&#160;&#171;Лазеры и&#160;аппаратура&#187;. Продукты группы компаний: системы для микрообработки, системы пятикоординатной обработки, 3D-печати металлопорошками, производительной высокоточной резки.
+                    </p>
+                    <p>
+                        ООО&#160;&#171;РусАТ&#187; (предприятие Топливной компании Росатома &#171;ТВЭЛ&#187;)&#160;&#8212; специализированная компания-интегратор атомной отрасли в&#160;области аддитивных технологий (трёхмерной печати). Деятельность компании сосредоточена на&#160;четырех ключевых направлениях: производство линейки 3D-принтеров и&#160;их&#160;компонентов, создание материалов и&#160;металлических порошков для 3D-печати, разработка комплексного программного обеспечения для аддитивных систем, а&#160;также выполнение услуг по&#160;3D-печати и&#160;внедрению аддитивных технологий в&#160;производство (в&#160;том числе в&#160;части организации центров производства).
+                    </p>
+                    <ul>
+                        <li>Пункт 1</li>
+                        <li>Пункт 2</li>
+                        <li>Пункт 3</li>
+                        <li> Пункт 4</li>
+                    </ul>
+                </div>
+
+                <div class="news-detail__actions d-flex flex-align-center flex-justify-sb">
+                    <a href="/novosti/vosstanovlennye-turbokompressory-kachestvo-originala-po-nizkoy-tsene/"
+                       class="news-detail__button button button--icon button--icon-left">
+                        <svg class="button__arrow" width="24px" height="16px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#icon-arrow-left"></use>
+                        </svg>
+                        Предыдущая новость
+                    </a>
+                    <a href="/novosti/rol-elektronnykh-komponentov-v-rabote-turbokompressora/"
+                       class="news-detail__button button button--icon button--icon-right">
+                        Следующая новость
+                        <svg class="button__arrow" width="24px" height="16px">
+                            <use href="./img/svgsprite/sprite.symbol.svg#icon-arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+            <aside class="news-detail__sidebar">
+                <div class="news-detail__title-sidebar title title--small title--primary title--w-bold">
+                    Читайте также
+                </div>
+
+                <div class="news-detail__items-sidebar splide js-sidebar-news-slider">
+                    <div class="news-detail__splide-track splide__track">
+                        <div class="news-detail__splide-list splide__list">
+                            <div class="news-detail__splide-slide splide__slide">
+                                <article class="news-detail__item">
+                                    <a href="news-detail.html" class="news-detail__item-link">
+                                        <div class="news-detail__item-info">
+                                            <h3 class="news-detail__item-title text text--small text--primary text--w-regular">
+                                                Приглашаем на&#160;наш стенд
+                                                на&#160;&#171;Металлообработке&#187;!
+                                            </h3>
+                                            <time class="news-detail__item-date text text--small text--secondary text--w-regular"
+                                                  datetime="2022-12-12">
+                                                12.12.2022
+                                            </time>
+                                        </div>
+                                        <div class="news-detail__item-pic">
+                                            <img src="./img/other/news.png" alt="" class="news-detail__item-img">
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="news-detail__splide-slide splide__slide">
+                                <article class="news-detail__item">
+                                    <a href="news-detail.html" class="news-detail__item-link">
+                                        <div class="news-detail__item-info">
+                                            <h3 class="news-detail__item-title text text--small text--primary text--w-regular">
+                                                Приглашаем на&#160;наш стенд
+                                                на&#160;&#171;Металлообработке&#187;!
+                                            </h3>
+                                            <time class="news-detail__item-date text text--small text--secondary text--w-regular"
+                                                  datetime="2022-12-12">
+                                                12.12.2022
+                                            </time>
+                                        </div>
+                                        <div class="news-detail__item-pic">
+                                            <img src="./img/other/news.png" alt="" class="news-detail__item-img">
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="news-detail__splide-slide splide__slide">
+                                <article class="news-detail__item">
+                                    <a href="news-detail.html" class="news-detail__item-link">
+                                        <div class="news-detail__item-info">
+                                            <h3 class="news-detail__item-title text text--small text--primary text--w-regular">
+                                                Приглашаем на&#160;наш стенд
+                                                на&#160;&#171;Металлообработке&#187;!
+                                            </h3>
+                                            <time class="news-detail__item-date text text--small text--secondary text--w-regular"
+                                                  datetime="2022-12-12">
+                                                12.12.2022
+                                            </time>
+                                        </div>
+                                        <div class="news-detail__item-pic">
+                                            <img src="./img/other/news.png" alt="" class="news-detail__item-img">
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="features__splide-pagination splide__pagination slider-pagination-dotted"></ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__outer b-padding-80">
+        <div class="footer__body container">
+            <div class="footer__columns">
+                <div class="footer__left-col">
+                    <div class="footer__left-col-wrap">
+                        <a href="/" class="footer__logo">
+                            <img src="./img/logo.svg" alt="" class="footer__logo-img">
+                        </a>
+                        <nav class="footer__menu menu">
+                            <ul class="footer__menu-list menu__list">
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        О&#160;компании
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Оборудование
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Технологии
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Применения
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Сервис
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Карьера
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="tel:+7 (495) 877-41-28" class="footer__contact d-flex flex-align-center">
+                            <svg class="footer__contact-svg">
+                                <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                            </svg>
+                            <span class="footer__contact-text">
+                                +7&#160;495&#160;877-41-28
+                            </span>
+                        </a>
+                        <a href="mailto:sales@laser-app.ru" class="footer__contact d-flex flex-align-center">
+                            <svg class="footer__contact-svg">
+                                <use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+                            </svg>
+                            <span class="footer__contact-text">
+                                sales@laser-app.ru
+                            </span>
+                        </a>
+                        <a href="https://yandex.ru/maps/?rtext=~55.983756,37.219897" class="footer__contact d-flex flex-align-center">
+                            <svg class="footer__contact-svg">
+                                <use href="./img/svgsprite/sprite.symbol.svg#map-pin"></use>
+                            </svg>
+                            <span class="footer__contact-text">
+                                г.&#160;Москва, Зеленоград, проезд 4922, д.&#160;4, стр.&#160;4, эт.&#160;1, территория технопарка &#171;Элма&#187;
+                            </span>
+                        </a>
+                    </div>
+                    <div class="footer__socials socials d-flex flex-align-center">
+                        <a href="" class="footer__socials-link socials__link">
+                            <img src="./img/icons/vk.svg" alt="" class="footer__social-icon socials__icon">
+                        </a>
+                        <a href="" class="footer__socials-link socials__link">
+                            <img src="./img/icons/youtube.svg" alt="" class="footer__social-icon socials__icon">
+                        </a>
+                        <a href="" class="footer__socials-link socials__link">
+                            <img src="./img/icons/tg.svg" alt="" class="footer__social-icon socials__icon">
+                        </a>
+                        <a href="" class="footer__socials-link socials__link">
+                            <img src="./img/icons/dzen.svg" alt="" class="footer__social-icon socials__icon">
+                        </a>
+                        <a href="" class="footer__socials-link socials__link">
+                            <img src="./img/icons/rt.svg" alt="" class="footer__social-icon socials__icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__right-col">
+                    <div class="footer__map">
+                        <script type="text/javascript" charset="utf-8" async
+								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A98177e575a81e5a2db9eda3c6af5ff64d007d9a16c89a37e3a7d4d283c58378e&amp;width=100%25&amp;height=100&amp;lang=ru_RU&amp;scroll=false&amp;apikey=54c8ee45-fe04-4932-882e-da7a366d5e2f"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__bottom-wrap container">
+            <div class="footer__bottom-inner d-flex flex-justify-sb flex-align-center">
+                <div class="footer__copyright text text--normal text--w-regular">
+                    &#169; 2024 Лазеры и&#160;аппаратура.
+                    <br>
+                    Все права защищены.
+                </div>
+                <div class="footer__links text text--small text--w-regular">
+                    <a href="" class="footer__link-policy">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="" class="footer__link-policy">
+                        Обработка персональных данных
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>

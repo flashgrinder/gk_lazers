@@ -4,3 +4,11 @@
     padding-top: 48px;
   }
 }
+
+.page-head__subtitle {
+  margin-top: 48px;
+  max-width: 960px;
+  @include mobile {
+    margin-top: 16px;
+  }
+}

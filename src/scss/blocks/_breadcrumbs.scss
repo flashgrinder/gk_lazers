@@ -8,6 +8,12 @@
   stroke: var(--primary);
 }
 
+.breadcrumbs a:first-child {
+  margin-bottom: -2px;
+  width: 100%;
+  max-width: 16px;
+}
+
 .breadcrumbs a:first-child::before {
   content: none;
   margin-bottom: -2px;
@@ -23,6 +29,12 @@
   position: relative;
   font-weight: 700;
   color: var(--primary);
+
+  @include mobile {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
 
 .breadcrumbs a {

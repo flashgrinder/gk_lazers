@@ -8,6 +8,9 @@ import purchaseSlider from "./modules/purchase-slider";
 import industrySliders from "./modules/industry-sliders";
 import searchActionMobile from "./modules/show-hide-form-search";
 import mobileNav from './modules/mobile-nav.js';
+import sidebarNewsSlider from "./modules/sidebar-news-slider";
+import serviceMobileSlider from "./modules/service-mobile-slider";
+import catalogSlidersMobile from "./modules/catalog-sliders-mobile";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     mobileNav();
@@ -18,6 +21,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
     technologySlider();
     newsSliders();
     purchaseSlider();
+    sidebarNewsSlider();
+    serviceMobileSlider();
+    catalogSlidersMobile();
     Fancybox.bind('[data-fancybox]');
 
 })

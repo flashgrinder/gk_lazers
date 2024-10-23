@@ -1,0 +1,79 @@
+.service {
+  padding: 48px 0 64px;
+  @include mobile {
+    padding: 48px 0;
+  }
+}
+
+.service__splide.splide {
+  visibility: visible;
+  @include mobile {
+    visibility: hidden;
+  }
+}
+
+.service__splide.splide .splide__list {
+  flex-direction: column;
+  gap: 48px;
+  @include mobile {
+    flex-direction: unset;
+    gap: unset;
+  }
+}
+
+.service__item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  align-items: center;
+  gap: 32px;
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.service__splide-slide.splide__slide:nth-child(even) .service__item picture {
+  order: 1;
+  @include mobile {
+    order: unset;
+  }
+}
+
+.service__item-title {
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+.service__item picture {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.service__item picture,
+.service__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service__wysiwyg.wysiwyg p {
+  margin: 16px 0;
+  @include mobile {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.service__wysiwyg.wysiwyg ul,
+.service__wysiwyg.wysiwyg ol {
+  @include mobile {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.service__wysiwyg.wysiwyg ul li ~ li,
+.service__wysiwyg.wysiwyg ol li ~ li {
+  margin-top: 2px;
+}
