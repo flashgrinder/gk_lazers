@@ -1,0 +1,74 @@
+.select {
+  position: relative;
+  width: auto;
+  max-width: 650px;
+  z-index: 10;
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+
+.select.is-active .select__body {
+  display: block;
+}
+
+.select.is-active .select__header {
+  border-bottom: 1px solid transparent;
+  border-radius: 8px 8px 0 0;
+}
+
+.select__header {
+  border-top: 1px solid var(--disabled);
+  border-right: 1px solid var(--disabled);
+  border-bottom: 1px solid var(--disabled);
+  border-left: 1px solid var(--disabled);
+  cursor: pointer;
+  display: flex;
+  border-radius: 8px;
+}
+
+.select__current {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 18px 16px;
+  opacity: .8;
+}
+
+.select__icon {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 10px;
+  text-align: center;
+  fill: transparent;
+  stroke: var(--primary-font-color);
+}
+
+
+.select__body {
+  border: 1px solid var(--disabled);
+  border-top: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: var(--primary-bg);
+  border-radius: 0 0 8px 8px;
+}
+
+.select__item {
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 18px 16px;
+  color: var(--primary-font-color);
+}
+
+.select__item:hover {
+  background-color: #f2f2f2;
+}

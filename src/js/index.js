@@ -11,6 +11,7 @@ import mobileNav from './modules/mobile-nav.js';
 import sidebarNewsSlider from "./modules/sidebar-news-slider";
 import serviceMobileSlider from "./modules/service-mobile-slider";
 import catalogSlidersMobile from "./modules/catalog-sliders-mobile";
+import customSelect from "./modules/custom-select";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     mobileNav();
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     sidebarNewsSlider();
     serviceMobileSlider();
     catalogSlidersMobile();
+    customSelect();
     Fancybox.bind('[data-fancybox]');
 
 })

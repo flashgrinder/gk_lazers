@@ -10,6 +10,13 @@
   gap: 32px;
 }
 
+.news-index__sort-title,
+.news-index__sort-buttons {
+  @include mobile {
+    display: none;
+  }
+}
+
 .news-index__items {
   margin-top: 48px;
   display: grid;
