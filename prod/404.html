@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лазеры и&#160;аппаратура</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+<body>
+<!-- Убираешь класс header--dark и меняет цвета на белый -->
+<header class="header js-header-mobile header--dark">
+    <div class="header__search-wrap-mobile container js-form-search-mobile">
+        <form action="" class="header__form-search header__form-search--mobile">
+            <div class="header__form-field">
+                <input class="header__form-input" type="text" value="" name="q" placeholder="Поиск" data-catalog-search-q="">
+                <button class="header__form-btn" type="submit">
+                    <svg class="header__form-svg-search" width="24px" height="25px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="header__outer js-header-outer">
+        <div class="header__body container">
+            <div class="header__top d-flex flex-justify-sb flex-align-center">
+                <a href="/" class="header__logo">
+                    <img src="./img/logo.svg" alt="" class="header__logo-img">
+                </a>
+                <form action="" class="header__form-search header__form-search--desktop">
+                    <div class="header__form-field">
+                        <input class="header__form-input" type="text" value="" name="q" placeholder="Поиск" data-catalog-search-q="">
+                        <button class="header__form-btn" type="submit">
+                            <svg class="header__form-svg-search" width="24px" height="25px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="header__search-btn js-search-btn">
+                    <svg class="header__search-icon" width="30px" height="30px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                    </svg>
+                </div>
+                <button class="mobile-nav-btn burger js-mobile-nav-burger">
+                    <div class="nav-icon burger__icon"></div>
+                </button>
+                <div class="header__contacts header__contacts--desktop text text--normal text--primary text--w-regular d-flex d-flex-column">
+                    <a href="tel:+7 (495) 877-41-28" class="header__contact">
+                        +7&#160;495&#160;877-41-28
+                    </a>
+                    <a href="mailto:sales@laser-app.ru" class="header__contact">
+                        sales@laser-app.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom js-menu">
+        <div class="header__menu-wrap container">
+            <nav class="header__menu menu">
+                <ul class="header__menu-list menu__list">
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            О&#160;компании
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Оборудование
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Отрасли
+                        </a>
+                        <ul class="menu__sub-menu">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Авиостроение
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Авиационное двигателестроение
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Атомная энергетика
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Вертолётостроение
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Газовые турбины
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Инструментальная промышленность
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Космос
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Микроэлектроника
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">
+                                    Медицинское оборудование
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Технологии
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Сервис
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__item">
+                        <a href="" class="header__menu-link menu__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts header__contacts--mobile header__contacts--desktop text text--medium text--primary text--w-bold d-flex d-flex-column">
+                <a href="tel:+7 (495) 877-41-28" class="header__contact">
+                    +7&#160;495&#160;877-41-28
+                </a>
+                <a href="mailto:sales@laser-app.ru" class="header__contact">
+                    sales@laser-app.ru
+                </a>
+            </div>
+            <div class="header__socials header__socials--mobile socials d-flex flex-justify-center flex-align-center">
+                <a href="" class="header__socials-link socials__link">
+                    <img src="./img/icons/vk.svg" alt="" class="footer__social-icon socials__icon">
+                </a>
+                <a href="" class="header__socials-link socials__link">
+                    <img src="./img/icons/youtube.svg" alt="" class="footer__social-icon socials__icon">
+                </a>
+                <a href="" class="header__socials-link socials__link">
+                    <img src="./img/icons/tg.svg" alt="" class="footer__social-icon socials__icon">
+                </a>
+                <a href="" class="header__socials-link socials__link">
+                    <img src="./img/icons/dzen.svg" alt="" class="footer__social-icon socials__icon">
+                </a>
+                <a href="" class="header__socials-link socials__link">
+                    <img src="./img/icons/rt.svg" alt="" class="footer__social-icon socials__icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobile-nav">
+    <ul class="mobile-nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="docs.html">Документация</a></li>
+    </ul>
+</div>
+
+<main>
+
+<section class="page-head">
+    <div class="page-head__body container">
+        <div class="page-head__breadcrumbs breadcrumbs">
+            <nav class="breadcrumbs__nav d-flex flex-align-center">
+                <a href="/">
+                    <svg class="breadcrumbs__icon-home" width="16px" height="16px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#home"></use>
+                    </svg>
+                </a>
+                <a href="">Отрасли</a>
+                <span>Машиностроение</span>
+            </nav>
+        </div>
+        <h1 class="page-head__title title title--big title--primary title--w-bold">
+            Страница не&#160;найдена
+        </h1>
+    </div>
+</section>
+
+<section class="page-404 b-padding-48">
+    <div class="page-404__body container">
+        <div class="page-404__outer d-flex">
+            <div class="page-404__pic">
+                <img src="./img/other/404.svg" alt="" class="page-404__img">
+            </div>
+            <div class="page-404__info">
+                <h3 class="page-404__title title title--large title--primary title--w-bold">
+                    Идут ремонтные работы&#8230;
+                </h3>
+                <p class="page-404__subtitle text text--large text--primary text--w-regular">
+                    Но&#160;у&#160;нас есть много другой полезной
+                    и&#160;интересной информации
+                </p>
+                <div class="page-404__actions d-flex flex-align-center">
+                    <a href="/" class="page-404__button button button--primary">
+                        На&#160;главную
+                    </a>
+                    <a href="/news.html" class="page-404__button button button--secondary">
+                        Новости
+                    </a>
+                </div>
+                <a href="javascript:;" class="page-404__text-error text text--normal text--secondary text--w-regular" data-hystmodal="#error">
+                    Сообщить об&#160;ошибке
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__outer b-padding-80">
+        <div class="footer__body container">
+            <div class="footer__columns">
+                <div class="footer__left-col">
+                    <div class="footer__left-col-wrap">
+                        <a href="/" class="footer__logo">
+                            <img src="./img/logo.svg" alt="" class="footer__logo-img">
+                        </a>
+                        <nav class="footer__menu menu">
+                            <ul class="footer__menu-list menu__list">
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        О&#160;компании
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Оборудование
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Технологии
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Применения
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Сервис
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Карьера
+                                    </a>
+                                </li>
+                                <li class="footer__menu-item menu__item">
+                                    <a href="" class="footer__menu-link menu__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="tel:+7 (495) 877-41-28" class="footer__contact d-flex flex-align-center">
+                            <svg class="footer__contact-svg">
+                                <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                            </svg>
+                            <span class="footer__contact-text">
+                                +7&#160;495&#160;877-41-28
+                            </span>
+                        </a>
+                        <a href="mailto:sales@laser-app.ru" class="footer__contact d-flex flex-align-center">
+                            <svg class="footer__contact-svg">
+                                <use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+                            </svg>
+                            <span class="footer__contact-text">
+                                sales@laser-app.ru
+                            </span>
+                        </a>
+                        <a href="https://yandex.ru/maps/?rtext=~55.983756,37.219897" class="footer__contact d-flex flex-align-center">
+                            <svg class="footer__contact-svg">
+                                <use href="./img/svgsprite/sprite.symbol.svg#map-pin"></use>
+                            </svg>
+                            <span class="footer__contact-text">
+                                г.&#160;Москва, Зеленоград, проезд 4922, д.&#160;4, стр.&#160;4, эт.&#160;1, территория технопарка &#171;Элма&#187;
+                            </span>
+                        </a>
+                    </div>
+                    <div class="footer__socials socials d-flex flex-align-center">
+                        <a href="" class="footer__socials-link socials__link">
+                            <img src="./img/icons/vk.svg" alt="" class="footer__social-icon socials__icon">
+                        </a>
+                        <a href="" class="footer__socials-link socials__link">
+                            <img src="./img/icons/youtube.svg" alt="" class="footer__social-icon socials__icon">
+                        </a>
+                        <a href="" class="footer__socials-link socials__link">
+                            <img src="./img/icons/tg.svg" alt="" class="footer__social-icon socials__icon">
+                        </a>
+                        <a href="" class="footer__socials-link socials__link">
+                            <img src="./img/icons/dzen.svg" alt="" class="footer__social-icon socials__icon">
+                        </a>
+                        <a href="" class="footer__socials-link socials__link">
+                            <img src="./img/icons/rt.svg" alt="" class="footer__social-icon socials__icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__right-col">
+                    <div class="footer__map">
+                        <script type="text/javascript" charset="utf-8" async
+								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A98177e575a81e5a2db9eda3c6af5ff64d007d9a16c89a37e3a7d4d283c58378e&amp;width=100%25&amp;height=100&amp;lang=ru_RU&amp;scroll=false&amp;apikey=54c8ee45-fe04-4932-882e-da7a366d5e2f"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__bottom-wrap container">
+            <div class="footer__bottom-inner d-flex flex-justify-sb flex-align-center">
+                <div class="footer__copyright text text--normal text--w-regular">
+                    &#169; 2024 Лазеры и&#160;аппаратура.
+                    <br>
+                    Все права защищены.
+                </div>
+                <div class="footer__links text text--small text--w-regular">
+                    <a href="" class="footer__link-policy">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="" class="footer__link-policy">
+                        Обработка персональных данных
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>
