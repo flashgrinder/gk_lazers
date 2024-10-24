@@ -90,7 +90,7 @@ gulp.task('html:prod', function () {
 				},
 			})
 		)
-		.pipe(htmlclean())
+		// .pipe(htmlclean())
 		.pipe(gulp.dest('./prod/'));
 });
 
