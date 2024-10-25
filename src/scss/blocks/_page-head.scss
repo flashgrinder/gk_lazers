@@ -10,5 +10,6 @@
   max-width: 960px;
   @include mobile {
     margin-top: 16px;
+    font-size: 16px;
   }
 }
