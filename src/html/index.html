@@ -1,10 +1,14 @@
 @@include('blocks/header.html')
 
 <section class="main-screen js-reveal gs-reveal">
-	<video class="main-screen__video" autoplay muted loop playsinline poster="./img/poster-main-screen.jpg">
-		<source src="./img/video-laser.mp4" type="video/mp4">
-		<source src="./img/video-laser.webm" type="video/webm">
-	</video>
+	<div class="main-screen__video-embed">
+		<iframe class="main-screen__video"
+				src="https://kinescope.io/embed/hSGMJedU3HHZqwQwKvk1PT?background=true&playsinline=true"
+				frameborder="0"
+				allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
+				allowfullscreen
+		></iframe>
+	</div>
 	<div class="main-screen__body container">
 		<div class="main-screen__wrap">
 			<h1 class="main-screen__title title title--big title--white title--w-bold">
@@ -475,7 +479,10 @@
 
 <div class="video-about js-reveal gs-reveal">
 	<div class="video-about__body">
-		<a href="./img/video-laser.webm" class="video-about__look title title--large title--white title--w-bold" data-fancybox="video">
+		<a href="https://kinescope.io/embed/hSGMJedU3HHZqwQwKvk1PT"
+		   class="video-about__look title title--large title--white title--w-bold"
+		   data-fancybox="video"
+		   data-type="iframe">
 			Смотреть видео
 		</a>
 	</div>

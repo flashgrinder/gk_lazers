@@ -4,6 +4,10 @@
   overflow: hidden;
   @include mobile {
     padding: 252px 0;
+    background-image: url("../img/other/main-screen-mobile-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -16,14 +20,41 @@
   height: 100%;
   background-color: #0000003D;
   z-index: 1;
+  @include mobile {
+    background-color: rgba(0, 0, 0, 0.539216);
+  }
+}
+
+.main-screen__video-embed {
+  position: absolute;
+  padding-bottom: 56.25%;
+  height: 0;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @include to(1200px) {
+    padding-bottom: 66.25%;
+  }
+  @include mobile {
+    display: none;
+  }
 }
 
 .main-screen__video {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1920px;
+  height: 1080px;
+}
+
+.main-screen__video-embed .main-screen__video .wrapper>div>div {
+  border-radius: 0;
 }
 
 .main-screen__wrap {
