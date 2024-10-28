@@ -10,6 +10,13 @@
 	}
 }
 
+.industry-index__grid + .industry-index__grid {
+	margin-top: 32px;
+	@include mobile {
+		margin-top: 16px;
+	}
+}
+
 .industry-index__item {
 	min-height: 296px;
 	width: 100%;
