@@ -1,5 +1,6 @@
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import gsReveal from "./modules/gs-reveal";
 import featuresSlider from "./modules/features-slider";
 import popularSlider from "./modules/popular-slider";
 import technologySlider from "./modules/technology-slider";
@@ -15,6 +16,7 @@ import customSelect from "./modules/custom-select";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     mobileNav();
+    gsReveal.init();
     searchActionMobile();
     featuresSlider();
     popularSlider();
