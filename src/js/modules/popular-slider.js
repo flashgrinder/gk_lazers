@@ -9,8 +9,6 @@ function popularSlider () {
             type   : 'loop',
             height: 'auto',
             perPage: 3,
-            // perMove: 1,
-            autoWidth: true,
             focus: 0,
             trimSpace: false,
             autoplay: false,

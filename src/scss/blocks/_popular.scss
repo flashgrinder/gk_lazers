@@ -11,7 +11,7 @@
 }
 
 .popular__splide-list .splide__slide {
-  margin-left: 6px;
+  width: 100%;
   @include mobile {
     width: 100%;
     margin-left: 0;
@@ -30,7 +30,8 @@
   box-shadow: var(--small-shadow);
 }
 
-.popular__item:hover .popular__item-img {
+.popular__item:hover > .popular__item-pic picture,
+.popular__item:hover > .popular__item-pic img {
   transform: scale(1.1);
 }
 
@@ -42,7 +43,8 @@
   }
 }
 
-.popular__item-img {
+.popular__item > .popular__item-pic picture,
+.popular__item > .popular__item-pic img {
   transition: transform var(--hover-time) ease-out;
   margin: 0 auto;
 }

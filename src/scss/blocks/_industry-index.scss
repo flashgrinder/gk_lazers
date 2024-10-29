@@ -61,6 +61,7 @@
 	user-select: none;
 	pointer-events: none;
 	transition: opacity var(--hover-time) ease-out;
+	z-index: 1;
 }
 
 .industry-index__item::before {
@@ -80,8 +81,19 @@
 	opacity: 1;
 }
 
+.industry-index__item > picture,
+.industry-index__item > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
 .industry-index__item-pic,
-.industry-index__item-img {
+.industry-index__item-icon {
 	max-width: 64px;
 	min-width: 64px;
 	max-height: 64px;
