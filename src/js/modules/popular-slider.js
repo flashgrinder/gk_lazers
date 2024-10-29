@@ -8,11 +8,12 @@ function popularSlider () {
         const popularSlider = new Splide( '.js-popular-slider-init', {
             type   : 'loop',
             height: 'auto',
-            perPage: 3.5,
+            perPage: 3,
             // perMove: 1,
+            autoWidth: true,
             focus: 0,
             trimSpace: false,
-            autoplay: true,
+            autoplay: false,
             arrows: true,
             gap: '32px',
             classes: {
@@ -20,15 +21,14 @@ function popularSlider () {
                 arrow : 'splide__arrow slider-nav__splide-arrow',
                 prev  : 'splide__arrow--prev slider-nav__splide-arrow--prev',
                 next  : 'splide__arrow--next slider-nav__splide-arrow--next',
-                pagination: 'splide__pagination slider-pagination-line',
-                page      : 'splide__pagination__page slider-pagination-line__page',
+                pagination: 'splide__pagination slider-pagination-dotted',
+                page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
             breakpoints: {
                 768: {
                     perPage: 1,
                     gap: '8px',
                     arrows: false,
-                    autoWidth: true,
                 },
             }
         } );

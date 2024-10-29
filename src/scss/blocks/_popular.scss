@@ -1,6 +1,8 @@
 .popular {
+  padding-bottom: 140px;
   @include mobile {
     background-color: var(--secondary-bg);
+    padding-bottom: 48px;
   }
 }
 
@@ -10,6 +12,10 @@
 
 .popular__splide-list .splide__slide {
   margin-left: 6px;
+  @include mobile {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .popular__splide {
@@ -54,6 +60,12 @@
 }
 
 .popular__navigation-slider {
-  position: relative;
+  position: absolute;
   max-width: 1280px;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mobile {
+    position: static;
+    transform: none;
+  }
 }

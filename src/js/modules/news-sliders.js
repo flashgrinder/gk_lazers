@@ -23,8 +23,8 @@ function newsSliders () {
                 arrow: 'splide__arrow slider-nav__splide-arrow',
                 prev: 'splide__arrow--prev slider-nav__splide-arrow--prev',
                 next: 'splide__arrow--next slider-nav__splide-arrow--next',
-                pagination: 'splide__pagination slider-pagination-line',
-                page      : 'splide__pagination__page slider-pagination-line__page',
+                pagination: 'splide__pagination slider-pagination-dotted',
+                page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
             breakpoints: {
                 768: {
@@ -39,19 +39,17 @@ function newsSliders () {
         const newsMiniSlider = new Splide( '.js-news-mini-slider-init', {
             height: 'auto',
             rewind: true,
-            perPage: 5,
-            autoWidth: true,
-            focus: 'center',
+            perPage: 4,
             isNavigation: true,
-            arrows: true,
-            gap: '32px',
+            arrows: false,
+            gap: '16px',
             classes: {
                 arrows: 'splide__arrows slider-nav__splide-arrows',
                 arrow : 'splide__arrow slider-nav__splide-arrow',
                 prev  : 'splide__arrow--prev slider-nav__splide-arrow--prev',
                 next  : 'splide__arrow--next slider-nav__splide-arrow--next',
-                pagination: 'splide__pagination slider-pagination-line',
-                page      : 'splide__pagination__page slider-pagination-line__page',
+                pagination: 'splide__pagination slider-pagination-dotted',
+                page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
             breakpoints: {
                 768: {

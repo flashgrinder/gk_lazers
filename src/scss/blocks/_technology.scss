@@ -1,6 +1,8 @@
 .technology {
+  padding-bottom: 180px;
   @include mobile {
     background-color: var(--primary-bg);
+    padding-bottom: 48px;
   }
 }
 
@@ -82,9 +84,14 @@
 }
 
 .technology__navigation-slider {
-  position: relative;
+  position: absolute;
   max-width: 1280px;
-  margin-top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mobile {
+    position: static;
+    transform: none;
+  }
 }
 
 .technology__action {

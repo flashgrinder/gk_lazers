@@ -1,7 +1,9 @@
 .news {
   border-top: 15px solid var(--separator-bg);
+  padding-bottom: 120px;
   @include mobile {
     background-color: var(--primary-bg);
+    padding-bottom: 48px;
   }
 }
 
@@ -108,10 +110,13 @@
 }
 
 .news__item-link {
-  display: grid;
-  grid-template-columns: 200px 90px;
-  padding: 26px 0 26px 10px;
+  display: flex;
+  padding: 0 0 0 10px;
   align-items: center;
+}
+
+.news__item-info {
+  max-width: 208px;
 }
 
 .news__item:hover .news__item-title {
@@ -150,8 +155,9 @@
 
 .news__item-pic {
   overflow: hidden;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   height: 100px;
+  width: 100px;
 }
 
 .news__navigation-slider-mini {
