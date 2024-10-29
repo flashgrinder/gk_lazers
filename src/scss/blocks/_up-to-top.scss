@@ -1,0 +1,30 @@
+.up-to-top {
+	position: fixed;
+	left: 50px;
+	bottom: 60px;
+	cursor: pointer;
+	gap: 16px;
+	visibility: hidden;
+	opacity: 0;
+	@include mobile {
+		display: none;
+	}
+}
+
+.up-to-top.is-visible {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility var(--hover-time) ease-out, opacity var(--hover-time) ease-out;
+}
+
+.up-to-top__icon {
+	fill: var(--primary);
+}
+
+.up-to-top__name {
+	@extend .text;
+	@extend .text--normal;
+	@extend .text--w-bold;
+	@extend .text--uppercase;
+	color: var(--primary);
+}

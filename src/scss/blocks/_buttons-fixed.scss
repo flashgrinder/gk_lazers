@@ -1,0 +1,25 @@
+.buttons-fixed {
+	visibility: hidden;
+	opacity: 0;
+	@include mobile {
+		display: none;
+	}
+}
+
+.buttons-fixed.is-visible {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility var(--hover-time) ease-out, opacity var(--hover-time) ease-out;
+}
+
+.buttons-fixed {
+	overflow: hidden;
+	position: fixed;
+	right: 51px;
+	bottom: 62px;
+	height: 240px;
+	width: 84px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}

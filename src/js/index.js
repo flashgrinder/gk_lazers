@@ -1,6 +1,8 @@
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import gsReveal from "./modules/gs-reveal";
+import buttonsFixedInit from "./modules/buttons-fixed";
+import upToTop from "./modules/up-to-top";
 import featuresSlider from "./modules/features-slider";
 import popularSlider from "./modules/popular-slider";
 import technologySlider from "./modules/technology-slider";
@@ -14,6 +16,13 @@ import serviceMobileSlider from "./modules/service-mobile-slider";
 import catalogSlidersMobile from "./modules/catalog-sliders-mobile";
 import customSelect from "./modules/custom-select";
 document.addEventListener('DOMContentLoaded', ()=> {
+
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+    if(mediaQuery.matches) {
+        buttonsFixedInit();
+        upToTop();
+    }
 
     mobileNav();
     gsReveal.init();

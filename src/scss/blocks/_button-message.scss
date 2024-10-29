@@ -1,0 +1,32 @@
+.button-message {
+	background-color: var(--success-border);
+	border: 2px solid var(--success-border);
+	border-radius: 50%;
+	box-shadow: 0 8px 10px rgba(105, 158, 74, 0.3);
+	cursor: pointer;
+	height: 84px;
+	width: 84px;
+	text-align: center;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index: 999;
+	animation: hoverWave linear 3s infinite;
+	text-decoration: none;
+	transition: background-color var(--hover-time) ease-out, border-color var(--hover-time) ease-out;
+}
+
+.button-message:hover {
+	background-color: var(--primary-bg);
+	border-color: #00533933;
+}
+
+.button-message__icon {
+	stroke: var(--primary-bg);
+	fill: transparent;
+	transition: stroke var(--hover-time) ease-out;
+}
+
+.button-message:hover .button-message__icon {
+	stroke: var(--success-border);
+}

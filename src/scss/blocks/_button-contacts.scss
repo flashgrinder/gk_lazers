@@ -1,0 +1,24 @@
+.button-contacts {
+	padding: 24px 12px;
+	border-radius: 21px;
+	background: var(--success-border);
+	gap: 48px;
+	justify-content: flex-start;
+	transition: transform var(--hover-time) ease-out;
+	width: max-content;
+	transform: translateY(100%);
+}
+
+.button-contacts__icon {
+	height: 0;
+	stroke: var(--primary-bg);
+	fill: transparent;
+}
+
+.button-contacts.is-active {
+	transform: translateY(0);
+}
+
+.button-contacts.is-active .button-contacts__icon {
+	height: 35px;
+}
