@@ -1,25 +1,40 @@
+.page-404 {
+  position: relative;
+}
+
 .page-404__outer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 900px;
   @include mobile {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 32px;
+    height: auto;
   }
 }
 
 .page-404__pic {
   width: 100%;
-  margin-right: -400px;
+  position: absolute;
+  //margin-right: -400px;
   @include mobile {
+    position: static;
     margin-right: 0;
   }
 }
 
 .page-404__info {
+  position: relative;
   max-width: 606px;
   padding-bottom: 48px;
   align-self: flex-end;
+  grid-area: 1/2;
+  margin-bottom: 100px;
   @include mobile {
     padding-bottom: 0;
     align-self: center;
+    margin-bottom: 0;
+    grid-area: auto;
   }
 }
 
