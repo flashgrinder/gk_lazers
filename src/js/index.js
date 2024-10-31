@@ -15,6 +15,7 @@ import sidebarNewsSlider from "./modules/sidebar-news-slider";
 import serviceMobileSlider from "./modules/service-mobile-slider";
 import catalogSlidersMobile from "./modules/catalog-sliders-mobile";
 import customSelect from "./modules/custom-select";
+import departmentsSlider from "./modules/departments-slider";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     serviceMobileSlider();
     catalogSlidersMobile();
     customSelect();
+    departmentsSlider();
     Fancybox.bind('[data-fancybox]');
 
 })
