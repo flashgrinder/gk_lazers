@@ -29,17 +29,6 @@
   }
 }
 
-.news-index__items + .news-index__items .news-index__post:first-child {
-  grid-area: auto;
-}
-
-.news-index__post:first-child {
-  grid-area: 1/2 span;
-  @include mobile {
-    grid-area: auto;
-  }
-}
-
 .news-index__post {
   box-shadow: var(--small-shadow);
   border-radius: 10px;
