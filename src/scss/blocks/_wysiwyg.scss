@@ -102,3 +102,15 @@
 .wysiwyg a:hover {
   color: var(--primary);
 }
+
+/* About */
+.wysiwyg.wysiwyg--about p {
+  margin: 24px 0;
+  font-weight: 400;
+  line-height: 32px;
+  @extend .text--large;
+  @include mobile {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
