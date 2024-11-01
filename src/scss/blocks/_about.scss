@@ -55,6 +55,53 @@
 	min-height: 493px;
 }
 
+.about__slider-wrap {
+	margin-top: 48px;
+	@include mobile {
+		margin-top: 32px;
+	}
+}
+
+.about__slider-top {
+	gap: 16px;
+	@include mobile {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.about__excerpt {
+	max-width: 582px;
+	text-align: right;
+	@include mobile {
+		text-align: left;
+		max-width: 100%;
+	}
+}
+
+.about__slider-inner-wrap {
+	margin-top: 32px;
+	display: grid;
+	grid-template-columns: minmax(400px, 400px) 1fr;
+	gap: 0;
+}
+
+.about__photo {
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.about__photo picture img,
+.about__photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	max-width: 400px;
+	border-radius: 8px;
+}
+
 .about__description-wrap {
 	padding: 32px;
 	background-color: var(--focus-bg);
@@ -98,4 +145,141 @@
 .about__description-more.button.button--icon .button__arrow {
 	stroke: var(--primary-font-color);
 	opacity: 1;
+}
+
+/* Slide Item */
+.about__splide-list {
+	background: url("../img/other/about-newspaper.png") no-repeat center;
+	background-size: cover;
+	background-position-x: 100px;
+}
+
+.about__splide-slide {
+	position: relative;
+}
+
+.about__splide-slide:first-child::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 83, 57, 0.7);
+	clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 19% 50%, 0% 0%);
+}
+
+.about__splide-slide:last-child::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 83, 57, 0.7);
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+
+.about__splide-slide:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 83, 57, 0.7);
+}
+
+.about__slide-item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	padding: 50px 50px 50px 100px;
+}
+
+.about__slide-window-year,
+.about__slide-year {
+	font-size: 64px;
+	padding-left: 60px;
+	position: relative;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.about__slide-year span {
+	position: relative;
+	z-index: 10;
+}
+
+.about__slide-year::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 100%;
+	width: 40px;
+	clip-path: polygon(65% 0%, 100% 50%, 65% 100%, 0% 100%, 35% 50%, 0% 0%);
+	background-color: var(--secondary);
+}
+
+.about__slide-year:after {
+	content: '';
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0;
+	height: 100%;
+	background-color: var(--secondary);
+	clip-path: polygon(0% 0%, 78% 0%, 85% 49%, 78% 100%, 0% 100%);
+	opacity: 0;
+	transition: width var(--hover-time) ease-out, opacity var(--hover-time) ease-out;
+}
+
+.about__slide-year:hover:after {
+	width: 130%;
+	opacity: 1;
+}
+
+.about__slide-year:hover .about__slide-text {
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+.about__slide-text {
+	position: absolute;
+	max-width: 280px;
+	width: 280px;
+	opacity: 0;
+	transform: translateY(100%);
+	margin-top: 20px;
+	transition: transform .1s ease-out, opacity .1s ease-out;
+	user-select: none;
+	pointer-events: none;
+	left: 0;
+}
+
+.about__slide-window {
+	padding: 16px;
+	background-color: #FFFFFF59;
+	backdrop-filter: blur(10px);
+	gap: 20px;
+}
+
+.about__slide-window-inner-col {
+	width: 50%;
+	max-width: 288px;
+	border-radius: 8px;
+}
+
+.about__slide-window-year {
+	border-bottom: 1px solid var(--secondary);
+}
+
+.about__slide-window-excerpt,
+.about__slide-window-pic {
+	margin-top: 20px;
+}
+
+.about__slide-window-pic {
+	overflow: hidden;
+	border-radius: 10px;
 }
