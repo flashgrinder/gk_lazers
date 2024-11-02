@@ -46,10 +46,6 @@
   margin-top: 20px;
 }
 
-.wysiwyg.wysiwyg--delivery ul li ~ li {
-  margin-top: 6px;
-}
-
 .wysiwyg table {
   width: 100%;
   margin-bottom: 20px;
@@ -89,10 +85,6 @@
   }
 }
 
-.wysiwyg.wysiwyg--delivery p:first-child {
-  margin-top: 0;
-}
-
 .wysiwyg a {
   text-decoration: underline;
   color: var(--color-gray-600);
@@ -112,5 +104,14 @@
   @include mobile {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+/* Industry-detail */
+.wysiwyg.wysiwyg--industry-detail p {
+  @include mobile {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 15px 0;
   }
 }
