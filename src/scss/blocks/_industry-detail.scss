@@ -25,16 +25,7 @@
 	object-fit: cover;
 }
 
-.industry-detail__head-col {
-	margin-top: 16px;
-	gap: 32px;
-	@include mobile {
-		flex-direction: column;
-		gap: 16px;
-	}
-}
-
-.industry-detail__head-title {
+.industry-detail__block-title {
 	margin-top: 48px;
 	@include mobile {
 		margin-top: 32px;
@@ -42,6 +33,15 @@
 }
 
 /* Type blocks all */
+.industry-detail__block-col {
+	gap: 32px;
+	grid-area: coltext;
+	@include mobile {
+		flex-direction: column;
+		gap: 16px;
+	}
+}
+
 .industry-detail__block + .industry-detail__block {
 	margin-top: 48px;
 	@include mobile {
@@ -84,21 +84,43 @@
 .industry-detail__block--type-1 .industry-detail__block-grid {
 	display: grid;
 	grid-template-areas:
-		"img img text text"
-		"accent accent accent accent";
-	gap: 48px 32px;
+		"img"
+		"coltext";
+	gap: 16px;
 	align-items: stretch;
-	@include mobile {
-		grid-template-areas:
-			"text"
-			"accent"
-			"img";
-		gap: 16px;
-	}
 }
 
 /* Type block 2 */
 .industry-detail__block--type-2 .industry-detail__block-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 48px 32px;
+	align-items: stretch;
+	@include mobile {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+}
+
+.industry-detail__block--type-2 .industry-detail__block-pic,
+.industry-detail__block--type-2 .industry-detail__block-text {
+	grid-area: unset;
+}
+
+/* Type block 3 */
+.industry-detail__block--type-3 .industry-detail__block-grid {
+	display: grid;
+	grid-template-areas:
+		"accent";
+	gap: 24px 32px;
+	align-items: stretch;
+	@include mobile {
+		gap: 16px;
+	}
+}
+
+/* Type block 4 */
+.industry-detail__block--type-4 .industry-detail__block-grid {
 	display: grid;
 	grid-template-areas:
 		"img img img-2 img-2"
@@ -114,8 +136,8 @@
 	}
 }
 
-/* Type block 3 */
-.industry-detail__block--type-3 .industry-detail__block-grid {
+/* Type block 5 */
+.industry-detail__block--type-5 .industry-detail__block-grid {
 	display: grid;
 	grid-template-areas:
 		"img img img accent accent"
@@ -131,8 +153,8 @@
 	}
 }
 
-/* Type block 5 */
-.industry-detail__block--type-5 .industry-detail__block-grid {
+/* Type block 6 */
+.industry-detail__block--type-6 .industry-detail__block-grid {
 	display: grid;
 	grid-template-areas:
 		"text text text img img img-2 img-2";
@@ -144,20 +166,4 @@
 			"img img-2";
 		gap: 16px;
 	}
-}
-
-/* Type block 6 */
-.industry-detail__block--type-6 .industry-detail__block-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	gap: 32px;
-	align-items: stretch;
-	@include mobile {
-		gap: 16px;
-	}
-}
-
-.industry-detail__block--type-6 .industry-detail__block-pic,
-.industry-detail__block--type-6 .industry-detail__block-text {
-	grid-area: unset;
 }
