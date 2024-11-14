@@ -26,6 +26,9 @@
   opacity: 0;
   transform: translateY(-50%);
   transition: opacity var(--hover-time) ease-out;
+  @include mobile {
+    content: none;
+  }
 }
 
 .menu__list > .menu__item:hover:before {
@@ -41,6 +44,9 @@
 
 .menu__list > .menu__item:hover .menu__link {
   transform: translateX(10px);
+  @include mobile {
+    transform: none;
+  }
 }
 
 .menu__sub-menu {
