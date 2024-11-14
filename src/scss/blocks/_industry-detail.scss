@@ -5,11 +5,11 @@
 	}
 }
 
-.industry-detail__body {
-	padding: 0 0 48px;
+.industry-detail__outer {
+	padding-bottom: 48px;
 	border-bottom: 2px solid var(--disabled);
 	@include mobile {
-		padding: 0 0 32px;
+		padding-bottom: 32px;
 	}
 }
 
