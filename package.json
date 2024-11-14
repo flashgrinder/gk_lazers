@@ -47,7 +47,7 @@
 		]
 	},
 	"browserslist": [
-		"last 5 versions"
+		"last 15 versions"
 	],
 	"dependencies": {
 		"@fancyapps/ui": "^5.0.36",
