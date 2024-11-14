@@ -2,13 +2,18 @@
   border-top: 1px solid #E0E0E0;
 }
 
+.main-form__column {
+  display: grid;
+  grid-template-columns: minmax(450px, 624px) minmax(400px, 1fr);
+  gap: 109px;
+}
+
 .main-form__subtitle {
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .main-form__form {
-  margin: 32px auto 0;
-  max-width: 952px;
+  margin: 48px 0 0;
 }
 
 .main-form__wrapper-fields {
@@ -40,4 +45,18 @@
 .main-form__form-button {
   max-width: 342px;
   width: 100%;
+}
+
+.main-form__pic {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.main-form__pic picture,
+.main-form__pic picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
