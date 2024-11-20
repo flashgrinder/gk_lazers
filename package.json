@@ -54,8 +54,10 @@
 		"@splidejs/splide": "^4.1.4",
 		"@splidejs/splide-extension-grid": "^0.4.1",
 		"avif-webp-checker": "^1.0.0",
+		"dropzone": "^6.0.0-beta.2",
 		"hystmodal": "^1.0.1",
 		"jquery": "^3.7.1",
+		"slim-select": "^2.9.2",
 		"swiper": "^11.0.6"
 	},
 	"repository": {

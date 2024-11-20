@@ -1,0 +1,19 @@
+.smart-captcha-manual {
+	background: #f8f8f8;
+	position: relative;
+	border-radius: 16px !important;
+	width: 100%;
+}
+
+.smart-captcha-manual:before {
+	content: 'Yandex SmartCaptcha';
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #cccccc;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}

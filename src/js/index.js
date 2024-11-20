@@ -19,6 +19,9 @@ import departmentsSlider from "./modules/departments-slider";
 import showMoreText from "./modules/show-more-text";
 import aboutSlider from "./modules/about-slider";
 import similarSlider from "./modules/similar-slider";
+import dragAndDrop from "./modules/drag-and-drop";
+import modalWindow from "./modules/modal";
+import selectForm from "./modules/select-form";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -45,6 +48,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
     showMoreText();
     aboutSlider();
     similarSlider();
+    dragAndDrop();
+    modalWindow();
+    selectForm();
     Fancybox.bind('[data-fancybox]');
 
 })

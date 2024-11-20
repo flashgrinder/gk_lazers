@@ -6,6 +6,15 @@
   display: grid;
   grid-template-columns: minmax(450px, 624px) minmax(400px, 1fr);
   gap: 109px;
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-form__col-right {
+  @include mobile {
+    display: none;
+  }
 }
 
 .main-form__subtitle {
@@ -14,18 +23,16 @@
 
 .main-form__form {
   margin: 48px 0 0;
-}
-
-.main-form__wrapper-fields {
-  gap: 15px;
   @include mobile {
-    flex-direction: column;
+    margin: 32px 0 0;
   }
 }
 
-.main-form__text-area,
-.main-form__actions {
-  margin-top: 15px;
+.main-form__wrapper-fields {
+  gap: 32px;
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .main-form__actions {
@@ -35,16 +42,12 @@
   }
 }
 
-.main-form__accept {
-  margin: 0;
-  @include mobile {
-    order: 1;
-  }
-}
-
 .main-form__form-button {
   max-width: 342px;
   width: 100%;
+  @include mobile {
+    max-width: 100%;
+  }
 }
 
 .main-form__pic {
