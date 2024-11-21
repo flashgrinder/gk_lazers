@@ -34,21 +34,21 @@ function dragAndDrop() {
 
     const allDropzones = document.querySelectorAll('.js-dropzone-form');
 
-    const buildDropzone = dropzoneElem => {
+    const buildDropzone = (dropzoneElem, key) => {
         return new Dropzone(dropzoneElem, {
             url: window.location.pathname + /upload/,
-            clickable: '.dropzone',
+            clickable: `.js-dropzone-${key}`,
             addRemoveLinks: true,
             autoProcessQueue: false,
-            previewsContainer: '.js-dropzone-previews',
-            hiddenInputContainer: '.js-form',
+            previewsContainer: `.js-dropzone-previews-${key}`,
+            hiddenInputContainer: `.js-form-${key}`,
             acceptedFiles: ".jpeg,.jpg,.png,.pdf",
-            previewTemplate: document.querySelector('.js-form-dropzone-template').innerHTML,
+            previewTemplate: document.querySelector(`.js-form-dropzone-template-${key}`).innerHTML,
             dictRemoveFile: removeSvg,
         });
     }
 
-    allDropzones.forEach(dropzone => { buildDropzone(dropzone) });
+    allDropzones.forEach((dropzone, key) => { buildDropzone(dropzone, key) });
 
 }
 
