@@ -38,7 +38,7 @@
   border: 1px solid var(--success-border);
 }
 
-.form__input:invalid + .form__placeholder {
+.form__placeholder {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -54,7 +54,7 @@
   }
 }
 
-.form__input + .form__placeholder {
+.form__input.is-dirty + .form__placeholder {
   position: absolute;
   font-size: 12px;
   left: 16px;
@@ -65,6 +65,7 @@
   }
 }
 
+.form__input.is-dirty + .form__placeholder,
 .form__input:focus + .form__placeholder,
 .form__input:target + .form__placeholder,
 .form__input:focus-visible + .form__placeholder {
