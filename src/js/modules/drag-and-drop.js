@@ -10,28 +10,6 @@ function dragAndDrop() {
                         '<path d="M6 6L18 18" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>\n' +
                     '</svg>';
 
-    // let myDropzone = new Dropzone(".js-dropzone-form", {
-    //     url: '/upload/',
-    //     clickable: '.dropzone',
-    //     addRemoveLinks: true,
-    //     previewsContainer: '.js-dropzone-previews',
-    //     hiddenInputContainer: '.js-form',
-    //     // autoProcessQueue: false,
-    //     acceptedFiles: ".jpeg,.jpg,.png,.pdf",
-    //     previewTemplate: document.querySelector('.js-form-dropzone-template').innerHTML,
-    //     dictRemoveFile: removeSvg,
-    //     success: function(file, response){ // Dropzone upload response
-    //
-    //         let jsonObj = JSON.parse(response);
-    //
-    //         if(jsonObj.status == 0){
-    //             alert(jsonObj.msg);
-    //         }
-    //     }
-    // });
-
-    // myDropzone.init();
-
     const allDropzones = document.querySelectorAll('.js-dropzone-form');
 
     const buildDropzone = (dropzoneElem, key) => {
@@ -43,12 +21,39 @@ function dragAndDrop() {
             previewsContainer: `.js-dropzone-previews-${key}`,
             hiddenInputContainer: `.js-form-${key}`,
             acceptedFiles: ".jpeg,.jpg,.png,.pdf",
+            uploadMultiple: true,
+            // hiddenFileInput: "FILES",
+            paramName: 'files',
+            init: function() {
+                    this.hiddenFileInput.setAttribute("name", "FILES[]");
+                    // console.log(this.hiddenFileInput);
+
+                    this.on("addedfiles", function(file) {
+                        this.hiddenFileInput.setAttribute("name", "FILES[]");
+                        // console.log(this.hiddenFileInput);
+                    });
+                    let setupHiddenFileInput = ()=> {
+                        this.hiddenFileInput.setAttribute("name", "FILES[]");
+                    }
+
+            },
+            accept: function(file, done) {
+                //произвольная функция проверки загружаемых файлов
+                if (file.type == "image/png") {
+                    //сообщение без ошибки, если файл забракован
+                    console.log("I don`t accept PNGs.");
+                }
+                //чтобы файл был принят, нужно вызвать done без параметров
+                else { done(); }
+            },
             previewTemplate: document.querySelector(`.js-form-dropzone-template-${key}`).innerHTML,
             dictRemoveFile: removeSvg,
         });
     }
 
-    allDropzones.forEach((dropzone, key) => { buildDropzone(dropzone, key) });
+    allDropzones.forEach((dropzone, key) => {
+        buildDropzone(dropzone, key);
+    });
 
 }
 
