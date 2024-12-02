@@ -1,0 +1,107 @@
+.application-detail {
+	padding: 48px 0 0;
+	@include mobile {
+		padding: 32px 0 0;
+	}
+}
+
+.application-detail__content {
+	padding-bottom: 48px;
+	border-bottom: 2px solid var(--disabled);
+	@include mobile {
+		padding-bottom: 32px;
+	}
+}
+
+.application-detail__block-title {
+	margin-top: 48px;
+	@include mobile {
+		margin-top: 32px;
+	}
+}
+
+/* Type blocks all */
+.application-detail__block + .application-detail__block {
+	margin-top: 48px;
+	@include mobile {
+		margin-top: 16px;
+	}
+}
+
+.application-detail__block-pic {
+	overflow: hidden;
+	border-radius: 10px;
+	grid-area: img;
+}
+
+.application-detail__block-pic picture,
+.application-detail__block-pic img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.application-detail__block-text {
+	grid-area: text;
+}
+
+.application-detail__block-accent {
+	background-color: var(--secondary-bg);
+	grid-area: accent;
+	padding: 32px;
+	border-radius: 10px;
+	@include mobile {
+		padding: 16px;
+	}
+}
+
+/* Type block 1 & 3 */
+.application-detail__block--type-1 .application-detail__block-grid,
+.application-detail__block--type-3 .application-detail__block-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	gap: 48px 32px;
+	align-items: stretch;
+	@include mobile {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+}
+
+.application-detail__block--type-1 .application-detail__block-pic {
+	order: 1;
+}
+
+.application-detail__block--type-1 .application-detail__block-pic,
+.application-detail__block--type-1 .application-detail__block-text,
+.application-detail__block--type-3 .application-detail__block-pic,
+.application-detail__block--type-3 .application-detail__block-text {
+	grid-area: unset;
+}
+
+/* Type block 2 */
+.application-detail__block--type-3 .application-detail__block-grid {
+	display: grid;
+	grid-template-areas:
+		"accent";
+	@include mobile {
+		gap: 16px;
+	}
+}
+
+/* Video */
+.application-detail__video-wrap {
+	margin-top: 48px;
+}
+
+.application-detail__video-wrap,
+.application-detail__video-wrap iframe {
+	width: 100%;
+	height: 100%;
+	min-height: 720px;
+	max-height: 720px;
+	@include mobile {
+		max-height: 192px;
+		min-height: 192px;
+	}
+}
