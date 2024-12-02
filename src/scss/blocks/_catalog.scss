@@ -43,19 +43,27 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 32px;
+  padding-top: 10px !important;
   @include mobile {
     display: flex;
     flex-direction: unset;
     gap: unset;
+    padding-top: 0;
   }
 }
 
 .catalog__product {
   padding: 0 16px 24px;
+  transition: box-shadow var(--hover-time) ease-out;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.catalog__product:hover .catalog__product-img {
-  transform: scale(1.1);
+.catalog__product:hover {
+  box-shadow: var(--small-shadow);
+  @include mobile {
+    box-shadow: none;
+  }
 }
 
 .catalog__product:hover .catalog__product-name {
@@ -67,9 +75,11 @@
   overflow: hidden;
 }
 
-.catalog__product-img {
+.catalog__product picture,
+.catalog__product img {
   width: 100%;
-  transition: transform var(--hover-time) ease-out;
+  height: 100%;
+  object-fit: cover;
 }
 
 .catalog__product-name {
