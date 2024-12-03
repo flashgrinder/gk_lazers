@@ -23,6 +23,8 @@ import dragAndDrop from "./modules/drag-and-drop";
 import modalWindow from "./modules/modal";
 import selectForm from "./modules/select-form";
 import placeholderInputs from "./modules/placeholder-inputs";
+import productSlider from "./modules/product-slider";
+import customTabs from "./modules/tabs";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -53,6 +55,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     modalWindow();
     selectForm();
     placeholderInputs();
+    productSlider();
+    customTabs();
     Fancybox.bind('[data-fancybox]');
 
 })

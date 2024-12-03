@@ -98,19 +98,22 @@
 
 .button--text {
   color: var(--primary-font-color);
-  padding: 8px 16px;
+  padding: 12px 16px;
+  font-weight: normal;
   text-transform: none;
 }
 
 .button--text:hover,
 .button--text:focus,
 .button--text:target {
-  color: var(--secondary-hover);
-  padding: 8px 16px;
+  color: var(--primary);
+  background-color: var(--focus-bg);
 }
 
-.button--text:active {
-  color: var(--secondary-pressed);
+.button--text:active,
+.button--text.is-active {
+  background-color: var(--primary);
+  color: var(--primary-bg);
 }
 
 .button--text:disabled {
@@ -182,7 +185,8 @@
   color: var(--primary-pressed);
 }
 
-.button--tab:active {
+.button--tab:active,
+.button--tab.is-active {
   background-color: var(--primary);
   color: var(--primary-bg);
 }
