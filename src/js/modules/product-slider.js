@@ -21,6 +21,12 @@ function productSlider () {
                 page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
             gap: '0px',
+            breakpoints: {
+                1024: {
+                    height: '445px',
+                    arrows: false,
+                },
+            }
         } );
 
         productSlider.mount();

@@ -1,8 +1,18 @@
+.product {
+	@include tablet {
+		padding-top: 32px;
+	}
+}
+
 .product__head {
 	display: grid;
 	grid-template-columns: minmax(450px, 733px) minmax(450px, 1fr);
 	gap: 32px;
 	padding-bottom: 102px;
+	@include tablet {
+		grid-template-columns: 1fr;
+		padding-bottom: 0;
+	}
 }
 
 .product__wrap {
@@ -30,12 +40,22 @@
 	right: 24px;
 }
 
+.product__navigation-slider .slider-pagination-dotted.splide__pagination {
+	@include tablet {
+		margin-top: 16px;
+	}
+}
+
 .product__navigation-slider {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 100%;
 	bottom: -48px;
+	@include tablet {
+		position: static;
+		transform: none;
+	}
 }
 
 .product__video-wrap {
@@ -47,6 +67,10 @@
 	justify-content: center;
 	overflow: hidden;
 	border-radius: 10px;
+	@include mobile {
+		min-height: 477px;
+		max-height: 477px;
+	}
 }
 
 .product__video-wrap iframe {
@@ -57,6 +81,25 @@
 	@include mobile {
 		max-height: 192px;
 		min-height: 192px;
+	}
+}
+
+.product__tabs-buttons.tabs__buttons {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	bottom: -112px;
+	@include tablet {
+		position: static;
+		transform: none;
+		margin-top: 16px;
+	}
+}
+
+.product__tabs-button.tabs__button {
+	@include tablet {
+		font-size: 16px;
 	}
 }
 
@@ -71,19 +114,45 @@
 
 .product__subtitle {
 	margin-top: 24px;
+	@include tablet {
+		margin-top: 16px;
+	}
 }
 
 .product__actions {
 	margin-top: 48px;
 	gap: 32px;
+	@include tablet {
+		margin-top: 32px;
+		gap: 16px;
+	}
+}
+
+.product__button.button--tab {
+	@include mobile {
+		font-size: 14px;
+	}
+}
+
+.product__button-text {
+	@include tablet {
+		margin-top: 32px;
+	}
 }
 
 .product__content {
 	margin-top: 48px;
+	@include tablet {
+		margin-top: 32px;
+	}
 }
 
-.product__content-block + .product__content-block {
-	margin-top: 48px;
+.product__content-block {
+	padding-top: 48px;
+	@include tablet {
+		padding-top: 32px;
+		border-top: 1px solid var(--disabled);;
+	}
 }
 
 .product__content-title {
@@ -101,10 +170,17 @@
 	height: 2px;
 	background-color: var(--disabled);
 	margin-left: 32px;
+	margin-top: 4px;
+	@include tablet {
+		content: none;
+	}
 }
 
 .product__content-text {
 	padding: 0 16px;
+	@include tablet {
+		padding: 0 8px;
+	}
 }
 
 .product__content-tags {
@@ -114,4 +190,7 @@
 
 .product__tag-button.button--tab {
 	text-transform: none;
+	@include tablet {
+		font-size: 14px;
+	}
 }
