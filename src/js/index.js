@@ -25,6 +25,7 @@ import selectForm from "./modules/select-form";
 import placeholderInputs from "./modules/placeholder-inputs";
 import productSlider from "./modules/product-slider";
 import customTabs from "./modules/tabs";
+import productContentSlider from "./modules/product-content-slider";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -57,6 +58,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     placeholderInputs();
     productSlider();
     customTabs();
+    productContentSlider();
     Fancybox.bind('[data-fancybox]');
 
 })
