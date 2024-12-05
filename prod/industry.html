@@ -885,7 +885,6 @@
                             </span>
                         </label>
                     </div>
-
                     <label class="main-form__form-input form__field" for="service-form-textarea">
                         <textarea class="main-form__text-area form__input form__input--textarea" name="message"
 								  id="service-form-textarea"
@@ -895,43 +894,12 @@
                         <div class="form__files-wrap-title text text--normal text--primary text--w-regular">
                             Загрузите файлы ошибки
                         </div>
-                        <!-- Шаблон для js -->
-                        <div class="form__dropzone-template js-form-dropzone-template-0 visually-hidden">
-                            <div class="dz-details">
-                                <img src="./img/icons/pdf-file.svg"/>
-                                <div class="form__dz-meta">
-                                    <span data-dz-name></span>
-                                    <div data-dz-size></div>
-                                    <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
-                                </div>
-                                <div class="dz-remove-item" data-dz-remove></div>
-                            </div>
-                            <div class="dz-success-mark"><span>✔</span></div>
-                            <div class="dz-error-mark"><span>✘</span></div>
-                            <div class="dz-error-message"><span data-dz-errormessage></span></div>
-                        </div>
-                        <!-- Dropzone files -->
-                        <div class="main-form__dropzone-container form__dropzone-container js-dropzone-form">
-                            <div class="main-form__dropzone-previews form__dropzone-previews dropzone-previews js-dropzone-previews-0"></div>
-                            <div class="dropzone form__dropzone js-dropzone-0">
-                                <div class="form__dropzone-wrap d-flex flex-align-center">
-                                    <svg width="57" height="58" viewBox="0 0 57 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M28.4689 57.6273C44.1919 57.6273 56.9379 44.8813 56.9379 29.1584C56.9379 13.4354 44.1919 0.689453 28.4689 0.689453C12.746 0.689453 0 13.4354 0 29.1584C0 44.8813 12.746 57.6273 28.4689 57.6273Z" fill="#699E4A"/>
-                                        <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M28.4688 49.1582C39.5144 49.1582 48.4688 40.2039 48.4688 29.1582C48.4688 18.1125 39.5144 9.1582 28.4688 9.1582C17.4231 9.1582 8.46875 18.1125 8.46875 29.1582C8.46875 40.2039 17.4231 49.1582 28.4688 49.1582Z" fill="#699E4A"/>
-                                        <path d="M20.4688 29.1582V37.1582C20.4688 38.2628 21.3642 39.1582 22.4688 39.1582H34.4688C35.5733 39.1582 36.4688 38.2628 36.4688 37.1582V29.1582" stroke="#005339" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M32.4688 23.1582L28.4688 19.1582L24.4688 23.1582" stroke="#005339" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M28.4688 19.1582V32.1582" stroke="#005339" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <div class="form__dropzone-text-wrap">
-                                        <div class="form__dropzone-text text text--normal text--primary text--w-bold">
-                                            <span>Нажмите для загрузки</span> <span>или перетащите в&#160;эту область</span>
-                                        </div>
-                                        <div class="form__dropzone-subtext text text--small text--secondary text--w-regular">
-                                            PDF, PNG, JPEG, AVI, MP4 (максимальный размер&#160;&#8212; 25 MB)
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="form__dropzone">
+                            <input class="js-input-drag-adn-drop"
+								   type="file"
+								   name="FILES[]"
+								   data-max-file-size="25MB"
+								   multiple />
                         </div>
                     </div>
                     <div class="main-form__captcha form__captcha">
@@ -1054,43 +1022,12 @@
                     </label>
                 </div>
                 <div class="main-form__form-files-wrapper form__files-wrapper">
-                    <!-- Шаблон для js -->
-                    <div class="form__dropzone-template js-form-dropzone-template-1 visually-hidden">
-                        <div class="dz-details">
-                            <img src="./img/icons/pdf-file.svg"/>
-                            <div class="form__dz-meta">
-                                <span data-dz-name></span>
-                                <div data-dz-size></div>
-                                <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
-                            </div>
-                            <div class="dz-remove-item" data-dz-remove></div>
-                        </div>
-                        <div class="dz-success-mark"><span>✔</span></div>
-                        <div class="dz-error-mark"><span>✘</span></div>
-                        <div class="dz-error-message"><span data-dz-errormessage></span></div>
-                    </div>
-                    <!-- Dropzone files -->
-                    <div class="main-form__dropzone-container form__dropzone-container js-dropzone-form">
-                        <div class="main-form__dropzone-previews form__dropzone-previews dropzone-previews js-dropzone-previews-1"></div>
-                        <div class="dropzone form__dropzone js-dropzone-1">
-                            <div class="form__dropzone-wrap d-flex flex-align-center">
-                                <svg width="57" height="58" viewBox="0 0 57 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M28.4689 57.6273C44.1919 57.6273 56.9379 44.8813 56.9379 29.1584C56.9379 13.4354 44.1919 0.689453 28.4689 0.689453C12.746 0.689453 0 13.4354 0 29.1584C0 44.8813 12.746 57.6273 28.4689 57.6273Z" fill="#699E4A"/>
-                                    <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M28.4688 49.1582C39.5144 49.1582 48.4688 40.2039 48.4688 29.1582C48.4688 18.1125 39.5144 9.1582 28.4688 9.1582C17.4231 9.1582 8.46875 18.1125 8.46875 29.1582C8.46875 40.2039 17.4231 49.1582 28.4688 49.1582Z" fill="#699E4A"/>
-                                    <path d="M20.4688 29.1582V37.1582C20.4688 38.2628 21.3642 39.1582 22.4688 39.1582H34.4688C35.5733 39.1582 36.4688 38.2628 36.4688 37.1582V29.1582" stroke="#005339" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M32.4688 23.1582L28.4688 19.1582L24.4688 23.1582" stroke="#005339" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M28.4688 19.1582V32.1582" stroke="#005339" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <div class="form__dropzone-text-wrap">
-                                    <div class="form__dropzone-text text text--normal text--primary text--w-bold">
-                                        <span>Нажмите для загрузки</span> <span>или перетащите в&#160;эту область</span>
-                                    </div>
-                                    <div class="form__dropzone-subtext text text--small text--secondary text--w-regular">
-                                        PDF, PNG, JPEG, AVI, MP4 (максимальный размер&#160;&#8212; 25 MB)
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="form__dropzone">
+                        <input class="js-input-drag-adn-drop"
+							   type="file"
+							   name="FILES[]"
+							   data-max-file-size="25MB"
+							   multiple />
                     </div>
                 </div>
                 <div class="main-form__captcha form__captcha">
