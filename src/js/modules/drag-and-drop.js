@@ -36,7 +36,12 @@ function dragAndDrop() {
             dropValidation: true,
             allowProcess: true,
             allowMultiple: true,
+            styleProgressIndicatorPosition: 'center',
             styleButtonRemoveItemPosition: 'right',
+            iconRemove: '<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+                            '<path d="M18 6.81396L6 18.814" stroke="#5A5F61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+                            '<path d="M6 6.81396L18 18.814" stroke="#5A5F61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+                        '</svg>',
             fileValidateTypeDetectType: (source, type) =>
                 new Promise((resolve, reject) => {
                     if (/\.xls$/.test(source.name)) return resolve('application/vnd.ms-excel');
@@ -46,8 +51,10 @@ function dragAndDrop() {
     }
 
     inputsDragAndDrop.forEach((DragAndDrop, key) => {
-        buildDragAndDrop(DragAndDrop, key, ()=> {
-            DragAndDrop.setOptions(ru_RU);
+        buildDragAndDrop(DragAndDrop, key, () => {
+            this.setOptions(ru_RU);
+            const date = this.getFile()
+            console.log(this);
         });
     });
 
