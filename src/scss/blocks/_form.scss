@@ -192,21 +192,6 @@
   margin-bottom: 24px;
 }
 
-//.dz-details {
-//  display: flex;
-//  align-items: center;
-//  gap: 24px;
-//}
-
-//.form__dropzone.dropzone {
-//  min-height: auto;
-//  padding: 24px 48px;
-//  border: 2px dashed #699E4A80;
-//  margin-top: 16px;
-//  @include mobile {
-//    padding: 16px;
-//  }
-//}
 .form__dropzone .filepond--root {
   min-height: 104px;
 }
@@ -263,11 +248,6 @@
   cursor: pointer;
   background: transparent;
 }
-
-//.form__dropzone .filepond--file-info .filepond--file-info-sub {
-//  font-size: 16px;
-//  font-family: var(--font-main);
-//}
 
 .form__dropzone .filepond--drip {
   opacity: 1;
