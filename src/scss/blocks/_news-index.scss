@@ -35,8 +35,18 @@
   overflow: hidden;
 }
 
-.news-index__post-title:hover {
+.news-index__post:hover .news-index__post-title {
   color: var(--primary-hover);
+}
+
+.news-index__post:hover picture,
+.news-index__post:hover img {
+  transform: scale(1.1);
+}
+
+.news-index__post-pic {
+  display: block;
+  overflow: hidden;
 }
 
 .news-index__post picture,
@@ -46,6 +56,7 @@
   min-height: 256px;
   max-height: 256px;
   object-fit: cover;
+  transition: transform var(--hover-time) ease-out;
 }
 
 .news-index__meta {
