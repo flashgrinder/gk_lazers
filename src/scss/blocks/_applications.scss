@@ -1,21 +1,21 @@
 .applications__items {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 	gap: 32px;
 	@include mobile {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 32px 16px;
+		grid-template-columns: 1fr;
 	}
 }
 
 .applications__item {
 	transition: box-shadow var(--hover-time) ease-out;
+	box-shadow: var(--small-shadow);
+	border-radius: 10px;
 }
 
 .applications__item:hover {
 	overflow: hidden;
-	border-radius: 8px;
-	box-shadow: var(--small-shadow);
+	box-shadow: none;
 	@include mobile {
 		box-shadow: none;
 	}
