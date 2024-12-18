@@ -27,6 +27,8 @@ import productSlider from "./modules/product-slider";
 import customTabs from "./modules/tabs";
 import productContentSlider from "./modules/product-content-slider";
 import $ from "jquery";
+import aboutSliderAnimation from "./modules/about-slider-animation";
+import aboutCompoundSlider from "./modules/about-compound-slider";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -60,33 +62,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
     productSlider();
     customTabs();
     productContentSlider();
+    aboutSliderAnimation();
+    aboutCompoundSlider();
     Fancybox.bind('[data-fancybox]');
 
-    const slideItem = document.querySelectorAll('.js-slide-item');
-    const slideYear = document.querySelectorAll('.js-slide-year');
-    const slideWindow = document.querySelectorAll('.js-slide-window');
-    const slideWindowYear = document.querySelectorAll('.about__slide-window-year');
 
-    slideYear.forEach((el, index) => {
-
-        el.addEventListener('click', () => {
-            slideWindow[index].classList.add('is-open');
-            slideItem[index].classList.add('is-open');
-            el.classList.add('is-hidden');
-
-            slideWindowYear[index].addEventListener('click', ()=> {
-                el.classList.remove('is-hidden');
-                slideWindow[index].classList.remove('is-open');
-                slideWindow[index].classList.add('can-animate');
-                slideItem[index].classList.remove('is-open');
-                slideItem[index].classList.add('can-animate');
-                setTimeout(()=> {
-                    slideWindow[index].classList.remove('can-animate');
-                }, 300)
-            });
-        })
-
-    })
 
 })
 // import isAvifWebp from 'avif-webp-checker';
