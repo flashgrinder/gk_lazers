@@ -31,12 +31,19 @@
 
 .news-index__post {
   box-shadow: var(--small-shadow);
+  border: 1px solid transparent;
   border-radius: 10px;
   overflow: hidden;
+  transition: border var(--hover-time) ease-out, box-shadow var(--hover-time) ease-out;
+}
+
+.news-index__post:hover {
+  box-shadow: none;
+  border: 1px solid var(--primary-hover);
 }
 
 .news-index__post:hover .news-index__post-title {
-  color: var(--primary-hover);
+  color: var(--primary);
 }
 
 .news-index__post:hover picture,

@@ -1,6 +1,6 @@
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import gsReveal from "./modules/gs-reveal";
+// import gsReveal from "./modules/gs-reveal";
 import buttonsFixedInit from "./modules/buttons-fixed";
 import upToTop from "./modules/up-to-top";
 import featuresSlider from "./modules/features-slider";
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
 
     mobileNav();
-    gsReveal.init();
+    // gsReveal.init();
     searchActionMobile();
     featuresSlider();
     popularSlider();
