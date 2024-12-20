@@ -176,14 +176,14 @@ const svgSymbol = {
 		transform: [
 			{
 				svgo: {
-					plugins: [
-						{
-							name: 'removeAttrs',
-							params: {
-								attrs: '(fill|stroke)',
-							},
-						},
-					],
+					// plugins: [
+					// 	{
+					// 		name: 'removeAttrs',
+					// 		params: {
+					// 			attrs: '(fill|stroke)',
+					// 		},
+					// 	},
+					// ],
 				},
 			},
 		],

@@ -18,7 +18,12 @@
 }
 
 .up-to-top__icon {
-	fill: var(--primary);
+	fill: var(--primary, #005339);
+	transition: fill var(--hover-time) ease-out;
+}
+
+.up-to-top:hover .up-to-top__icon {
+	fill: var(--primary-hover);
 }
 
 .up-to-top__name {
@@ -27,4 +32,9 @@
 	@extend .text--w-bold;
 	@extend .text--uppercase;
 	color: var(--primary);
+	transition: color var(--hover-time) ease-out;
+}
+
+.up-to-top:hover .up-to-top__name {
+	color: var(--primary-hover);
 }

@@ -23,6 +23,7 @@
 
 .button-message__icon {
 	stroke: var(--primary-bg);
+	stroke-width: 1.6;
 	fill: transparent;
 	transition: stroke var(--hover-time) ease-out;
 }

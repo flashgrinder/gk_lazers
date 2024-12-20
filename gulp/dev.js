@@ -131,7 +131,7 @@ const svgSymbol = {
 						{
 							name: 'removeAttrs',
 							params: {
-								attrs: '(fill|stroke)',
+								attrs: '()',
 							},
 						},
 					],
