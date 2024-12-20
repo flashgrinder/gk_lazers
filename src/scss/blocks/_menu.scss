@@ -61,6 +61,7 @@
   overflow: hidden;
   transition: visibility .2s ease-in, opacity .2s ease-in-out;
   left: 0;
+  max-height: 360px;
   @include mobile {
     display: none;
     //position: static;
