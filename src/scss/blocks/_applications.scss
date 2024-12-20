@@ -8,13 +8,15 @@
 }
 
 .applications__item {
-	transition: box-shadow var(--hover-time) ease-out;
+	border: 1px solid transparent;
 	box-shadow: var(--small-shadow);
 	border-radius: 10px;
+	transition: box-shadow var(--hover-time) ease-out, border var(--hover-time) ease-out;
 }
 
 .applications__item:hover {
 	overflow: hidden;
+	border: 1px solid var(--primary);
 	box-shadow: none;
 	@include mobile {
 		box-shadow: none;
