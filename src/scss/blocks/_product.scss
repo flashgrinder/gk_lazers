@@ -105,9 +105,14 @@
 
 .product__info {
 	align-items: baseline;
+	justify-content: flex-start;
 }
 
-.product__meta,
+.product__meta {
+	margin-top: 50%;
+	transform: translateY(-50%);
+}
+
 .product__button-text {
 	margin-top: auto;
 }
@@ -199,7 +204,7 @@
 
 .product__param {
 	display: grid;
-	grid-template-columns: minmax(203px, 345px) minmax(100px, 1fr);
+	grid-template-columns: minmax(203px, 1fr) minmax(100px, 1fr);
 	gap: 24px;
 }
 
@@ -212,6 +217,10 @@
 	@include tablet {
 		font-size: 14px;
 	}
+}
+
+.product__param-value {
+	text-align: right;
 }
 
 .product__content-splide.splide {

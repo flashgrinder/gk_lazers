@@ -17,7 +17,6 @@
 .applications__item:hover {
 	overflow: hidden;
 	border: 1px solid var(--primary);
-	box-shadow: none;
 	@include mobile {
 		box-shadow: none;
 	}

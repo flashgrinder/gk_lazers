@@ -32,6 +32,13 @@
   padding-bottom: 48px;
 }
 
+.catalog__splide-track.splide__track {
+  overflow: visible;
+  @include mobile {
+    overflow: hidden;
+  }
+}
+
 .catalog__splide.splide {
   visibility: visible;
   @include mobile {
@@ -63,7 +70,6 @@
 
 .catalog__product:hover {
   border: 1px solid var(--primary-hover);
-  box-shadow: none;
   @include mobile {
     box-shadow: none;
   }

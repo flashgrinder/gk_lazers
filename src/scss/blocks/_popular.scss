@@ -12,6 +12,7 @@
 
 .popular__splide-list .splide__slide {
   width: 100%;
+  padding: 5px;
   @include mobile {
     width: 100%;
     margin-left: 0;
@@ -24,10 +25,15 @@
 
 .popular__item {
   background-color: var(--primary-bg);
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: var(--small-shadow);
+  transition: border var(--hover-time) ease-out, box-shadow var(--hover-time) ease-out;
 }
 
 .popular__item:hover {
-  box-shadow: var(--small-shadow);
+  border: 1px solid var(--primary);
 }
 
 .popular__item:hover > .popular__item-pic picture,
@@ -56,9 +62,17 @@
   }
 }
 
+.popular__item-name {
+  transition: color var(--hover-time) ease-out;
+}
+
 .popular__item-name,
 .popular__item-description {
   margin-top: 16px;
+}
+
+.popular__item:hover .popular__item-name {
+  color: var(--primary);
 }
 
 .popular__navigation-slider {
