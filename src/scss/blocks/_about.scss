@@ -384,8 +384,16 @@
 }
 
 /* Light Version */
+.about__splide-list.splide__list::before {
+	margin-right: 1px;
+}
+.about__splide-list.splide__list::after {
+	margin-left: -1px;
+}
 .about__splide-slide.splide__slide {
 	padding-left: 40px;
+	margin-left: -1px;
+	margin-right: 1px !important;
 }
 .about__slide-item.about__slide-item--light {
 	background-color: var(--footer-bg);
