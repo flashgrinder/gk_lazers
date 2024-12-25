@@ -141,7 +141,7 @@
   transform: translateY(-50%);
   stroke: var(--secondary-font-color);
   fill: transparent;
-  opacity: .5;
+  opacity: 1;
   transition: opacity var(--hover-time) ease-out, stroke var(--hover-time) ease-out;
 }
 

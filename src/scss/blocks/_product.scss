@@ -4,6 +4,13 @@
 	}
 }
 
+.product__back-button {
+	margin-bottom: 48px;
+	@include mobile {
+		margin-bottom: 32px;
+	}
+}
+
 .product__head {
 	display: grid;
 	grid-template-columns: minmax(450px, 733px) minmax(450px, 1fr);
