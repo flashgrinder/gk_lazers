@@ -29,6 +29,7 @@ import productContentSlider from "./modules/product-content-slider";
 import $ from "jquery";
 import aboutSliderAnimation from "./modules/about-slider-animation";
 import aboutCompoundSlider from "./modules/about-compound-slider";
+import initAcc from "./modules/accordion";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -64,9 +65,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     productContentSlider();
     aboutSliderAnimation();
     aboutCompoundSlider();
+    initAcc('.js-accordion', false);
     Fancybox.bind('[data-fancybox]');
-
-
 
 })
 // import isAvifWebp from 'avif-webp-checker';

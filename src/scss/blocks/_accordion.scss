@@ -1,0 +1,98 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+}
+
+.accordion__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--disabled);
+}
+
+.accordion__item.is-active {
+    border: 1px solid var(--primary-hover);
+    box-shadow: var(--small-shadow);
+}
+
+.accordion__item.is-active .accordion__title {
+    color: var(--primary-font-color);
+}
+
+.accordion__item.is-active .accordion__title .accordion__arrow {
+    transform: rotate(180deg);
+}
+
+.accordion__item.is-active .accordion__title .accordion__svg-arrow {
+    stroke: var(--primary);
+}
+
+.accordion__item.is-active .accordion__text {
+    opacity: 1;
+    padding: 0 16px 16px;
+    max-height: 999px;
+}
+
+.accordion__title {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 17px 56px 17px 16px;
+    width: 100%;
+    color: var(--secondary-font-color);
+    cursor: pointer;
+    transition: color var(--hover-time) ease-out;
+}
+
+.accordion__arrow {
+    display: block;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    right: 17px;
+    top: 17px;
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: transform .3s ease-in-out;
+    pointer-events: none;
+    user-select: none;
+}
+
+.accordion__svg-arrow {
+    display: block;
+    stroke: var(--secondary-font-color);
+}
+
+.accordion__text {
+    gap: 24px;
+    width: 100%;       
+    opacity: 0;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 16px 0;
+    transition: max-height var(--hover-time) ease-out, padding var(--hover-time) ease-out;
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.accordion__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 192px;
+    max-height: 192px;
+    aspect-ratio: 4/4;
+    object-fit: cover;
+    @include mobile {
+        max-height: 100%;
+        max-width: 100%;
+        aspect-ratio: auto;
+    }
+}
