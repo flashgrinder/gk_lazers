@@ -1,0 +1,51 @@
+@@include('blocks/header.html')
+
+<section class="page-head">
+    <div class="page-head__body container">
+        <div class="page-head__breadcrumbs breadcrumbs">
+            <nav class="breadcrumbs__nav d-flex flex-align-center">
+                <a href="/">
+                    <svg class="breadcrumbs__icon-home" width="16px" height="16px">
+                        <use href="./img/svgsprite/sprite.symbol.svg#home"></use>
+                    </svg>
+                </a>
+                <span>Страница в разработке</span>
+            </nav>
+        </div>
+        <h1 class="page-head__title title title--big title--primary title--w-bold">
+            Страница в разработке
+        </h1>
+    </div>
+</section>
+
+<section class="coming-soon b-padding-48">
+    <div class="coming-soon__body container">
+        <div class="coming-soon__outer d-flex">
+            <div class="coming-soon__info">
+                <h3 class="coming-soon__title title title--large title--primary title--w-bold">
+                    Идут ремонтные работы...
+                </h3>
+                <p class="coming-soon__subtitle text text--large text--primary text--w-regular">
+                    Но у нас есть много другой полезной
+                    и интересной информации
+                </p>
+                <div class="coming-soon__actions d-flex flex-align-center">
+                    <a href="/" class="coming-soon__button button button--primary">
+                        На главную
+                    </a>
+                    <a href="/news.html" class="coming-soon__button button button--secondary">
+                        Наше оборудование
+                    </a>
+                </div>
+                <a href="javascript:;" class="coming-soon__text-error text text--normal text--secondary text--w-regular" data-hystmodal="#error">
+                    Сообщить об ошибке
+                </a>
+            </div>
+            <div class="coming-soon__pic">
+                <img src="./img/other/coming-soon.png" alt="" class="coming-soon__img">
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('blocks/footer.html')

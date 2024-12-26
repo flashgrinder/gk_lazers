@@ -1,0 +1,85 @@
+.coming-soon {
+	position: relative;
+}
+
+.coming-soon__body {
+	position: relative;
+}
+
+.coming-soon__outer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	height: 900px;
+	@include mobile {
+		grid-template-columns: 1fr;
+		gap: 32px;
+		height: auto;
+	}
+}
+
+.coming-soon__pic {
+	position: absolute;
+	right: 0;
+	@include mobile {
+		position: static;
+		margin-right: 0;
+		order: -1;
+	}
+}
+
+.coming-soon__info {
+	position: relative;
+	align-self: flex-end;
+	margin-bottom: 200px;
+	@include mobile {
+		padding-bottom: 0;
+		align-self: center;
+		margin-bottom: 0;
+		grid-area: auto;
+	}
+}
+
+.coming-soon__title,
+.coming-soon__subtitle {
+	display: block;
+	text-align: center;
+	@include mobile {
+		text-align: left;
+	}
+}
+
+.coming-soon__subtitle {
+	max-width: 600px;
+	margin: 24px auto 0;
+	@include mobile {
+		margin-top: 16px;
+	}
+}
+
+.coming-soon__text-error {
+	display: block;
+	text-align: center;
+	margin-top: 24px;
+	@include mobile {
+		margin-top: 16px;
+	}
+}
+
+.coming-soon__actions {
+	margin: 48px 0 24px;
+	gap: 32px;
+	@include mobile {
+		flex-direction: column;
+		gap: 16px;
+	}
+}
+
+.coming-soon__button:last-child {
+	@include mobile {
+		display: none;
+	}
+}
+
+.coming-soon__button {
+	width: 100%;
+}
