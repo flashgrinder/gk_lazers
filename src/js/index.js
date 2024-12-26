@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     similarSlider();
     dragAndDrop();
     modalWindow();
-    modalThanks();
+    window.modalThanks = modalThanks;
     selectForm();
     placeholderInputs();
     productSlider();
