@@ -90,6 +90,14 @@
   margin-top: 24px;
 }
 
+.wysiwyg p + h1,
+.wysiwyg p + h2,
+.wysiwyg p + h3,
+.wysiwyg p + h4,
+.wysiwyg p + h5 {
+  margin-bottom: 24px;
+}
+
 .wysiwyg a {
   text-decoration: underline;
   color: var(--color-gray-600);
