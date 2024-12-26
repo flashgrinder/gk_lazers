@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     aboutSlider();
     similarSlider();
     dragAndDrop();
+    window.modalWindow = modalWindow;
     modalWindow();
     selectForm();
     placeholderInputs();

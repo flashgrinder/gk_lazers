@@ -908,12 +908,19 @@
 <div class="modal modal--thanks hystmodal js-modal-success" id="thanks" aria-hidden="true">
     <div class="modal__wrap hystmodal__wrap">
         <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="modal__close hystmodal__close">Close</button>
-            <div class="modal__title title title--medium title--dark title--w-bold">
-                Спасибо, заявка отправлена!
-            </div>
-            <div class="modal__subtitle text text--normal text--light-gray text--w-regular text-center">
-                Наш менеджер перезвонит в&#160;течение 10 минут для согласования заказа.
+<!--			<button data-hystclose class="modal__close hystmodal__close">Close</button>-->
+            <div class="modal__inner">
+                <div class="modal__inner-text">
+                    <div class="modal__title title title--large title--primary title--w-bold">
+                        Спасибо! Ваша заявка принята.
+                    </div>
+                    <div class="modal__subtitle text text--large text--primary text--w-regular">
+                        Наши менеджеры свяжутся с&#160;вами в&#160;ближайшее время для обсуждения деталей
+                    </div>
+                    <button class="button button--primary" data-hystclose>
+                        Вернуться назад
+                    </button>
+                </div>
             </div>
         </div>
     </div>

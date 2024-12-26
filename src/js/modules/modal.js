@@ -1,5 +1,5 @@
 import HystModal from "hystmodal";
-function modalWindow() {
+function modalWindow(container = document) {
 
     const modalFeedback = new HystModal({
         linkAttributeName: "data-hystmodal",
