@@ -34,4 +34,28 @@
 .modal.modal--thanks .modal__body {
   padding: 80px;
   max-width: 100%;
+  @include mobile {
+    padding: 32px 16px;
+  }
+}
+
+.modal.modal--thanks .modal__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center;
+  @include mobile {
+    gap: 48px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.modal__thanks-btn {
+  margin-top: 48px;
+}
+
+.modal.modal--thanks .modal__pic {
+  margin-bottom: -80px;
+  @include mobile {
+    margin-bottom: -32px;
+  }
 }
