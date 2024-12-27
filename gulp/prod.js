@@ -11,7 +11,8 @@ const typograf = require('gulp-typograf');
 const postcss       = require('gulp-postcss');
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
-const autoprefixer = require('gulp-autoprefixer');
+// const autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('autoprefixer');
 const csso = require('gulp-csso');
 const webImagesCSS = require('gulp-web-images-css');  //Вывод WEBP-изображений
 
@@ -97,14 +98,14 @@ gulp.task('html:prod', function () {
 gulp.task('sass:prod', function () {
 	const prt = require('postcss-responsive-type');
 	const plugins = [
-		prt()
+		prt(),
+		autoprefixer()
 	]
 	return gulp
 		.src('./src/scss/*.scss')
 		.pipe(changed('./prod/css/'))
 		.pipe(plumber(plumberNotify('SCSS')))
 		.pipe(sourceMaps.init())
-		.pipe(autoprefixer())
 		.pipe(sassGlob())
 		.pipe(groupMedia())
 		.pipe(sass())
@@ -121,7 +122,7 @@ gulp.task('sass:prod', function () {
 			)
 		)
 		.pipe(csso())
-		.pipe(sourceMaps.write())
+		// .pipe(sourceMaps.write())
 		.pipe(gulp.dest('./prod/css/'));
 });
 
