@@ -10,7 +10,7 @@ function industrySliders () {
         const industrySlider = new Splide( '.js-industry-slider-init', {
             type   : 'loop',
             height: 'auto',
-            perPage: 1,
+            perPage: 2,
             autoWidth: true,
             perMove: 1,
             focus: 0,
@@ -34,6 +34,17 @@ function industrySliders () {
                 },
             }
         } );
+
+        industrySlider.on( 'mounted', function () {
+            let items = industrySlider.length;
+            let perPage = industrySlider.options.perPage;
+            if ( items <= perPage ) {
+                industrySlider.options = {
+                    drag: false,
+                    arrows: false, // If you're not using the CSS method above you can use this to hide arrows
+                };
+            }
+        });
 
         if(mediaQuery.matches) {
             industrySlider.destroy();
