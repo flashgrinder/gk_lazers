@@ -357,10 +357,8 @@
                                     </p>
                                 </div>
                                 <picture>
-<source srcset="./img/no-photo.webp 1x, ./img/no-photo@2x.webp 2x" type="image/webp">
-<source srcset="./img/no-photo.png 1x, ./img/no-photo@2x.png 2x" type="image/png">
-<img class="accordion__img" src="./img/no-photo.png" alt="">
-</picture>
+                                    <img class="accordion__img" src="./img/no-photo.png" alt="">
+                                </picture>
                             </div>
                         </div>
                         <div class="application-detail__accordion-item accordion__item js-accordion-item">
@@ -832,7 +830,8 @@
                     <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual"></div>
                 </div>
                 <div class="main-form__actions form__actions d-flex flex-justify-sb flex-align-center">
-                    <button type="submit" class="main-form__form-button form__button button button--primary">
+                    <button type="button" class="main-form__form-button form__button button button--primary"
+							data-hystmodal="#thanks">
                         Отправить заявку
                     </button>
                     <div class="main-form__accept form__accept">
@@ -856,7 +855,7 @@
 <div class="modal modal--thanks hystmodal js-modal-success" id="thanks" aria-hidden="true">
     <div class="modal__wrap hystmodal__wrap">
         <div class="modal__body hystmodal__window" role="dialog" aria-modal="true">
-<!--			<button data-hystclose class="modal__close hystmodal__close">Close</button>-->
+            <button data-hystclose class="modal__close hystmodal__close">Close</button>
             <div class="modal__inner">
                 <div class="modal__inner-text">
                     <div class="modal__title title title--large title--primary title--w-bold">

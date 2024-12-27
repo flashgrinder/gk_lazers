@@ -20,7 +20,8 @@ import showMoreText from "./modules/show-more-text";
 import aboutSlider from "./modules/about-slider";
 import similarSlider from "./modules/similar-slider";
 import dragAndDrop from "./modules/drag-and-drop";
-import modalWindow from "./modules/modal";
+import { modalWindow } from "./modules/modal";
+import { modalThanks } from "./modules/modal";
 import selectForm from "./modules/select-form";
 import placeholderInputs from "./modules/placeholder-inputs";
 import productSlider from "./modules/product-slider";
@@ -30,7 +31,7 @@ import $ from "jquery";
 import aboutSliderAnimation from "./modules/about-slider-animation";
 import aboutCompoundSlider from "./modules/about-compound-slider";
 import initAcc from "./modules/accordion";
-import modalThanks from "./modules/modalThanks";
+// import modalThanks from "./modules/modalThanks";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     const mediaQuery = window.matchMedia('(min-width: 768px)');

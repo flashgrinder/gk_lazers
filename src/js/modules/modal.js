@@ -1,10 +1,14 @@
 import HystModal from "hystmodal";
+const modalForms = new HystModal({
+    linkAttributeName: "data-hystmodal",
+    catchFocus: false,
+})
 function modalWindow(container = document) {
-
-    const modalForms = new HystModal({
-        linkAttributeName: "data-hystmodal",
-    })
-
+    modalForms.init();
 }
 
-export default modalWindow;
+function modalThanks() {
+    modalForms.open('#thanks');
+}
+
+export {modalWindow, modalThanks};
