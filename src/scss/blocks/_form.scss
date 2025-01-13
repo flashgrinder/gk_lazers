@@ -201,6 +201,12 @@
   min-height: 104px;
 }
 
+.form__dropzone .filepond--root .filepond--drop-label:hover,
+.form__dropzone .filepond--root .filepond--drop-label:active,
+.form__dropzone .filepond--root .filepond--drop-label:focus {
+  border: 2px solid #699E4A80;
+}
+
 .form__dropzone .filepond--root .is-error.filepond--drop-label {
   border: 2px dashed var(--error-border);
 }
