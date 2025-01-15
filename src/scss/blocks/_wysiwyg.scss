@@ -86,6 +86,8 @@
   }
 }
 
+.wysiwyg p + img,
+.wysiwyg img + p,
 .wysiwyg p + p {
   margin-top: 24px;
 }

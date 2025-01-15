@@ -54,11 +54,7 @@
 }
 
 .product__navigation-slider {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	bottom: -48px;
+	margin-bottom: -48px;
 	@include tablet {
 		position: static;
 		transform: none;
@@ -96,7 +92,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 	width: 100%;
-	bottom: -112px;
+	bottom: -106px;
 	@include tablet {
 		position: static;
 		transform: none;

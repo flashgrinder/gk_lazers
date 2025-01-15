@@ -53,6 +53,16 @@
 .popular__item > .popular__item-pic img {
   transition: transform var(--hover-time) ease-out;
   margin: 0 auto;
+  min-height: 390px;
+  max-height: 390px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  @include mobile {
+    min-height: 363px;
+    max-height: 363px;
+  }
 }
 
 .popular__item-info {
