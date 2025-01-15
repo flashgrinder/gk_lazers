@@ -156,12 +156,6 @@
 	border-radius: 8px;
 }
 
-.about__description-wrap {
-	padding: 32px;
-	background-color: var(--focus-bg);
-	border-radius: 10px;
-}
-
 .about__description-wrap,
 .about__geography {
 	margin-top: 48px;
@@ -172,33 +166,53 @@
 	width: 100%;
 }
 
-//.about__description {
-//	height: 100%;
-//	max-height: 224px;
-//	overflow: hidden;
-//	transition: max-height 5s ease-out;
-//}
-
-.about__description.is-open {
-	max-height: 9999px;
-}
-
-.about__description-more.button {
-	margin-top: 24px;
-	text-transform: none;
-	padding-left: 0;
-	font-weight: normal;
-	color: var(--primary);
-	font-size: 24px;
-	opacity: 1;
+.about__description + .about__team-wrap,
+.about__team-wrap + .about__description {
+	margin-top: 48px;
 	@include mobile {
-		font-size: 16px;
+		margin-top: 32px;
 	}
 }
 
-.about__description-more.button.button--icon .button__arrow {
-	stroke: var(--primary-font-color);
-	opacity: 1;
+.about__member {
+	display: grid;
+	grid-template-columns: 328px 1fr;
+	gap: 48px;
+	align-items: center;
+	@include mobile {
+		grid-template-columns: 1fr;
+		gap: 24px;
+		justify-items: center;
+	}
+}
+
+.about__member + .about__member {
+	margin-top: 48px;
+	@include mobile {
+		margin-top: 32px;
+	}
+}
+
+.about__member-pic {
+	border-radius: 50%;
+	overflow: hidden;
+	height: 328px;
+	max-width: 328px;
+}
+
+.about__member-pic picture,
+.about__member-pic img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about__member-text {
+	margin-top: 24px;
+	@include mobile {
+		margin-top: 16px;
+	}
 }
 
 /* Slide Item */

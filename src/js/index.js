@@ -16,7 +16,6 @@ import serviceMobileSlider from "./modules/service-mobile-slider";
 import catalogSlidersMobile from "./modules/catalog-sliders-mobile";
 import customSelect from "./modules/custom-select";
 import departmentsSlider from "./modules/departments-slider";
-import showMoreText from "./modules/show-more-text";
 import aboutSlider from "./modules/about-slider";
 import similarSlider from "./modules/similar-slider";
 import dragAndDrop from "./modules/drag-and-drop";
@@ -55,7 +54,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     catalogSlidersMobile();
     customSelect();
     departmentsSlider();
-    showMoreText();
     aboutSlider();
     similarSlider();
     dragAndDrop();
