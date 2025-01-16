@@ -86,6 +86,8 @@
   }
 }
 
+.wysiwyg p + picture,
+.wysiwyg picture + p,
 .wysiwyg p + img,
 .wysiwyg img + p,
 .wysiwyg p + p {
