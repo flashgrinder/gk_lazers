@@ -176,6 +176,10 @@ picture + .about__description {
 	}
 }
 
+.about__description-wrap picture {
+	display: block;
+}
+
 .about__member {
 	display: grid;
 	grid-template-columns: 328px 1fr;
