@@ -166,8 +166,8 @@
 	width: 100%;
 }
 
-.about__description + .about__team-wrap,
-.about__team-wrap + .about__description {
+.about__description + .about__member,
+.about__member + .about__description {
 	margin-top: 48px;
 	@include mobile {
 		margin-top: 32px;
