@@ -27,6 +27,7 @@
   background-color: var(--primary-bg);
   height: 100%;
   border: 1px solid transparent;
+  overflow: hidden;
   border-radius: 10px;
   box-shadow: var(--small-shadow);
   transition: border var(--hover-time) ease-out, box-shadow var(--hover-time) ease-out;
