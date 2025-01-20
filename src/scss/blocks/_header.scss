@@ -158,6 +158,10 @@
 	align-items: flex-end;
 }
 
+.header .header__contact {
+	color: var(--primary-font-color);
+}
+
 .header__contacts--desktop {
 	@include mobile {
 		display: none;
