@@ -1,8 +1,6 @@
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 
-const mediaQuery = window.matchMedia('(max-width: 768px)');
-
 function similarSlider () {
 
     const similarSliderTrue = document.querySelector('.js-similar-slider-init');
@@ -31,11 +29,18 @@ function similarSlider () {
             }
         } );
 
-        // if(mediaQuery.matches) {
-            similarSlider.mount();
-        // } else {
-        //     similarSlider.destroy();
-        // }
+        similarSlider.on( 'mounted', function () {
+            let items = similarSlider.length;
+            let perPage = similarSlider.options.perPage;
+            if ( items <= perPage ) {
+                similarSlider.options = {
+                    drag: false,
+                    arrows: false, // If you're not using the CSS method above you can use this to hide arrows
+                };
+            }
+        });
+
+        similarSlider.mount();
     }
 
 }
