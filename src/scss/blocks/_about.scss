@@ -167,11 +167,17 @@
 }
 
 .about__description + .about__member,
-.about__member + .about__description {
+.about__member + .about__description,
+.about__description + picture,
+picture + .about__description {
 	margin-top: 48px;
 	@include mobile {
 		margin-top: 32px;
 	}
+}
+
+.about__description-wrap picture {
+	display: block;
 }
 
 .about__member {

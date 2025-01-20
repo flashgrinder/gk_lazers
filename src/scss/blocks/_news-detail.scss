@@ -59,6 +59,13 @@
   }
 }
 
+.news-detail__items-sidebar.splide .splide__track {
+  overflow: visible;
+  @include mobile {
+    overflow: hidden;
+  }
+}
+
 .news-detail__items-sidebar.splide .splide__list {
   flex-direction: column;
   gap: 32px;
@@ -72,6 +79,7 @@
   background-color: var(--secondary-bg);
   border: 1px solid transparent;
   border-radius: 8px;
+  box-shadow: var(--small-shadow);
   transition: border var(--hover-time) ease-out;
 }
 
