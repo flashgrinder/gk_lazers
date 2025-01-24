@@ -204,6 +204,10 @@ picture + .about__description {
 	overflow: hidden;
 	height: 328px;
 	max-width: 328px;
+	@include mobile {
+		height: auto;
+		max-width: 100%;
+	}
 }
 
 .about__member-pic picture,

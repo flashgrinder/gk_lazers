@@ -40,8 +40,8 @@
 	height: 100%;
 	object-fit: cover;
 	@include mobile {
-		min-height: 164px;
-		max-height: 164px;
+		min-height: 229px;
+		max-height: 229px;
 	}
 }
 
@@ -49,7 +49,6 @@
 	padding: 16px 24px;
 	transition: color var(--hover-time) ease-out;
 	@include mobile {
-		padding: 16px 0 0;
 		font-size: 16px;
 	}
 }

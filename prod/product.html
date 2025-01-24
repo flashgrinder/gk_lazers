@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- Убираешь класс header--dark и меняет цвета на белый -->
-<header class="header js-header-mobile header--dark">
+<header class="header js-header-mobile header--darks">
     <div class="header__search-wrap-mobile container js-form-search-mobile js-reveal gs-reveal">
         <form action="" class="header__form-search header__form-search--mobile">
             <div class="header__form-field">
@@ -548,7 +548,21 @@
                             </a>
                         </div>
                     </div>
-                    <ul class="product__content-splide-pagination splide__pagination slider-pagination-dotted"></ul>
+                    <div class="slider-nav splide__arrows">
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--prev splide__arrow splide__arrow--prev">
+                            <svg class="slider-nav__arrow-icon" width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-left-check"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-nav__splide-arrow slider-nav__splide-arrow--next splide__arrow splide__arrow--next">
+                            <svg class="slider-nav__arrow-icon" width="24px" height="24px">
+                                <use href="./img/svgsprite/sprite.symbol.svg#arrow-right-check"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product__content-navigation-slider">
+                        <ul class="product__content-splide-pagination splide__pagination slider-pagination-dotted"></ul>
+                    </div>
                 </div>
             </div>
         </div>

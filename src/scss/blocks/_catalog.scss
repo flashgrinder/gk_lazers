@@ -59,6 +59,12 @@
   }
 }
 
+.catalog__splide-slide.splide__slide {
+  @include mobile {
+    padding: 5px;
+  }
+}
+
 .catalog__product {
   padding: 0 16px 24px;
   border: 1px solid transparent;

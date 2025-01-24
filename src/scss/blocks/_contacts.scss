@@ -16,6 +16,11 @@
 	}
 }
 
+.contacts__head-pic {
+	overflow: hidden;
+	border-radius: 10px;
+}
+
 .contacts__head-pic img,
 .contacts__head-pic picture {
 	width: 100%;
@@ -118,7 +123,7 @@
 }
 
 .contacts__address {
-	gap: 20px;
+	gap: 16px;
 }
 
 .contacts__address-icon {
