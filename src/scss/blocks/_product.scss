@@ -60,6 +60,7 @@
 	@include tablet {
 		position: static;
 		transform: none;
+		margin-bottom: 0;
 	}
 }
 
@@ -117,6 +118,14 @@
 .product__meta {
 	margin-top: 50%;
 	transform: translateY(-50%);
+	@include mobile {
+		margin-top: auto;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
 }
 
 .product__button-text {

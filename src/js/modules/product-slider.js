@@ -23,7 +23,7 @@ function productSlider () {
             gap: '0px',
             breakpoints: {
                 1024: {
-                    height: '445px',
+                    height: 'auto',
                     arrows: false,
                 },
             }

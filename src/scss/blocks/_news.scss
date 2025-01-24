@@ -140,9 +140,9 @@
 
 .news__splide--big.splide .splide__slide {
   width: 100%;
-  @include mobile {
-    padding: 5px;
-  }
+  //@include mobile {
+  //  padding: 5px;
+  //}
 }
 
 .news__splide.js-news-mini-slider-init .news__splide-track.splide__track {
