@@ -29,6 +29,7 @@ import $ from "jquery";
 // import aboutSliderAnimation from "./modules/about-slider-animation";
 import aboutCompoundSlider from "./modules/about-compound-slider";
 import initAcc from "./modules/accordion";
+import mainSlider from "./modules/main-slider";
 // import modalThanks from "./modules/modalThanks";
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
 
     mobileNav();
+    mainSlider();
     // gsReveal.init();
     searchActionMobile();
     featuresSlider();
