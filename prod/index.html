@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- Убираешь класс header--dark и меняет цвета на белый -->
-<header class="header js-header-mobile header--darks">
+<header class="header js-header-mobile header--dark">
     <div class="header__search-wrap-mobile container js-form-search-mobile js-reveal gs-reveal">
         <form action="" class="header__form-search header__form-search--mobile">
             <div class="header__form-field">
@@ -233,29 +233,115 @@
 
 <main>
 
-<section class="main-screen js-reveal gs-reveal">
-    <div class="main-screen__video-embed">
-        <iframe class="main-screen__video"
-				src="https://kinescope.io/embed/hSGMJedU3HHZqwQwKvk1PT?background=true&playsinline=true"
-				frameborder="0"
-				allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
-				allowfullscreen
-		></iframe>
-    </div>
-    <div class="main-screen__body container">
-        <div class="main-screen__wrap">
-            <h1 class="main-screen__title title title--big title--white title--w-bold">
-                Разрабатываем и&#160;производим
-                промышленное лазерное оборудование с&#160;1998 года
-            </h1>
-            <div class="main-screen__actions d-flex">
-                <a href="#main-form" class="main-screen__button button button--primary">
-                    Отправить заявку
-                </a>
-                <a href="javascript:;" class="main-screen__button button button--secondary" data-hystmodal="#thanks">
-                    Выбрать решение
-                </a>
+<!--<section class="main-screen js-reveal gs-reveal">-->
+<!--	<div class="main-screen__video-embed">-->
+<!--		<iframe class="main-screen__video"-->
+<!--				src="https://kinescope.io/embed/hSGMJedU3HHZqwQwKvk1PT?background=true&playsinline=true"-->
+<!--				frameborder="0"-->
+<!--				allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"-->
+<!--				allowfullscreen-->
+<!--		></iframe>-->
+<!--	</div>-->
+<!--	<div class="main-screen__body container">-->
+<!--		<div class="main-screen__wrap">-->
+<!--			<h1 class="main-screen__title title title&#45;&#45;big title&#45;&#45;white title&#45;&#45;w-bold">-->
+<!--				Разрабатываем и производим-->
+<!--				промышленное лазерное оборудование с 1998 года-->
+<!--			</h1>-->
+<!--			<div class="main-screen__actions d-flex">-->
+<!--				<a href="#main-form" class="main-screen__button button button&#45;&#45;primary">-->
+<!--					Отправить заявку-->
+<!--				</a>-->
+<!--				<a href="javascript:;" class="main-screen__button button button&#45;&#45;secondary" data-hystmodal="#thanks">-->
+<!--					Выбрать решение-->
+<!--				</a>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</section>-->
+<section class="main-screen">
+    <div class="main-screen__body">
+        <div class="main-screen__splide splide js-main-slider-init" data-splide='{"autoplay":"true"}'>
+            <div class="main-screen__splide-track splide__track">
+                <div class="main-screen__splide-list splide__list">
+                    <div class="main-screen__splide-slide splide__slide" data-splide-interval="1000">
+                        <div class="main-scree__item">
+                            <div class="main-screen__item-pic main-screen__item-pic--mobile">
+                                <picture>
+                                    <img src="./img/other/technology-1.jpeg" alt="">
+                                </picture>
+                            </div>
+                            <iframe class="main-screen__video"
+									src="https://kinescope.io/embed/hSGMJedU3HHZqwQwKvk1PT?background=true&playsinline=true"
+									frameborder="0"
+									allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
+									allowfullscreen
+							></iframe>
+                            <div class="main-screen__item-text container">
+                                <div class="main-screen__item-info main-screen__item-info--one">
+                                    <h1 class="main-screen__title title title--big title--white title--w-bold">
+                                        Разрабатываем и&#160;производим
+                                        промышленное лазерное оборудование с&#160;1998 года
+                                    </h1>
+                                    <div class="main-screen__actions d-flex">
+                                        <a href="#main-form" class="main-screen__button button button--primary">
+                                            Отправить заявку
+                                        </a>
+                                        <a href="/katalog/" class="main-screen__button button button--secondary">
+                                            Выбрать решение
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-screen__splide-slide splide__slide" data-splide-interval="10000">
+                        <div class="main-scree__item">
+                            <picture>
+                                <img src="./img/other/technology-1.jpeg" alt="">
+                            </picture>
+                            <div class="main-screen__item-text container">
+                                <div class="main-screen__item-info main-screen__item-info--two">
+                                    <h1 class="main-screen__title title title--big title--white title--w-bold">
+                                        Разрабатываем и&#160;производим
+                                        промышленное лазерное оборудование с&#160;1998 года
+                                    </h1>
+                                    <div class="main-screen__actions d-flex">
+                                        <a href="#main-form" class="main-screen__button button button--primary">
+                                            Отправить заявку
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-screen__splide-slide splide__slide" data-splide-interval="4000">
+                        <div class="main-scree__item">
+                            <picture>
+                                <img src="./img/other/slide-1.jpg" alt="">
+                            </picture>
+                            <div class="main-screen__item-text container">
+                                <div class="main-screen__item-info main-screen__item-info--three">
+                                    <h1 class="main-screen__title title title--big title--white title--w-bold">
+                                        Пятикоординатный станок СЛП5150
+                                        для резки деталей сложной формы под прямыми
+                                        и&#160;острыми углами к&#160;обрабатываемой поверхности
+                                    </h1>
+                                    <div class="main-screen__actions d-flex">
+                                        <a href="#main-form" class="main-screen__button button button--primary">
+                                            Отправить заявку
+                                        </a>
+                                        <a href="/katalog/" class="main-screen__button button button--secondary">
+                                            Выбрать решение
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <ul class="main-screen__splide-pagination splide__pagination slider-pagination-dotted"></ul>
         </div>
     </div>
 </section>
