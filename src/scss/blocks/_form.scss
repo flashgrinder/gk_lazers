@@ -28,13 +28,16 @@
 
 .form .form__input {
   border: 1px solid var(--disabled);
+  transition: border var(--hover-time) ease-out;
 }
 
 .form__field .form__input:focus,
 .form__field .form__input:target,
+.form__field .form__input:hover,
 .form__field .form__input--textarea:focus,
 .form__field .form__input--textarea:target,
-.form__field .form__input--textarea:focus-visible {
+.form__field .form__input--textarea:focus-visible,
+.form__field .form__input--textarea:hover {
   border: 1px solid var(--success-border);
 }
 
@@ -198,7 +201,10 @@
 
 .form__dropzone .filepond--root .filepond--drop-label {
   border: 2px dashed #699E4A80;
+  border-spacing: 10px;
   min-height: 104px;
+  transition: border var(--hover-time) ease-out;
+  border-radius: 8px;
 }
 
 .form__dropzone .filepond--root .filepond--drop-label:hover,
