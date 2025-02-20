@@ -42,6 +42,13 @@
 	}
 }
 
+.header__search-wrapper {
+	width: 100%;
+	@include mobile {
+		width: auto;
+	}
+}
+
 .header__form-search {
 	width: 100%;
 	max-width: 750px;

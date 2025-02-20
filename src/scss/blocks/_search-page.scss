@@ -32,9 +32,15 @@
 	padding: 24px 16px;
 	border-radius: 10px;
 	box-shadow: var(--small-shadow);
+	border: 1px solid transparent;
+	transition: border var(--hover-time) ease-out;
 	@include tablet {
 		padding: 16px;
 	}
+}
+
+.search-page__item:hover {
+	border: 1px solid var(--primary-hover);
 }
 
 .search-page__item + .search-page__item {
@@ -48,9 +54,14 @@
 }
 
 .search-page__item-title {
+	transition: color var(--hover-time) ease-out;
 	@include tablet {
 		font-weight: bold;
 	}
+}
+
+.search-page__item:hover .search-page__item-title {
+	color: var(--primary);
 }
 
 .search-page__item-excerpt {
@@ -85,6 +96,12 @@
 .search-page__synonym {
 	border-radius: 10px;
 	box-shadow: var(--small-shadow);
+	border: 1px solid transparent;
+	transition: border var(--hover-time) ease-out;
+}
+
+.search-page__synonym:hover {
+	border: 1px solid var(--primary-hover);
 }
 
 .search-page__synonym-pic {
