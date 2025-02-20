@@ -28,13 +28,16 @@
 
 .form .form__input {
   border: 1px solid var(--disabled);
+  transition: border var(--hover-time) ease-out;
 }
 
 .form__field .form__input:focus,
 .form__field .form__input:target,
+.form__field .form__input:hover,
 .form__field .form__input--textarea:focus,
 .form__field .form__input--textarea:target,
-.form__field .form__input--textarea:focus-visible {
+.form__field .form__input--textarea:focus-visible,
+.form__field .form__input--textarea:hover {
   border: 1px solid var(--success-border);
 }
 
@@ -122,13 +125,14 @@
 .form__accept-label::before {
   content: '';
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
   flex-grow: 0;
   //margin-right: 0.5em;
   border-radius: 2px;
-  background-color: var(--primary-hover);
+  border: 2px solid var(--secondary-font-color);
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 10px 10px;
@@ -149,30 +153,32 @@
 }
 
 .form__checkbox:checked + .form__accept-label::before {
-  border-color: var(--normal-border);
+  border-color: var(--primary-hover);
+  background-color: var(--primary-hover);
   background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.83317 0.791748L3.87484 6.75008L1.1665 4.04175' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 /* стили при наведении курсора на checkbox */
 .form__checkbox:not(:disabled):not(:checked)+.form__accept-label:hover::before {
-  border-color: var(--success-border);
+  border-color: var(--primary-hover);
 }
 /* стили для активного состояния чекбокса (при нажатии на него) */
 .form__checkbox:not(:disabled):active+.form__accept-label::before {
-  background-color: #b3d7ff;
-  border-color: var(--success-border);
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
 }
 /* стили для чекбокса, находящегося в фокусе */
 .form__checkbox:focus+.form__accept-label::before {
-  box-shadow: 0 0 0 0.1rem rgba(58, 175, 169, 0.25);
+  border-color: var(--primary-hover);
 }
 /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
 .form__checkbox:focus:not(:checked)+.form__accept-label::before {
-  border-color: var(--success-border);
+  border-color: var(--primary-hover);
 }
 /* стили для чекбокса, находящегося в состоянии disabled */
 .form__checkbox:disabled+.form__accept-label::before {
-  background-color: #e9ecef;
+  background-color: var(--disabled);
+  border-color: var(--disabled);
 }
 
 .form__field .form__input.is-error,
@@ -198,7 +204,10 @@
 
 .form__dropzone .filepond--root .filepond--drop-label {
   border: 2px dashed #699E4A80;
+  border-spacing: 10px;
   min-height: 104px;
+  transition: border var(--hover-time) ease-out;
+  border-radius: 8px;
 }
 
 .form__dropzone .filepond--root .filepond--drop-label:hover,
@@ -288,6 +297,7 @@
 .ss-main.form__select {
   --ss-border-radius: 8px;
   padding: 17px 16px;
+  max-height: 58px;
   border-radius: var(--ss-border-radius);
   border: 1px solid var(--disabled);
   font-size: 16px;
@@ -295,6 +305,10 @@
     padding: 14px 12px 15px 16px;
     font-size: 14px;
   }
+}
+
+.ss-main.form__select .ss-main .ss-values {
+  overflow: hidden;
 }
 
 .ss-main.form__select:focus {

@@ -33,6 +33,10 @@
 	border-radius: 10px;
 }
 
+.product__splide .splide__track--fade>.splide__list>.splide__slide.product__splide-slide {
+	aspect-ratio: 4/4;
+}
+
 .product__splide-slide picture,
 .product__splide-slide img {
 	display: block;
@@ -145,6 +149,7 @@
 	@include tablet {
 		margin-top: 32px;
 		gap: 16px;
+		flex-wrap: wrap;
 	}
 }
 

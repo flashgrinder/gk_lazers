@@ -2,6 +2,17 @@
   gap: 24px;
 }
 
+.socials__link:focus svg,
+.socials__link:target svg,
+.socials__link:hover svg {
+  opacity: .75;
+}
+
+.socials__link:disabled {
+  opacity: .5;
+}
+
 .socials svg {
   display: block;
+  transition: opacity var(--hover-time) ease-out;
 }

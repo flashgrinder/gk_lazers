@@ -9,7 +9,6 @@ function departmentsSlider () {
     if (departmentsSliderTrue) {
         const departmentsSlider = new Splide( '.js-departments-slider-mobile-init', {
             type   : 'loop',
-            height: 'auto',
             perPage: 1,
             perMove: 1,
             autoplay: true,

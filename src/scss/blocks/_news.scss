@@ -29,6 +29,7 @@
   transition: border var(--hover-time) ease-out, box-shadow var(--hover-time) ease-out;
   @include mobile {
     box-shadow: var(--small-shadow);
+    height: 100%;
   }
 }
 
@@ -43,11 +44,17 @@
   grid-template-columns: minmax(500px, 734px) minmax(450px, 536px);
   @include mobile {
     grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-rows: 200px 1fr;
+    height: 100%;
   }
 }
 
 .news__post-pic {
   overflow: hidden;
+  @include mobile {
+    max-height: 200px;
+  }
 }
 
 .news__item-img,
@@ -75,6 +82,7 @@
   @include mobile {
     order: 1;
     margin-top: 32px;
+    opacity: .5;
   }
 }
 
@@ -91,6 +99,7 @@
   @include mobile {
     margin-top: 16px;
     font-size: 16px;
+    margin-bottom: 32px;
   }
 }
 
@@ -140,9 +149,9 @@
 
 .news__splide--big.splide .splide__slide {
   width: 100%;
-  //@include mobile {
-  //  padding: 5px;
-  //}
+  @include mobile {
+    padding: 5px;
+  }
 }
 
 .news__splide.js-news-mini-slider-init .news__splide-track.splide__track {

@@ -66,7 +66,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
     productContentSlider();
     aboutCompoundSlider();
     initAcc('.js-accordion', false);
-    Fancybox.bind('[data-fancybox]');
+    Fancybox.bind('[data-fancybox]', {
+        Toolbar: {
+            display: {
+                right: ["close"],
+            }
+        },
+
+    });
 
 })
 // import isAvifWebp from 'avif-webp-checker';
