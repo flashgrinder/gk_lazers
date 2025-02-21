@@ -182,8 +182,10 @@
 }
 
 .form__field .form__input.is-error,
+.form__field .form__input.is-error.is-dirty,
 .form__field.is-error .form__input {
   border-color: var(--error-border);
+  background-color: var(--error);
 }
 
 .form__field .form__input.is-error:focus,
@@ -191,6 +193,13 @@
 .form__field.is-error .form__input:focus,
 .form__field.is-error .form__input:target {
   border-color: var(--success-border);
+  background-color: var(--success);
+}
+
+.form__field:not(.is-error) .form__input.is-dirty,
+.form__input:not(.is-error).is-dirty {
+  border-color: var(--success-border);
+  background-color: var(--success);
 }
 
 /* Загрузка файлов */

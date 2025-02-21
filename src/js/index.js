@@ -30,6 +30,7 @@ import $ from "jquery";
 import aboutCompoundSlider from "./modules/about-compound-slider";
 import initAcc from "./modules/accordion";
 import mainSlider from "./modules/main-slider";
+import validateForm from "./modules/validate-form";
 // import modalThanks from "./modules/modalThanks";
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -65,6 +66,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     customTabs();
     productContentSlider();
     aboutCompoundSlider();
+    validateForm();
     initAcc('.js-accordion', false);
     Fancybox.bind('[data-fancybox]', {
         Toolbar: {
