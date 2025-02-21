@@ -5,7 +5,7 @@ function validateForm() {
 
     inputsEmail.forEach((input) => {
 
-        input.addEventListener('keyup', (event)=> {
+        input.addEventListener('input', (event)=> {
 
             let email = input.value;
             let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
@@ -30,7 +30,7 @@ function validateForm() {
 
     inputsText.forEach((inputText) => {
 
-        inputText.addEventListener('keyup', (event)=> {
+        inputText.addEventListener('input', (event)=> {
 
             let pattern = /^[А-Яа-яЁё\s]+$/;
             let textEl = event.target;
@@ -38,7 +38,7 @@ function validateForm() {
 
             let text = inputText.value;
 
-            let checkStr = textEl.value.replace(/[^а-яА-я ]/g, '');
+            let checkStr = textEl.value.replace(/[^а-яА-ЯёЁ ]/g, '');
 
             if (checkStr !== text) {
                 inputText.value = '';
@@ -64,7 +64,7 @@ function validateForm() {
 
     inputsPhone.forEach((inputPhone) => {
 
-        inputPhone.addEventListener('keyup', (event)=> {
+        inputPhone.addEventListener('input', (event)=> {
 
             let pattern = /[+]7[\(]\d{3}[\)]\s\d{3}[\-]\d{2}\d{2}/;
             let phone = inputPhone.value;

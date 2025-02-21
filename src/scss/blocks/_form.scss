@@ -183,6 +183,7 @@
 
 .form__field .form__input.is-error,
 .form__field .form__input.is-error.is-dirty,
+.form__field.is-error .form__input.is-dirty,
 .form__field.is-error .form__input {
   border-color: var(--error-border);
   background-color: var(--error);
