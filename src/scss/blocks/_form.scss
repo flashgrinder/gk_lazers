@@ -197,7 +197,7 @@
   background-color: var(--success);
 }
 
-.form__field:not(.is-error) .form__input.is-dirty,
+.form__field:not(.is-error),
 .form__input:not(.is-error).is-dirty {
   border-color: var(--success-border);
   background-color: var(--success);
