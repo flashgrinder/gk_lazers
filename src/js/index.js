@@ -31,6 +31,7 @@ import aboutCompoundSlider from "./modules/about-compound-slider";
 import initAcc from "./modules/accordion";
 import mainSlider from "./modules/main-slider";
 import validateForm from "./modules/validate-form";
+import initHorizontalTimeline from "./modules/horizontal-timeline";
 // import modalThanks from "./modules/modalThanks";
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -67,6 +68,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     productContentSlider();
     aboutCompoundSlider();
     validateForm();
+    initHorizontalTimeline();
     initAcc('.js-accordion', false);
     Fancybox.bind('[data-fancybox]', {
         Toolbar: {
