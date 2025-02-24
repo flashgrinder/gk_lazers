@@ -15,8 +15,8 @@
 .cd-horizontal-timeline .timeline {
 	position: relative;
 	height: 100px;
-	width: 90%;
-	max-width: 1200px;
+	width: 100%;
+	//max-width: 1200px;
 	margin: 0 auto;
 }
 .cd-horizontal-timeline .events-wrapper {
@@ -109,7 +109,7 @@
 }
 @media only screen and (min-width: 1100px) {
 	.cd-horizontal-timeline {
-		margin: 6em auto;
+		margin-top: 48px;
 	}
 	.cd-horizontal-timeline::before {
 		/* never visible - this is used in jQuery to check the current MQ */
