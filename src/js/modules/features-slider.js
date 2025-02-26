@@ -10,21 +10,31 @@ function featuresSlider () {
         const featuresSlider = new Splide( '.js-features-slider-init', {
             type   : 'loop',
             height: 'auto',
-            perPage: 1,
+            perPage: 2,
             perMove: 1,
+            gap: '16px',
             autoplay: true,
             arrows: false,
             classes: {
                 pagination: 'splide__pagination slider-pagination-dotted',
                 page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
+            destroy: true,
+            breakpoints: {
+                1024: {
+                    destroy: false,
+                },
+                576: {
+                    perPage: 1,
+                }
+            }
         } );
 
-        if(mediaQuery.matches) {
+        // if(mediaQuery.matches) {
             featuresSlider.mount();
-        } else {
-            featuresSlider.destroy();
-        }
+        // } else {
+        //     featuresSlider.destroy();
+        // }
     }
 
 }

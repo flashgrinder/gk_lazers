@@ -1,6 +1,6 @@
 .header {
 	position: relative;
-	@include mobile {
+	@include tablet {
 		position: sticky;
 		top: 0;
 		width: 100%;
@@ -11,7 +11,7 @@
 
 .header__outer {
 	background-color: var(--primary-bg);
-	@include mobile {
+	@include tablet {
 		position: relative;
 		border-radius: 0 0 10px 10px;
 		transition: border-radius var(--hover-time) ease-out;
@@ -19,7 +19,7 @@
 }
 
 .header__outer.is-active {
-	@include mobile {
+	@include tablet {
 		border-radius: 0;
 	}
 }
@@ -27,7 +27,7 @@
 .header__top {
 	gap: 60px;
 	padding: 24px 0;
-	@include mobile {
+	@include tablet {
 		position: relative;
 		padding: 16px 0;
 		gap: 16px;
@@ -37,14 +37,14 @@
 .header__logo {
 	width: 100%;
 	max-width: 260px;
-	@include mobile {
+	@include tablet {
 		max-width: 185px;
 	}
 }
 
 .header__search-wrapper {
 	width: 100%;
-	@include mobile {
+	@include tablet {
 		width: auto;
 	}
 }
@@ -52,10 +52,13 @@
 .header__form-search {
 	width: 100%;
 	max-width: 750px;
+	@include tablet {
+		max-width: 100%;
+	}
 }
 
 .header__form-search--desktop {
-	@include mobile {
+	@include tablet {
 		display: none;
 	}
 }
@@ -68,7 +71,7 @@
 	background-color: var(--primary-bg);
 	transition: transform var(--hover-time) ease-out;
 	border-radius: 0 0 10px 10px;
-	@include mobile {
+	@include tablet {
 		display: block;
 	}
 }
@@ -86,7 +89,7 @@
 	min-width: 30px;
 	cursor: pointer;
 	margin-left: auto;
-	@include mobile {
+	@include tablet {
 		display: block;
 	}
 }
@@ -97,7 +100,7 @@
 
 .header__form-search--mobile {
 	display: none;
-	@include mobile {
+	@include tablet {
 		display: block;
 		padding: 16px 0 10px;
 		height: 100%;
@@ -171,7 +174,7 @@
 }
 
 .header__contacts--desktop {
-	@include mobile {
+	@include tablet {
 		display: none;
 	}
 }
@@ -179,7 +182,7 @@
 .header__bottom {
 	position: relative;
 	border-bottom: 24px solid rgba(129, 170, 157, 0.1);
-	@include mobile {
+	@include tablet {
 		padding: 0;
 		position: absolute;
 		width: 100%;
@@ -199,7 +202,7 @@
 }
 
 .header__menu-wrap {
-	@include mobile {
+	@include tablet {
 		display: flex;
 		flex-direction: column;
 		gap: 64px;
@@ -208,14 +211,14 @@
 
 .header__menu.menu {
 	color: var(--primary-font-color);
-	@include mobile {
+	@include tablet {
 		margin-top: 64px;
 	}
 }
 
 .header__menu-list.menu__list {
 	justify-content: space-between;
-	@include mobile {
+	@include tablet {
 		flex-direction: column;
 		gap: 16px;
 	}
@@ -223,7 +226,7 @@
 
 .header__menu.menu > .header__menu-list > .header__menu-item {
 	padding: 15px 12px;
-	@include mobile {
+	@include tablet {
 		padding: 8px 12px;
 	}
 }
@@ -249,7 +252,7 @@
 
 .header.header--dark .menu__list > .menu__item .menu__link {
 	color: var(--white-font-color);
-	@include mobile {
+	@include tablet {
 		color: var(--primary-font-color);
 	}
 }
@@ -259,7 +262,7 @@
 	backdrop-filter: blur(6px);
 	background: linear-gradient(0deg, rgba(90, 95, 97, 0.64), rgba(90, 95, 97, 0.64)),
 	linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-	@include mobile {
+	@include tablet {
 		background: var(--primary-bg);
 	}
 }
@@ -301,7 +304,7 @@
 	max-width: 100%;
 	align-items: flex-start;
 	gap: 32px;
-	@include mobile {
+	@include tablet {
 		display: flex;
 	}
 }
@@ -313,7 +316,7 @@
 .header__socials.header__socials--mobile {
 	position: relative;
 	display: none;
-	@include mobile {
+	@include tablet {
 		display: flex;
 		gap: 32px;
 	}

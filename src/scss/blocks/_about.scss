@@ -1,5 +1,8 @@
 .about {
 	padding: 48px 0 64px;
+	@include tablet {
+		padding: 32px 0;
+	}
 	@include mobile {
 		padding: 48px 0;
 	}
@@ -15,7 +18,7 @@
 
 .about__body {
 	padding-top: 48px;
-	@include mobile {
+	@include tablet {
 		padding-top: 32px;
 	}
 }
@@ -25,9 +28,14 @@
 	grid-template-columns: minmax(400px, 707px) minmax(350px, 1fr);
 	align-items: center;
 	gap: 48px;
-	@include mobile {
+	@include tablet {
 		grid-template-columns: 1fr;
 		gap: 16px;
+		padding-bottom: 32px;
+		margin-bottom: 0;
+		border-bottom: 1px solid var(--disabled);
+	}
+	@include mobile {
 	}
 }
 
@@ -53,7 +61,7 @@
 .about__video-wrap,
 .about__compound {
 	margin-bottom: 48px;
-	@include mobile {
+	@include tablet {
 		margin-bottom: 32px;
 	}
 }
@@ -75,6 +83,13 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	gap: 32px;
+	@include tablet {
+		grid-template-areas:
+		"item-1 item-2"
+		"item-3 item-4"
+		"item-5 item-6";
+		gap: 16px;
+	}
 	@include mobile {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-areas:
@@ -117,7 +132,7 @@
 }
 
 .about__feature-num {
-	@include mobile {
+	@include tablet {
 		font-size: 36px;
 	}
 }
@@ -204,7 +219,7 @@
 	border-radius: 8px;
 }
 
-.about__description-wrap,
+//.about__description-wrap,
 .about__geography {
 	margin-top: 48px;
 }
@@ -233,6 +248,10 @@ picture + .about__description {
 	grid-template-columns: 328px 1fr;
 	gap: 48px;
 	align-items: center;
+	@include tablet {
+		grid-template-columns: 245px 1fr;
+		gap: 16px;
+	}
 	@include mobile {
 		grid-template-columns: 1fr;
 		gap: 24px;
@@ -247,11 +266,29 @@ picture + .about__description {
 	}
 }
 
+.about__member-name {
+	@include tablet {
+		font-size: 24px;
+	}
+}
+
+.about__member-text.wysiwyg.wysiwyg--about p {
+	@include tablet {
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
+
 .about__member-pic {
 	border-radius: 50%;
 	overflow: hidden;
 	height: 328px;
 	max-width: 328px;
+	@include tablet {
+		height: 245px;
+		max-width: 245px;
+		aspect-ratio: 4/4;
+	}
 	@include mobile {
 		height: auto;
 		max-width: 100%;

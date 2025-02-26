@@ -10,7 +10,7 @@
 	grid-template-columns: minmax(400px, 1fr) minmax(350px, 496px);
 	align-items: center;
 	gap: 48px;
-	@include mobile {
+	@include tablet {
 		grid-template-columns: 1fr;
 		gap: 16px;
 	}
@@ -19,11 +19,17 @@
 .contacts__head-pic {
 	overflow: hidden;
 	border-radius: 10px;
+	@include tablet {
+		aspect-ratio: 16/9;
+	}
 }
 
 .contacts__head-pic img,
 .contacts__head-pic picture {
+	display: block;
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .contacts__head-text {
@@ -36,7 +42,7 @@
 .contacts__departments-splide.splide {
 	margin-top: 48px;
 	visibility: visible;
-	@include mobile {
+	@include tablet {
 		visibility: hidden;
 		margin-top: 32px;
 	}
@@ -44,13 +50,14 @@
 
 .contacts__departments-splide-track.splide__track {
 	overflow: visible;
-	@include mobile {
+	@include tablet {
 		overflow: hidden;
 		padding: 10px 0 10px 0;
 	}
 }
 
-.contacts__departments-splide-list.splide__list {
+.contacts__departments-splide-list.splide__list,
+.contacts__departments-splide.splide.is-initialized:not(.is-active) .splide__list {
 	display: grid;
 	grid-template-columns: repeat(12, minmax(50px, 1fr));
 	gap: 32px;
@@ -65,7 +72,7 @@
 .contacts__departments-splide-slide.splide__slide:nth-child(2),
 .contacts__departments-splide-slide.splide__slide:nth-child(3) {
 	grid-column: 4 span;
-	@include mobile {
+	@include tablet {
 		grid-column: unset;
 	}
 }
@@ -73,7 +80,7 @@
 .contacts__departments-splide-slide.splide__slide:nth-child(4),
 .contacts__departments-splide-slide.splide__slide:nth-child(5) {
 	grid-column: 6 span;
-	@include mobile {
+	@include tablet {
 		grid-column: unset;
 	}
 }
@@ -176,6 +183,9 @@
 .contacts__details {
 	display: inline-block;
 	margin-top: 48px;
+	@include tablet {
+		margin-top: 32px;
+	}
 }
 
 .contacts__address,
@@ -184,13 +194,16 @@
 .contacts__how-text,
 .contacts__details {
 	line-height: 32px;
-	@include mobile {
+	@include tablet {
 		font-size: 16px;
 		line-height: 20px;
 	}
 }
 
 .contacts__warn {
+	@include tablet {
+		font-size: 14px;
+	}
 	@include mobile {
 		font-size: 12px;
 	}

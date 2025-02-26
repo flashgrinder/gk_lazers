@@ -1,6 +1,6 @@
 .similar {
 	padding-bottom: 140px;
-	@include mobile {
+	@include tablet {
 		background-color: var(--secondary-bg);
 		padding-bottom: 48px;
 	}

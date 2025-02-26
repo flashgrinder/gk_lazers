@@ -1,7 +1,7 @@
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 
-const mediaQuery = window.matchMedia('(max-width: 768px)');
+const mediaQuery = window.matchMedia('(max-width: 1024px)');
 function newsSliders () {
 
     const newsBigSliderTrue = document.querySelector('.js-news-big-slider-init');
@@ -11,8 +11,8 @@ function newsSliders () {
                 type: 'slide',
                 height: 'auto',
                 rewind: true,
-                perPage: 1,
-                autoWidth: true,
+                perPage: 2,
+                autoWidth: false,
                 autoplay: false,
                 arrows: false,
                 gap: '8px',
@@ -25,6 +25,11 @@ function newsSliders () {
                     next: 'splide__arrow--next slider-nav__splide-arrow--next',
                     pagination: 'splide__pagination slider-pagination-dotted',
                     page      : 'splide__pagination__page slider-pagination-dotted__page',
+                },
+                breakpoints: {
+                    576: {
+                        perPage: 1,
+                    }
                 }
             });
             newsBigSlider.mount();

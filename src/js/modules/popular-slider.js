@@ -23,10 +23,14 @@ function popularSlider () {
                 page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
             breakpoints: {
-                768: {
+                1024: {
+                    perPage: 2,
+                    gap: '16px',
+                    arrows: false,
+                },
+                576: {
                     perPage: 1,
                     gap: '8px',
-                    arrows: false,
                 },
             }
         } );

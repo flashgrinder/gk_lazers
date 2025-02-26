@@ -2,6 +2,9 @@
   position: static;
   gap: 16px;
   margin-top: 32px;
+  @include tablet {
+    margin-top: 32px;
+  }
 }
 
 .slider-pagination-dotted .slider-pagination-dotted__page {

@@ -53,11 +53,14 @@
 
 .b-padding-48 {
 	padding: var(--padding-block-48);
+	@include tablet {
+		padding: 32px 0;
+	}
 }
 
 .b-padding-80 {
 	padding: var(--padding-block-80);
-	@include mobile {
+	@include tablet {
 		padding: 48px 0;
 	}
 }

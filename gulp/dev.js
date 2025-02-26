@@ -16,6 +16,7 @@ const changed = require('gulp-changed');
 const typograf = require('gulp-typograf');
 const svgsprite = require('gulp-svg-sprite');
 const replace = require('gulp-replace');
+const groupMedia = require("gulp-group-css-media-queries");
 
 gulp.task('clean:dev', function (done) {
 	if (fs.existsSync('./build/')) {
@@ -77,6 +78,7 @@ gulp.task('sass:dev', function () {
 		.pipe(plumber(plumberNotify('SCSS')))
 		.pipe(sourceMaps.init())
 		.pipe(sassGlob())
+		.pipe(groupMedia())
 		.pipe(sass())
 		.pipe(postcss(plugins))
 		.pipe(

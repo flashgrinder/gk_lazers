@@ -1,5 +1,5 @@
 .purchase {
-  @include mobile {
+  @include tablet {
     background-color: var(--secondary-bg);
   }
 }
@@ -12,7 +12,7 @@
   position: relative;
   margin-top: 48px;
   justify-content: space-between;;
-  @include mobile {
+  @include tablet {
     display: none;
     margin-top: 32px;
   }
@@ -20,7 +20,7 @@
 
 .purchase__item {
   position: relative;
-  @include mobile {
+  @include tablet {
     background-color: var(--primary-bg);
     padding: 16px 16px 36px;
     height: 100%;
@@ -123,7 +123,7 @@
 .purchase__item-info {
   max-width: 439px;
   width: 100%;
-  @include mobile {
+  @include tablet {
     max-width: 100%;
     margin-top: 16px;
   }
@@ -134,7 +134,7 @@
   padding-bottom: 14px;
   border-bottom: 4px solid #699E4A3D;
   margin-bottom: 14px;
-  @include mobile {
+  @include tablet {
     font-size: 16px;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -143,14 +143,14 @@
 }
 
 .purchase__item-description {
-  @include mobile {
+  @include tablet {
     font-size: 16px;
   }
 }
 
 .purchase__splide {
   display: none;
-  @include mobile {
+  @include tablet {
     display: block;
     margin-top: 32px;
   }

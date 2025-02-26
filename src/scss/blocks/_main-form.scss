@@ -1,7 +1,13 @@
 .main-form {
   border-top: 15px solid var(--separator-bg);
-  @include mobile {
+  @include tablet {
     border-width: 8px;
+  }
+}
+
+.main-form__heading {
+  @include tablet {
+    font-size: 24px;
   }
 }
 
@@ -9,13 +15,13 @@
   display: grid;
   grid-template-columns: minmax(450px, 624px) minmax(400px, 1fr);
   gap: 109px;
-  @include mobile {
+  @include tablet {
     grid-template-columns: 1fr;
   }
 }
 
 .main-form__col-right {
-  @include mobile {
+  @include tablet {
     display: none;
   }
 }
@@ -26,21 +32,146 @@
 
 .main-form__form {
   margin: 48px 0 0;
-  @include mobile {
+  @include tablet {
     margin: 32px 0 0;
+  }
+}
+
+/* Main form tablet*/
+.form.form--main.main-form__form {
+  @include tablet {
+    margin: 32px 0 0;
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+    "fields pic"
+    "action button"
+    "accept .";
+  }
+  @include mobileXS {
+    grid-template-areas: none;
+  }
+}
+
+.form.form--main .main-form__inner-wrap {
+  @include tablet {
+    grid-area: fields;
+  }
+  @include mobileXS {
+    grid-area: unset;
+  }
+}
+
+.form.form--main .main-form__pic-mobile {
+  display: none;
+  @include tablet {
+    display: block;
+    grid-area: pic;
+  }
+  @include mobileXS {
+    display: none;
+    grid-area: unset;
+  }
+}
+
+.form.form--main .main-form__actions {
+  @include tablet {
+    grid-area: action;
+  }
+  @include mobileXS {
+    grid-area: unset;
+  }
+}
+
+.form.form--main .main-form__form-button--mobile {
+  @include tablet {
+    grid-area: button;
+    align-self: baseline;
+  }
+  @include mobileXS {
+    display: none;
+    grid-area: unset;
+  }
+}
+
+.form.form--main .main-form__accept {
+  @include tablet {
+    grid-area: accept;
+  }
+  @include mobileXS {
+    grid-area: unset;
+  }
+}
+
+.form.form--main .main-form__button--desktop {
+  @include tablet {
+    display: none;
+  }
+  @include mobileXS {
+    display: block;
+  }
+}
+/* Main form service */
+.form.form--service.main-form__form {
+  @include tablet {
+    margin: 32px 0 0;
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+    "fields pic pic"
+    "action . .";
+  }
+  @include mobileXS {
+    grid-template-areas: none;
+  }
+}
+
+.form.form--service .main-form__inner-wrap {
+  @include tablet {
+    grid-area: fields;
+  }
+  @include mobileXS {
+    grid-area: unset;
+  }
+}
+
+.form.form--service .main-form__pic-mobile {
+  display: none;
+  @include tablet {
+    display: block;
+    grid-area: pic;
+  }
+  @include mobileXS {
+    display: none;
+    grid-area: unset;
+  }
+}
+
+.form.form--service .main-form__actions {
+  @include tablet {
+    grid-area: action;
+    flex-direction: column;
+  }
+  @include mobileXS {
+    grid-area: unset;
   }
 }
 
 .main-form__wrapper-fields {
   gap: 32px;
-  @include mobile {
+  @include tablet {
+    gap: 24px;
     flex-direction: column;
   }
 }
 
 .main-form__actions {
   gap: 30px;
-  @include mobile {
+  @include tablet {
+    margin-top: 0;
+  }
+  @include mobileXS {
+    margin-top: 32px;
     flex-direction: column;
   }
 }
@@ -48,17 +179,20 @@
 .main-form__form-button {
   max-width: 342px;
   width: 100%;
-  @include mobile {
+  @include tablet {
     max-width: 100%;
   }
 }
 
-.main-form__pic {
+.main-form__pic,
+.main-form__pic-mobile {
   overflow: hidden;
   border-radius: 10px;
   height: 100%;
 }
 
+.main-form__pic-mobile picture,
+.main-form__pic-mobile picture img,
 .main-form__pic picture,
 .main-form__pic picture img {
   display: block;

@@ -1,83 +1,109 @@
 .page-404 {
-  position: relative;
+	position: relative;
 }
 
 .page-404__outer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 900px;
-  @include mobile {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    height: auto;
-  }
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	height: 900px;
+	@include tablet {
+		height: 500px;
+	}
+	@include mobile {
+		grid-template-columns: 1fr;
+		gap: 32px;
+		height: auto;
+	}
+}
+
+.page-404__title {
+	@include tablet {
+		font-size: 24px;
+	}
 }
 
 .page-404__pic {
-  width: 100%;
-  position: absolute;
-  //margin-right: -400px;
-  @include mobile {
-    position: static;
-    margin-right: 0;
-  }
+	width: 100%;
+	position: absolute;
+	@include mobile {
+		position: static;
+		margin-right: 0;
+	}
 }
 
 .page-404__info {
-  position: relative;
-  //max-width: 606px;
-  align-self: flex-end;
-  grid-area: 1/2;
-  margin-bottom: 200px;
-  @include mobile {
-    padding-bottom: 0;
-    align-self: center;
-    margin-bottom: 0;
-    grid-area: auto;
-  }
+	position: relative;
+	//max-width: 606px;
+	align-self: flex-end;
+	grid-area: 1/2;
+	margin-bottom: 200px;
+	@include tablet {
+		margin-bottom: 0;
+	}
+	@include mobile {
+		padding-bottom: 0;
+		align-self: center;
+		grid-area: auto;
+	}
 }
 
 .page-404__title,
 .page-404__subtitle {
-  display: block;
-  text-align: center;
-  @include mobile {
-    text-align: left;
-  }
+	display: block;
+	text-align: center;
+	@include tablet {
+		text-align: right;
+	}
+	@include mobile {
+		text-align: left;
+	}
 }
 
 .page-404__subtitle {
-  max-width: 600px;
-  margin: 24px auto 0;
-  @include mobile {
-    margin-top: 16px;
-  }
+	max-width: 600px;
+	margin: 24px auto 0;
+	@include tablet {
+		font-size: 16px;
+		max-width: 320px;
+		margin: 24px 0 0 auto;
+	}
+	@include mobile {
+		margin-top: 16px;
+	}
 }
 
 .page-404__text-error {
-  display: block;
-  text-align: center;
-  margin-top: 24px;
-  @include mobile {
-    margin-top: 16px;
-  }
+	display: block;
+	text-align: center;
+	margin-top: 24px;
+	@include tablet {
+		display: none;
+	}
+	@include mobile {
+		margin-top: 16px;
+	}
 }
 
 .page-404__actions {
-  margin: 48px 0 24px;
-  gap: 32px;
-  @include mobile {
-    flex-direction: column;
-    gap: 16px;
-  }
+	margin: 48px 0 24px;
+	gap: 32px;
+	@include tablet {
+		margin: 32px 0 0 auto;
+		max-width: 320px;
+	}
+	@include mobile {
+		max-width: 100%;
+		flex-direction: column;
+		gap: 16px;
+	}
 }
 
 .page-404__button:last-child {
-  @include mobile {
-    display: none;
-  }
+	@include tablet {
+		display: none;
+	}
 }
 
 .page-404__button {
-  width: 100%;
+	width: 100%;
 }

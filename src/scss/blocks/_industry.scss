@@ -1,12 +1,12 @@
 .industry {
   padding-bottom: 180px;
-  @include mobile {
+  @include tablet {
     padding-bottom: 48px;
   }
 }
 
 .industry__more-button {
-  @include mobile {
+  @include tablet {
     display: none;
     padding-bottom: 48px;
   }
@@ -14,7 +14,7 @@
 
 .industry__heading-wrap {
   margin-bottom: 48px;
-  @include mobile {
+  @include tablet {
     margin-bottom: 32px;
   }
 }
@@ -26,7 +26,7 @@
 }
 
 .industry__splide-slide.splide__slide {
-  @include mobile {
+  @include mobileXS {
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
@@ -38,6 +38,9 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 32px;
+  @include tablet {
+    gap: 16px;
+  }
   @include mobile {
     gap: 8px;
   }
@@ -104,7 +107,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @include mobile {
+  @include mobileXS {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -173,13 +176,13 @@
 
 .industry__splide--desktop.splide {
   display: block;
-  @include mobile {
+  @include mobileXS {
     display: none;
   }
 }
 .industry__splide--mobile {
   display: none;
-  @include mobile {
+  @include mobileXS {
     display: block;
   }
 }
@@ -189,7 +192,7 @@
   max-width: 1280px;
   left: 50%;
   transform: translateX(-50%);
-  @include mobile {
+  @include tablet {
     position: static;
     transform: none;
   }
@@ -199,7 +202,17 @@
   display: none;
   text-align: center;
   margin-top: 32px;
-  @include mobile {
+  @include tablet {
     display: block;
+  }
+}
+
+.industry__action-mobile .industry__button {
+  @include tablet {
+    max-width: 332px;
+    width: 100%;
+  }
+  @include mobileXS {
+    width: 100%;
   }
 }
