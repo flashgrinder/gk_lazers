@@ -32,10 +32,13 @@ import initAcc from "./modules/accordion";
 import mainSlider from "./modules/main-slider";
 import validateForm from "./modules/validate-form";
 import initHorizontalTimeline from "./modules/horizontal-timeline";
+// import initVerticalTimeline from "./modules/vertical-timeline";
+import riveAnimation from "./modules/rive-animation";
 // import modalThanks from "./modules/modalThanks";
 document.addEventListener('DOMContentLoaded', ()=> {
 
     const mediaQuery = window.matchMedia('(min-width: 768px)');
+    const animeItemsTrue = document.querySelector('.purchase');
 
     if(mediaQuery.matches) {
         buttonsFixedInit();
@@ -69,6 +72,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     aboutCompoundSlider();
     validateForm();
     initHorizontalTimeline();
+    // initVerticalTimeline();
+    animeItemsTrue ? riveAnimation() : false;
     initAcc('.js-accordion', false);
     Fancybox.bind('[data-fancybox]', {
         Toolbar: {
