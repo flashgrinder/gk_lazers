@@ -84,7 +84,9 @@
 }
 
 .form.form--main .main-form__form-button--mobile {
+  display: none;
   @include tablet {
+    display: block;
     grid-area: button;
     align-self: baseline;
   }
@@ -171,7 +173,6 @@
     margin-top: 0;
   }
   @include mobileXS {
-    margin-top: 32px;
     flex-direction: column;
   }
 }
