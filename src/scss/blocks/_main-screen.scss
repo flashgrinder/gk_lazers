@@ -12,7 +12,7 @@
   height: 100%;
   background-color: #0000003D;
   z-index: 1;
-  @include mobile {
+  @include tablet {
     background-color: rgba(0, 0, 0, 0.539216);
   }
 }
@@ -21,9 +21,9 @@
   position: relative;
   width: 100%;
   aspect-ratio: 16/9;
-  @include mobile {
+  @include tablet {
     aspect-ratio: unset;
-    min-height: 100vh;
+    min-height: 95vh;
   }
 }
 
@@ -34,13 +34,13 @@
 
 .main-screen__item-pic--mobile {
   display: none;
-  @include mobile {
+  @include tablet {
     display: block;
   }
 }
 
 .main-screen__video {
-  @include mobile {
+  @include tablet {
     display: none;
   }
 }
@@ -85,7 +85,7 @@
   top: 50%;
   transform: translateY(-50%);
   padding-right: 16px;
-  @include mobile {
+  @include tablet {
     top: 50%;
   }
 }
@@ -102,7 +102,7 @@
   bottom: 120px;
   top: auto;
   transform: none;
-  @include mobile {
+  @include tablet {
     backdrop-filter: none;
     flex-direction: column;
     top: 50%;
@@ -114,12 +114,19 @@
 }
 
 .main-screen__item-info.main-screen__item-info--two .main-screen__title {
-  @extend .title--large;
+  font-size: responsive 24px 36px;
+  font-range: 375px 1024px;
+  @include tablet {
+    font-size: 44px;
+  }
+  @include mobileXS {
+    font-size: 24px;
+  }
 }
 
 .main-screen__item-info.main-screen__item-info--two .main-screen__actions {
   margin-top: 0;
-  @include mobile {
+  @include tablet {
     margin-top: 64px;
   }
 }
@@ -137,7 +144,11 @@
 .main-screen__actions {
   margin-top: 44px;
   gap: 32px;
-  @include mobile {
+  @include tablet {
+    margin-top: 48px;
+    gap: 16px;
+  }
+  @include mobileXS {
     margin-top: 64px;
     flex-direction: column;
     gap: 15px;
@@ -148,8 +159,17 @@
   max-width: 296px;
   min-width: 296px;
   width: 100%;
-  @include mobile {
+  @include tablet {
     max-width: 100%;
     font-size: 16px;
+  }
+}
+
+.main-screen .main-screen__title {
+  @include tablet {
+    font-size: 44px;
+  }
+  @include mobileXS {
+    font-size: 24px;
   }
 }

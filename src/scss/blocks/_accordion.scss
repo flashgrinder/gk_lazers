@@ -47,6 +47,9 @@
     color: var(--secondary-font-color);
     cursor: pointer;
     transition: color var(--hover-time) ease-out;
+    @include tablet {
+        font-size: 16px;
+    }
 }
 
 .accordion__arrow {

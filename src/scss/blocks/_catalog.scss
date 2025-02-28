@@ -48,7 +48,7 @@
 
 .catalog__splide.splide .splide__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 32px;
   padding-top: 10px !important;
   @include mobile {

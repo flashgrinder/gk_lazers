@@ -25,10 +25,15 @@ function technologySlider () {
                 page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
             breakpoints: {
-                768: {
+                1024: {
+                    perPage: 2,
+                    gap: '16px',
+                    autoWidth: false,
+                    arrows: false,
+                },
+                576: {
                     perPage: 1,
                     gap: '8px',
-                    arrows: false,
                 },
             }
         } );

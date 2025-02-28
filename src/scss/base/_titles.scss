@@ -8,7 +8,7 @@
 	}
 	&--big {
 		font-size: responsive 24px 44px;
-		font-range: 375px 1024px;
+		font-range: 1024px 1600px;
 	}
 	&--large {
 		font-size: responsive 24px 36px;
@@ -44,7 +44,7 @@
 	&--decor {
 		position: relative;
 		padding-left: 38px;
-		@include mobile {
+		@include tablet {
 			padding-left: 28px;
 		}
 	}
@@ -59,16 +59,19 @@
 		display: inline-block;
 		width: 24px;
 		height: 39px;
-		@include mobile {
-			background-size: 26px 26px;
+		@include tablet {
+			background-size: 16px 24px;
 			width: 16px;
-			height: 26px;
+			height: 24px;
 		}
 	}
 }
 
 .title--indent {
 	margin-bottom: 48px;
+	@include tablet {
+		margin-bottom: 32px;
+	}
 	@include mobile {
 		margin-bottom: 24px;
 	}

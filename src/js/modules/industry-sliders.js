@@ -1,7 +1,7 @@
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 
-const mediaQuery = window.matchMedia('(max-width: 768px)');
+const mediaQuery = window.matchMedia('(max-width: 576px)');
 function industrySliders () {
 
     const industrySliderTrue = document.querySelector('.js-industry-slider-init');
@@ -27,9 +27,9 @@ function industrySliders () {
                 page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
             breakpoints: {
-                768: {
+                1024: {
                     perPage: 1,
-                    gap: '8px',
+                    gap: '16px',
                     arrows: false
                 },
             }

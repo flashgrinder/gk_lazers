@@ -1,8 +1,6 @@
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 
-const mediaQuery = window.matchMedia('(max-width: 768px)')
-
 function sidebarNewsSlider () {
 
     const newsSidebarSliderTrue = document.querySelector('.js-sidebar-news-slider');
@@ -15,17 +13,23 @@ function sidebarNewsSlider () {
             gap: '16px',
             autoplay: true,
             arrows: false,
+            destroy: true,
             classes: {
                 pagination: 'splide__pagination slider-pagination-dotted',
                 page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
+            breakpoints: {
+                1024: {
+                    perPage: 2,
+                    destroy: false,
+                },
+                768: {
+                    perPage: 1,
+                }
+            }
         } );
 
-        if(mediaQuery.matches) {
-            sidebarNewsSlider.mount();
-        } else {
-            sidebarNewsSlider.destroy();
-        }
+        sidebarNewsSlider.mount();
     }
 
 }

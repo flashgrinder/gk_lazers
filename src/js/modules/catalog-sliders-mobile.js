@@ -11,7 +11,7 @@ function catalogMobileSlider () {
             return new Splide(`#${sliderElm.id}`, {
                 type   : 'loop',
                 height: 'auto',
-                perPage: 1,
+                perPage: 2,
                 perMove: 1,
                 gap: '16px',
                 autoplay: true,
@@ -20,6 +20,11 @@ function catalogMobileSlider () {
                     pagination: 'splide__pagination slider-pagination-dotted',
                     page      : 'splide__pagination__page slider-pagination-dotted__page',
                 },
+                breakpoints: {
+                    576: {
+                        perPage: 1,
+                    }
+                }
             } );
         }
 

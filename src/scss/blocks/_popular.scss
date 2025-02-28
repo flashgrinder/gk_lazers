@@ -1,6 +1,6 @@
 .popular {
   padding-bottom: 140px;
-  @include mobile {
+  @include tablet {
     background-color: var(--secondary-bg);
     padding-bottom: 48px;
   }
@@ -91,7 +91,7 @@
   max-width: 1280px;
   left: 50%;
   transform: translateX(-50%);
-  @include mobile {
+  @include tablet {
     position: static;
     transform: none;
   }

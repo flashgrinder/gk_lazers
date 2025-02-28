@@ -1,29 +1,30 @@
 .application-detail {
 	padding: 48px 0 0;
-	@include mobile {
-		padding: 32px 0 0;
+	@include tablet {
+		padding: 32px 0;
 	}
 }
 
 .application-detail__content {
 	padding-bottom: 48px;
 	border-bottom: 2px solid var(--disabled);
-	@include mobile {
+	@include tablet {
 		padding-bottom: 32px;
 	}
 }
 
 .application-detail__block-title {
 	margin-top: 48px;
-	@include mobile {
+	@include tablet {
 		margin-top: 32px;
+		margin-bottom: 16px;
 	}
 }
 
 /* Type blocks all */
 .application-detail__block + .application-detail__block {
 	margin-top: 48px;
-	@include mobile {
+	@include tablet {
 		margin-top: 16px;
 	}
 }
@@ -62,7 +63,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 	gap: 48px 32px;
 	align-items: stretch;
-	@include mobile {
+	@include tablet {
 		grid-template-columns: 1fr;
 		gap: 16px;
 	}
@@ -93,8 +94,8 @@
 .application-detail__video-wrap,
 .application-detail__accordion-wrap {
 	margin-top: 48px;
-	@include mobile {
-		margin-top: 32px;
+	@include tablet {
+		margin-top: 16px;
 	}
 }
 

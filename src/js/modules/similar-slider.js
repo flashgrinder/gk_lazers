@@ -21,6 +21,11 @@ function similarSlider () {
                 page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
             breakpoints: {
+                1024: {
+                    perPage: 2,
+                    gap: '16px',
+                    arrows: false,
+                },
                 768: {
                     perPage: 1,
                     gap: '8px',

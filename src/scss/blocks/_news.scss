@@ -1,7 +1,7 @@
 .news {
   border-top: 15px solid var(--separator-bg);
   padding-bottom: 120px;
-  @include mobile {
+  @include tablet {
     background-color: var(--primary-bg);
     padding-bottom: 48px;
   }
@@ -15,7 +15,7 @@
 }
 
 .news__more-button {
-  @include mobile {
+  @include tablet {
     display: none;
   }
 }
@@ -27,7 +27,7 @@
   border: 1px solid transparent;
   overflow: hidden;
   transition: border var(--hover-time) ease-out, box-shadow var(--hover-time) ease-out;
-  @include mobile {
+  @include tablet {
     box-shadow: var(--small-shadow);
     height: 100%;
   }
@@ -42,7 +42,7 @@
 .news__post-link {
   display: grid;
   grid-template-columns: minmax(500px, 734px) minmax(450px, 536px);
-  @include mobile {
+  @include tablet {
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-template-rows: 200px 1fr;
@@ -52,7 +52,7 @@
 
 .news__post-pic {
   overflow: hidden;
-  @include mobile {
+  @include tablet {
     max-height: 200px;
   }
 }
@@ -71,7 +71,7 @@
 
 .news__post-info {
   padding: 32px 48px;
-  @include mobile {
+  @include tablet {
     padding: 24px 16px;
     display: flex;
     flex-direction: column;
@@ -79,9 +79,9 @@
 }
 
 .news__post-date {
-  @include mobile {
+  @include tablet {
     order: 1;
-    margin-top: 32px;
+    //margin-top: 32px;
     opacity: .5;
   }
 }
@@ -89,14 +89,14 @@
 .news__post-title {
   margin-top: 93px;
   transition: color var(--hover-time) ease-out;
-  @include mobile {
+  @include tablet {
     margin-top: 0;
   }
 }
 
 .news__post-excerpt {
   margin-top: 32px;
-  @include mobile {
+  @include tablet {
     margin-top: 16px;
     font-size: 16px;
     margin-bottom: 32px;
@@ -115,14 +115,24 @@
   display: none;
   text-align: center;
   margin-top: 32px;
-  @include mobile {
+  @include tablet {
     display: block;
+  }
+}
+
+.news__action-mobile .news__button {
+  @include tablet {
+    max-width: 332px;
+    width: 100%;
+  }
+  @include mobileXS {
+    width: 100%;
   }
 }
 
 .news__outer-wrap {
   margin-top: 22px;
-  @include mobile {
+  @include tablet {
     display: none;
   }
 }
@@ -149,7 +159,7 @@
 
 .news__splide--big.splide .splide__slide {
   width: 100%;
-  @include mobile {
+  @include tablet {
     padding: 5px;
   }
 }

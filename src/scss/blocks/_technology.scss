@@ -1,6 +1,6 @@
 .technology {
   padding-bottom: 180px;
-  @include mobile {
+  @include tablet {
     background-color: var(--primary-bg);
     padding-bottom: 48px;
   }
@@ -14,7 +14,7 @@
 }
 
 .technology__more-button {
-  @include mobile {
+  @include tablet {
     display: none;
   }
 }
@@ -24,7 +24,7 @@
 }
 
 .technology__splide-slide {
-  @include mobile {
+  @include tablet {
     width: 100%;
   }
 }
@@ -39,7 +39,7 @@
   border-radius: 10px;
   max-width: 296px;
   width: 296px;
-  @include mobile {
+  @include tablet {
     width: 100%;
     max-width: 100%;
     min-height: 530px;
@@ -99,7 +99,7 @@
   max-width: 1280px;
   left: 50%;
   transform: translateX(-50%);
-  @include mobile {
+  @include tablet {
     position: static;
     transform: none;
   }
@@ -107,9 +107,19 @@
 
 .technology__action {
   display: none;
-  @include mobile {
+  @include tablet {
     display: block;
     margin-top: 32px;
     text-align: center;
+  }
+}
+
+.technology__action .technology__button {
+  @include tablet {
+    max-width: 332px;
+    width: 100%;
+  }
+  @include mobileXS {
+    width: 100%;
   }
 }

@@ -384,55 +384,68 @@
                     <b>&#171;У&#160;меня есть чертеж&#187;</b>, заполните форму и&#160;отправьте заявку.
                 </div>
                 <form action="" class="main-form__form form form--main">
-                    <div class="main-form__wrapper-fields form__wrapper-fields d-flex">
-                        <label class="main-form__form-input form__field" for="main-form-name">
-                            <input class="main-form__form-input form__input js-input" type="text" name="name"
-								   id="main-form-name">
-                            <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                Как к&#160;вам обращаться?
-                            </span>
+                    <div class="main-form__inner-wrap">
+                        <div class="main-form__wrapper-fields form__wrapper-fields d-flex">
+                            <label class="main-form__form-input form__field" for="main-form-name">
+                                <input class="main-form__form-input form__input js-input" type="text" name="name"
+									   id="main-form-name">
+                                <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                    Как к&#160;вам обращаться?
+                                </span>
+                            </label>
+                            <label class="main-form__form-input form__field" for="main-form-company">
+                                <input class="main-form__form-input form__input js-input" type="text" name="company"
+									   id="main-form-company">
+                                <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                    Название компании
+                                </span>
+                            </label>
+                        </div>
+                        <div class="main-form__wrapper-fields form__wrapper-fields d-flex">
+                            <label class="main-form__form-input form__field is-error" for="main-form-phone">
+                                <input class="main-form__form-input form__input js-input" type="tel" name="phone"
+									   id="main-form-phone">
+                                <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                    Контактный телефон
+                                </span>
+                            </label>
+                            <label class="main-form__form-input form__field" for="main-form-email">
+                                <input class="main-form__form-input form__input js-input" type="email" name="email"
+									   id="main-form-email">
+                                <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                    E&#8212;mail
+                                </span>
+                            </label>
+                        </div>
+                        <label class="main-form__form-input form__field" for="main-form-textarea">
+                            <textarea class="main-form__text-area form__input form__input--textarea js-input" name="message"
+									  id="main-form-textarea"
+									  cols="30" rows="1" placeholder="Опишите вашу задачу"></textarea>
                         </label>
-                        <label class="main-form__form-input form__field" for="main-form-company">
-                            <input class="main-form__form-input form__input js-input" type="text" name="company"
-								   id="main-form-company">
-                            <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                Название компании
-                            </span>
-                        </label>
+                        <div class="main-form__captcha form__captcha">
+                            <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual"></div>
+                        </div>
                     </div>
-                    <div class="main-form__wrapper-fields form__wrapper-fields d-flex">
-                        <label class="main-form__form-input form__field is-error" for="main-form-phone">
-                            <input class="main-form__form-input form__input js-input" type="tel" name="phone"
-								   id="main-form-phone">
-                            <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                Контактный телефон
-                            </span>
-                        </label>
-                        <label class="main-form__form-input form__field" for="main-form-email">
-                            <input class="main-form__form-input form__input js-input" type="email" name="email"
-								   id="main-form-email">
-                            <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                E&#8212;mail
-                            </span>
-                        </label>
-                    </div>
-                    <label class="main-form__form-input form__field" for="main-form-textarea">
-                        <textarea class="main-form__text-area form__input form__input--textarea" name="message"
-								  id="main-form-textarea"
-								  cols="30" rows="1" placeholder="Опишите вашу задачу"></textarea>
-                    </label>
-                    <div class="main-form__captcha form__captcha">
-                        <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual"></div>
+                    <div class="main-form__pic-mobile">
+                        <picture>
+                            <img src="./img/no-photo.png" alt="">
+                        </picture>
                     </div>
                     <div class="main-form__actions form__actions d-flex flex-justify-sb flex-align-center">
                         <button type="submit" class="main-form__form-button form__button button button--primary">
                             Отправить
                         </button>
-                        <button type="button" class="main-form__form-button form__button button button--secondary"
+                        <button type="button"
+								class="main-form__form-button main-form__button--desktop form__button button button--secondary"
 								data-hystmodal="#feedback">
                             У&#160;меня есть чертёж
                         </button>
                     </div>
+                    <button type="button"
+							class="main-form__form-button main-form__form-button--mobile form__button button button--secondary"
+							data-hystmodal="#feedback">
+                        У&#160;меня есть чертёж
+                    </button>
                     <div class="main-form__accept form__accept">
                         <input class="main-form__checkbox form__checkbox" type="checkbox" id="main-form-agreement"
 							   name="agreement"
@@ -468,66 +481,73 @@
                 <form action="./upload/" class="main-form__form form form--service js-form-0"
 					  enctype="multipart/form-data"
 					  method="post">
-                    <div class="main-form__wrapper-fields form__wrapper-fields d-flex">
-                        <label class="main-form__form-input form__field" for="service-form-name">
-                            <input class="main-form__form-input form__input js-input" type="text" name="name"
-								   id="service-form-name">
-                            <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                Как к&#160;вам обращаться?
-                            </span>
-                        </label>
-                        <label class="main-form__form-input form__field" for="service-form-company">
-                            <input class="main-form__form-input form__input js-input" type="text" name="company"
-								   id="service-form-company">
-                            <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                Название компании
-                            </span>
-                        </label>
-                    </div>
-                    <div class="main-form__wrapper-fields form__wrapper-fields d-flex">
-                        <label class="main-form__form-input form__field is-error" for="service-form-phone">
-                            <input class="main-form__form-input form__input js-input" type="tel" name="phone"
-								   id="service-form-phone">
-                            <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                Контактный телефон
-                            </span>
-                        </label>
-                        <label class="main-form__form-input form__field" for="service-form-email">
-                            <input class="main-form__form-input form__input js-input" type="email" name="email"
-								   id="service-form-email">
-                            <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                E&#8212;mail
-                            </span>
-                        </label>
-                    </div>
-                    <div class="main-form__wrapper-fields form__wrapper-fields d-flex">
-                        <label class="main-form__form-input form__field" for="service-form-model">
-                            <input class="main-form__form-input form__input js-input" type="text" name="name"
-								   id="service-form-model">
-                            <span class="form__placeholder text text--normal text--secondary text--w-regular">
-                                Модель и&#160;номер станка
-                            </span>
-                        </label>
-                    </div>
-                    <label class="main-form__form-input form__field" for="service-form-textarea">
-                        <textarea class="main-form__text-area form__input form__input--textarea" name="message"
-								  id="service-form-textarea"
-								  cols="30" rows="1" placeholder="Опишите вашу задачу"></textarea>
-                    </label>
-                    <div class="main-form__form-files-wrapper form__files-wrapper">
-                        <div class="form__files-wrap-title text text--normal text--primary text--w-regular">
-                            Загрузите файлы ошибки
+                    <div class="main-form__inner-wrap">
+                        <div class="main-form__wrapper-fields form__wrapper-fields d-flex">
+                            <label class="main-form__form-input form__field" for="service-form-name">
+                                <input class="main-form__form-input form__input js-input" type="text" name="name"
+									   id="service-form-name">
+                                <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                    Как к&#160;вам обращаться?
+                                </span>
+                            </label>
+                            <label class="main-form__form-input form__field" for="service-form-company">
+                                <input class="main-form__form-input form__input js-input" type="text" name="company"
+									   id="service-form-company">
+                                <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                    Название компании
+                                </span>
+                            </label>
                         </div>
-                        <div class="form__dropzone">
-                            <input class="js-input-drag-adn-drop"
-								   type="file"
-								   name="FILES[]"
-								   data-max-file-size="25MB"
-								   multiple />
+                        <div class="main-form__wrapper-fields form__wrapper-fields d-flex">
+                            <label class="main-form__form-input form__field is-error" for="service-form-phone">
+                                <input class="main-form__form-input form__input js-input" type="tel" name="phone"
+									   id="service-form-phone">
+                                <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                    Контактный телефон
+                                </span>
+                            </label>
+                            <label class="main-form__form-input form__field" for="service-form-email">
+                                <input class="main-form__form-input form__input js-input" type="email" name="email"
+									   id="service-form-email">
+                                <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                    E&#8212;mail
+                                </span>
+                            </label>
+                        </div>
+                        <div class="main-form__wrapper-fields form__wrapper-fields d-flex">
+                            <label class="main-form__form-input form__field" for="service-form-model">
+                                <input class="main-form__form-input form__input js-input" type="text" name="name"
+									   id="service-form-model">
+                                <span class="form__placeholder text text--normal text--secondary text--w-regular">
+                                    Модель и&#160;номер станка
+                                </span>
+                            </label>
+                        </div>
+                        <label class="main-form__form-input form__field" for="service-form-textarea">
+                            <textarea class="main-form__text-area form__input form__input--textarea" name="message"
+									  id="service-form-textarea"
+									  cols="30" rows="1" placeholder="Опишите вашу задачу"></textarea>
+                        </label>
+                        <div class="main-form__form-files-wrapper form__files-wrapper">
+                            <div class="form__files-wrap-title text text--normal text--primary text--w-regular">
+                                Загрузите файлы ошибки
+                            </div>
+                            <div class="form__dropzone">
+                                <input class="js-input-drag-adn-drop"
+									   type="file"
+									   name="FILES[]"
+									   data-max-file-size="25MB"
+									   multiple />
+                            </div>
+                        </div>
+                        <div class="main-form__captcha form__captcha">
+                            <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual"></div>
                         </div>
                     </div>
-                    <div class="main-form__captcha form__captcha">
-                        <div style="height: 102px;min-height: 102px !important;" class="smart-captcha-manual"></div>
+                    <div class="main-form__pic-mobile">
+                        <picture>
+                            <img src="./img/no-photo.png" alt="">
+                        </picture>
                     </div>
                     <div class="main-form__actions form__actions d-flex flex-justify-sb flex-align-center">
                         <button type="submit" class="main-form__form-button form__button button button--primary">
