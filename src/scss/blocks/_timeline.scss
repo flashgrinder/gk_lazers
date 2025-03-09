@@ -6,35 +6,33 @@
 	position: relative;
 	display: table; //*For Firefox
 	height: 100%;
-	div {
-		&:after {
-			content: '';
-			width: 2px;
-			position: absolute;
-			top: .5rem;
-			bottom: 0;
-			left: 130px;
-			z-index: 1;
-			background: var(--primary);
-			@include mobileXS {
-				left: 90px;
-			}
+	&:after {
+		content: '';
+		width: 2px;
+		position: absolute;
+		top: .5rem;
+		bottom: 0;
+		left: 130px;
+		z-index: 1;
+		background: var(--primary);
+		@include mobileXS {
+			left: 90px;
 		}
-	}
-	h3 {
-		position: sticky;
-		top: 5rem;
-		color: var(--primary-font-color);
-		margin: 0;
-		font-size: responsive 24px 36px;
-		font-range: 375px 1024px;
-		font-weight: 500;
 	}
 	section.year {
 		position: relative;
 		&:first-child section{
 			margin-top: -1.3em;
 			padding-bottom: 0px;
+		}
+		& > div {
+			position: sticky;
+			top: 5rem;
+			color: var(--primary-font-color);
+			margin: 0;
+			font-size: responsive 24px 36px;
+			font-range: 375px 1024px;
+			font-weight: 500;
 		}
 		section {
 			position: relative;

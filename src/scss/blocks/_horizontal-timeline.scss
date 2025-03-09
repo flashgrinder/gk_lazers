@@ -217,7 +217,7 @@
 	max-width: 1200px;
 	margin: 0 auto;
 }
-.cd-horizontal-timeline .events-content h2 {
+.cd-horizontal-timeline .events-content li > div {
 	font-size: 2.6rem;
 	@extend .title--large;
 	font-family: var(--font-main);
@@ -242,7 +242,7 @@
 	line-height: inherit;
 }
 @media only screen and (min-width: 768px) {
-	.cd-horizontal-timeline .events-content h2 {
+	.cd-horizontal-timeline .events-content li > div {
 		font-size: responsive 24px 44px;
 		font-range: 375px 1024px;
 	}
@@ -256,7 +256,7 @@
 	}
 }
 
-.cd-horizontal-timeline .events-content h2 {
+.cd-horizontal-timeline .events-content li > div {
 	font-size: 24px;
 	margin-bottom: 16px;
 }
