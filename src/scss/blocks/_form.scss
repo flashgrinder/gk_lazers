@@ -113,6 +113,7 @@
 
 .form__accept {
   margin-top: 16px;
+  display: inline-block;
 }
 
 .form.form--service .form__accept,
@@ -328,6 +329,12 @@
 
 .ss-main.form__select .ss-main .ss-values {
   overflow: hidden;
+}
+
+.ss-main.form__select .ss-values .ss-single {
+  max-width: 270px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .ss-main.form__select:focus {

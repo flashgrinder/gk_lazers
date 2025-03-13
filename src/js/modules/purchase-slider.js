@@ -8,7 +8,7 @@ function purchaseSlider () {
     const purchaseSliderTrue = document.querySelector('.js-purchase-slider-init');
     if (purchaseSliderTrue) {
         const purchaseSlider = new Splide( '.js-purchase-slider-init', {
-            type   : 'loop',
+            type   : 'slide',
             height: 'auto',
             perPage: 2,
             perMove: 1,

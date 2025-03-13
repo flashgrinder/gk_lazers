@@ -1,68 +1,29 @@
-import { Rive } from "@rive-app/canvas";
+import * as rive from "@rive-app/canvas";
+import $ from "jquery";
 function riveAnimation() {
 
-        let r = new Rive({
-            src: '/img/anime/purchase-1.riv',
-            canvas: document.getElementById('purchase-1'),
-            autoplay: true,
-            onLoad: () => {
-                r.resizeDrawingSurfaceToCanvas();
-            },
-        });
 
-        // let r2 = new Rive({
-        //     src: '/img/anime/purchase-2.riv',
-        //     canvas: document.getElementById('purchase-2'),
-        //     autoplay: true,
-        //     onLoad: () => {
-        //         r3.resizeDrawingSurfaceToCanvas();
-        //     },
-        // });
+    const animationPath = '/img/anime/';
+    $(function() {
 
-        let r3 = new Rive({
-            src: '/img/anime/purchase-3.riv',
-            canvas: document.getElementById('purchase-3'),
-            autoplay: true,
-            onLoad: () => {
-                r3.resizeDrawingSurfaceToCanvas();
-            },
-        });
+        if ($('[data-animation]').length > 0) {
 
-        // let r4 = new Rive({
-        //     src: '/img/anime/purchase-4.riv',
-        //     canvas: document.getElementById('purchase-4'),
-        //     autoplay: true,
-        //     onLoad: () => {
-        //         r4.resizeDrawingSurfaceToCanvas();
-        //     },
-        // });
+            $('[data-animation]').each(function(el) {
 
-        let r5 = new Rive({
-            src: '/img/anime/purchase-5.riv',
-            canvas: document.getElementById('purchase-5'),
-            autoplay: true,
-            onLoad: () => {
-                r5.resizeDrawingSurfaceToCanvas();
-            },
-        });
+                let $this = $(this);
+                let id = $this.attr('id');
 
-        let r6 = new Rive({
-            src: '/img/anime/purchase-6.riv',
-            canvas: document.getElementById('purchase-6'),
-            autoplay: true,
-            onLoad: () => {
-                r6.resizeDrawingSurfaceToCanvas();
-            },
-        });
+                let fileName = $this.attr('data-animation');
+                $this.attr('id', id);
+                let r = new rive.Rive({
+                    src: animationPath + fileName,
+                    canvas: document.getElementById(id),
+                    autoplay: true,
+                });
+            });
 
-        window.addEventListener("resize", () => {
-            r.resizeDrawingSurfaceToCanvas();
-            // r2.resizeDrawingSurfaceToCanvas();
-            r3.resizeDrawingSurfaceToCanvas();
-            // r4.resizeDrawingSurfaceToCanvas();
-            r5.resizeDrawingSurfaceToCanvas();
-            r6.resizeDrawingSurfaceToCanvas();
-        });
+        }
+    });
 
 }
 

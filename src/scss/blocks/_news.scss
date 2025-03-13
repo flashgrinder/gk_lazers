@@ -140,12 +140,15 @@
 .news__item-link {
   display: flex;
   padding: 0 0 0 10px;
-  align-items: center;
   justify-content: space-between;
 }
 
 .news__item-info {
   max-width: 208px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 0;
+  justify-content: space-between;
 }
 
 .news__post:hover .news__post-title,

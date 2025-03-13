@@ -8,7 +8,7 @@ function similarSlider () {
         const similarSlider = new Splide( '.js-similar-slider-init', {
             type   : 'slide',
             height: 'auto',
-            perPage: 4,
+            perPage: 3,
             perMove: 1,
             gap: '26px',
             autoplay: true,

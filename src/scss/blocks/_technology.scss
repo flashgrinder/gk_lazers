@@ -94,6 +94,17 @@
   z-index: 10;
 }
 
+.technology__item-pic {
+  max-width: 64px;
+  min-width: 64px;
+  max-height: 64px;
+  min-height: 64px;
+}
+
+.technology__item-pic + .technology__item-name {
+  margin-top: 12px;
+}
+
 .technology__navigation-slider {
   position: absolute;
   max-width: 1280px;
