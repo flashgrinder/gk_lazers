@@ -81,7 +81,7 @@
 .news__post-date {
   @include tablet {
     order: 1;
-    //margin-top: 32px;
+    margin-top: auto;
     opacity: .5;
   }
 }
@@ -126,6 +126,7 @@
     width: 100%;
   }
   @include mobileXS {
+    max-width: 100%;
     width: 100%;
   }
 }

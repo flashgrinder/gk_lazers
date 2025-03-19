@@ -45,7 +45,7 @@
 
 .industry-index__item-name {
 	@include mobile {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -178,6 +178,12 @@
 	@include tablet {
 		grid-column: span 2;
 		grid-row: span 3;
+	}
+}
+
+.industry-index__grid> .industry-index__item:nth-child(7).industry-index__item--mx,
+.industry-index__grid> .industry-index__item:nth-child(13).industry-index__item--mx {
+	@include tablet {
 		max-height: 161px;
 	}
 }

@@ -131,6 +131,7 @@
     width: 100%;
   }
   @include mobileXS {
+    max-width: 100%;
     width: 100%;
   }
 }
