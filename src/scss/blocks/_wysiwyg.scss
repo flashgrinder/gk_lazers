@@ -1,7 +1,7 @@
 .wysiwyg {
   font-family: var(--font-main);
   color: var(--primary-font-color);
-  font-size: responsive 20px 24px;
+  font-size: responsive 16px 20px;
   font-range: 576px 1024px;
 }
 
@@ -39,12 +39,12 @@
   margin-left: 0;
   margin-top: 20px;
   margin-bottom: 20px;
-  @extend .text--large;
+  @extend .text--medium;
   @include tablet {
     font-size: 16px;
   }
   @include mobile {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -83,15 +83,11 @@
 
 .wysiwyg p {
   font-weight: 400;
-  line-height: 32px;
-  @extend .text--large;
+  line-height: 30px;
+  @extend .text--medium;
   @include tablet {
     font-size: 16px;
     line-height: 20px;
-  }
-  @include mobile {
-    font-size: 14px;
-    line-height: 16px;
   }
 }
 
@@ -132,13 +128,9 @@
 .wysiwyg.wysiwyg--about p,
 .wysiwyg.wysiwyg--news p {
   font-weight: 400;
-  line-height: 32px;
-  @extend .text--large;
+  line-height: 30px;
+  @extend .text--medium;
   @include tablet {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  @include mobile {
     font-size: 16px;
     line-height: 20px;
   }

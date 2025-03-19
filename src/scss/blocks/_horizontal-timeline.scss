@@ -189,7 +189,7 @@
 	left: 0;
 	top: 0;
 	transform: translateX(-100%);
-	padding: 0 5%;
+	//padding: 0 5%;
 	opacity: 0;
 	animation-duration: 0.4s;
 	animation-timing-function: ease-in-out;
@@ -214,11 +214,11 @@
 	animation-direction: reverse;
 }
 .cd-horizontal-timeline .events-content li > * {
-	max-width: 1200px;
+	//max-width: 1200px;
 	margin: 0 auto;
 }
 .cd-horizontal-timeline .events-content li > div {
-	font-size: 2.6rem;
+	font-size: 24px;
 	@extend .title--large;
 	font-family: var(--font-main);
 	color: var(--primary-font-color);
@@ -234,7 +234,7 @@
 	content: "- ";
 }
 .cd-horizontal-timeline .events-content p {
-	font-size: 1.4rem;
+	font-size: 20px;
 	color: #5a5f61;
 }
 .cd-horizontal-timeline .events-content em,
@@ -247,11 +247,11 @@
 		font-range: 375px 1024px;
 	}
 	.cd-horizontal-timeline .events-content em {
-		font-size: responsive 20px 24px;
+		font-size: responsive 16px 20px;
 		font-range: 576px 1024px;
 	}
 	.cd-horizontal-timeline .events-content p {
-		font-size: responsive 20px 24px;
+		font-size: responsive 16px 20px;
 		font-range: 576px 1024px;
 	}
 }
@@ -263,8 +263,8 @@
 
 .cd-horizontal-timeline .events-content em {
 	@include mobile {
-		font-size: 20px;
-		line-height: 24px;
+		font-size: 16px;
+		line-height: 20px;
 	}
 }
 
