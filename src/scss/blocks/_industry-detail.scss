@@ -102,8 +102,10 @@
 .industry-detail__block-splide-slide .industry-detail__block-pic picture,
 .industry-detail__block-splide-slide .industry-detail__block-pic img {
 	min-height: 336px;
+	max-height: 336px;
 	@include mobile {
 		min-height: 296px;
+		max-height: 296px;
 	}
 }
 
