@@ -52,13 +52,13 @@
 	}
 }
 
-.industry-detail__block-pic {
+.industry-detail__block-grid > .industry-detail__block-pic {
 	overflow: hidden;
 	border-radius: 10px;
 	grid-area: img;
 }
 
-.industry-detail__block-pic:nth-child(2) {
+.industry-detail__block-grid > .industry-detail__block-pic:nth-child(2) {
 	grid-area: img-2;
 }
 
@@ -80,6 +80,30 @@
 	border-radius: 10px;
 	@include mobile {
 		padding: 16px;
+	}
+}
+
+.industry-detail__block-splide {
+	grid-area: slider;
+	min-height: 336px;
+}
+
+.industry-detail__block-splide.splide.is-initialized:not(.is-active).industry-detail__block-splide .industry-detail__block-splide-list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	gap: 32px;
+}
+
+.industry-detail__block-splide-slide .industry-detail__block-pic {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.industry-detail__block-splide-slide .industry-detail__block-pic picture,
+.industry-detail__block-splide-slide .industry-detail__block-pic img {
+	min-height: 336px;
+	@include mobile {
+		min-height: 296px;
 	}
 }
 
@@ -169,8 +193,10 @@
 .industry-detail__block--type-6 .industry-detail__block-grid,
 .industry-detail__block--type-9 .industry-detail__block-grid {
 	display: grid;
+	//grid-template-areas:
+	//	"text text text img img img-2 img-2";
 	grid-template-areas:
-		"text text text img img img-2 img-2";
+		"text text text slider slider slider";
 	gap: 48px 32px;
 	align-items: stretch;
 	@include tablet {
@@ -179,14 +205,13 @@
 	@include mobile {
 		grid-template-areas:
 			"text text"
-			"img img-2";
+			"slider slider";
 		gap: 16px;
 	}
 	@include mobileXS {
 		grid-template-areas:
 			"text"
-			"img"
-			"img-2";
+			"slider";
 	}
 }
 
@@ -201,19 +226,18 @@
 /* Type block 9 */
 .industry-detail__block--type-9 .industry-detail__block-grid {
 	grid-template-areas:
-		"img img img-2 img-2 text text text";
+		"slider slider slider text text text";
 	@include tablet {
 		gap: 16px;
 	}
 	@include mobile {
 		grid-template-areas:
 			"text text"
-			"img img-2";
+			"slider slider";
 	}
 	@include mobileXS {
 		grid-template-areas:
 			"text"
-			"img"
-			"img-2";
+			"slider";
 	}
 }

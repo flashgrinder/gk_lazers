@@ -34,6 +34,7 @@ import validateForm from "./modules/validate-form";
 import initHorizontalTimeline from "./modules/horizontal-timeline";
 // import initVerticalTimeline from "./modules/vertical-timeline";
 import riveAnimation from "./modules/rive-animation";
+import industryMobileSliders from "./modules/industry-block-sliders";
 // import modalThanks from "./modules/modalThanks";
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -71,8 +72,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
     productContentSlider();
     aboutCompoundSlider();
     validateForm();
+    industryMobileSliders();
     initHorizontalTimeline();
     // initVerticalTimeline();
+    ind
     animeItemsTrue ? riveAnimation() : false;
     initAcc('.js-accordion', false);
     Fancybox.bind('[data-fancybox]', {
