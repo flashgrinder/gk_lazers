@@ -1,3 +1,4 @@
+import $ from 'jquery';
 const throttle = (func, time = 100) => {
     let lastTime = 0;
     return () => {
@@ -10,6 +11,17 @@ const throttle = (func, time = 100) => {
 };
 
 function upToTop() {
+
+    // $(window).scroll(function(){
+    //     var offset = $('main').offset(),
+    //         offsetwb = $('footer + main').offset();
+    //     if ($(this).scrollTop() > offset.top && $(this).scrollTop() < offsetwb.top) {
+    //         $('.js-up-to-top').css('background-color','black');
+    //     }
+    //     else {
+    //         $('.js-up-to-top').css('background-color','white');
+    //     }
+    // });
 
     const upToTopButton = document.querySelector('.js-up-to-top');
 
@@ -29,6 +41,13 @@ function upToTop() {
 
         if( windowY > windowH - 400) {
             upToTopButton.classList.add('is-visible');
+
+            if (windowY <= (document.querySelector(".footer__bottom").offsetTop - window.innerHeight)) {
+                upToTopButton.classList.remove('is-white');
+            } else {
+                upToTopButton.classList.add('is-white');
+            }
+
         } else {
             upToTopButton.classList.remove('is-visible');
         }

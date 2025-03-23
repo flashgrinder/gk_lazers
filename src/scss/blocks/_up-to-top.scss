@@ -17,6 +17,14 @@
 	transition: visibility var(--hover-time) ease-out, opacity var(--hover-time) ease-out;
 }
 
+.up-to-top.is-white .up-to-top__icon {
+	--primary: #FFFFFF;
+}
+
+.up-to-top.is-white .up-to-top__name {
+	--primary: #FFFFFF;
+}
+
 .up-to-top__icon {
 	fill: var(--primary, #005339);
 	transition: fill var(--hover-time) ease-out;
