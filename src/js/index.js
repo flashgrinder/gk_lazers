@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     industryMobileSliders();
     initHorizontalTimeline();
     // initVerticalTimeline();
-    ind
     animeItemsTrue ? riveAnimation() : false;
     initAcc('.js-accordion', false);
     Fancybox.bind('[data-fancybox]', {
