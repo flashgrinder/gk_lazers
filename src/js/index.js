@@ -35,6 +35,7 @@ import initHorizontalTimeline from "./modules/horizontal-timeline";
 // import initVerticalTimeline from "./modules/vertical-timeline";
 import riveAnimation from "./modules/rive-animation";
 import industryMobileSliders from "./modules/industry-block-sliders";
+import customMultiSelect from "./modules/multi-select";
 // import modalThanks from "./modules/modalThanks";
 document.addEventListener('DOMContentLoaded', ()=> {
 
@@ -65,7 +66,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     dragAndDrop();
     modalWindow();
     window.modalThanks = modalThanks;
-    selectForm();
+    // selectForm();
     placeholderInputs();
     productSlider();
     customTabs();
@@ -74,6 +75,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     validateForm();
     industryMobileSliders();
     initHorizontalTimeline();
+    customMultiSelect();
     // initVerticalTimeline();
     animeItemsTrue ? riveAnimation() : false;
     initAcc('.js-accordion', false);
