@@ -10,6 +10,9 @@ function selectForm () {
             settings: {
                 showSearch: false,
                 focusSearch: false,
+                allowDeselect: true,
+                maxValuesShown: 0 - 1,
+                maxValuesMessage: 'Выбрано: {number}',
             }
         });
     }

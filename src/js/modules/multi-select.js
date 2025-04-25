@@ -1,9 +1,4 @@
-/*
- * Created by David Adams
- * https://codeshack.io/multi-select-dropdown-html-javascript/
- * 
- * Released under the MIT license
- */
+
 class MultiSelect {
 
     constructor(element, options = {}) {
@@ -53,7 +48,7 @@ class MultiSelect {
         let optionsHTML = '';
         for (let i = 0; i < this.data.length; i++) {
             optionsHTML += `
-                <div class="multi-select-option${this.selectedValues.includes(this.data[i].value) ? ' ' : ''}" data-value="${this.data[i].value}">
+                <div class="multi-select-option${this.selectedValues.includes(this.data[i].value) ? ' multi-select-selected' : ''}" data-value="${this.data[i].value}">
                     <span class="multi-select-option-radio"></span>
                     <span class="multi-select-option-text">${this.data[i].html ? this.data[i].html : this.data[i].text}</span>
                 </div>
@@ -68,7 +63,8 @@ class MultiSelect {
         }
         let template = `
             <div class="multi-select ${this.name}"${this.selectElement.id ? ' id="' + this.selectElement.id + '"' : ''} style="${this.width ? 'width:' + this.width + ';' : ''}${this.height ? 'height:' + this.height + ';' : ''}">
-                ${this.selectedValues.length < 0 ? this.selectedValues.map(value => `<input type="hidden" name="${this.name}[]" value="${value}">`).join('') : ''}
+                ${this.selectedValues.map(value => `<input type="hidden" name="${this.name}[]" value="${value}">`).join('')}
+                
                 <div class="multi-select-header" style="${this.width ? 'width:' + this.width + ';' : ''}${this.height ? 'height:' + this.height + ';' : ''}">
                     <span class="multi-select-header-max">${this.options.max ? this.selectedValues.length + '/' + this.options.max : ''}</span>
                     <span class="multi-select-header-placeholder">${this.placeholder}</span>
@@ -188,8 +184,9 @@ class MultiSelect {
                 }
             });
         } else {
+            // Вернуть еденицу
             if (this.selectedValues.length > 1) {
-                this.element.querySelector('.multi-select-header').insertAdjacentHTML('afterbegin', `<span class="multi-select-header-option">Выбрано: ${this.selectedValues.length} </span>`);
+                this.element.querySelector('.multi-select-header').insertAdjacentHTML('afterbegin', `<span class="multi-select-header-option">Выбрано: ${this.selectedValues.length - 1} </span>`);
             }
         }
         if (this.element.querySelector('.multi-select-header-option')) {

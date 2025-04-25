@@ -994,7 +994,7 @@
                             </span>
                     </label>
                     <label class="main-form__form-input form__field form__field--material" for="modal-form-material">
-                        <select class="form__select js-select-form" id="modal-form-material">
+                        <select class="form__select js-select-form" id="modal-form-material" multiple>
                             <option data-placeholder="true">Используемый материал</option>
                             <option value="Металл">Металл</option>
                             <option value="Дерево">Дерево</option>
@@ -1009,7 +1009,7 @@
                                 Контактный телефон
                             </span>
                     </label>
-                    <div class="main-form__form-input form__field form__field--category" style="overflow: visible">
+                    <label class="main-form__form-input form__field form__field--category" for="modal-form-category">
 <!--						<select class="form__select js-select-form" id="modal-form-category">-->
 <!--							<option data-placeholder="true">Категория</option>-->
 <!--							<option value="Аниме">Аниме</option>-->
@@ -1018,17 +1018,25 @@
 <!--							<option value="Рок">Рок</option>-->
 <!--							<option value="Герои III">Герои III</option>-->
 <!--						</select>-->
-                        <select id="category"
-								name="category[]"
-								data-placeholder="Категория"
-								data-multi-select>
+<!--						<select id="category"-->
+<!--								name="category"-->
+<!--								data-placeholder="Категория"-->
+<!--								data-multi-select>-->
+<!--							<option value="Аниме">Аниме</option>-->
+<!--							<option value="Фильмы">Фильмы</option>-->
+<!--							<option value="Металл">Металл</option>-->
+<!--							<option value="Рок">Рок</option>-->
+<!--							<option value="Герои III">Герои III</option>-->
+<!--						</select>-->
+                        <select class="form__select js-select-form" id="modal-form-category">
+                            <option data-placeholder="true">Категория</option>
                             <option value="Аниме">Аниме</option>
                             <option value="Фильмы">Фильмы</option>
                             <option value="Металл">Металл</option>
                             <option value="Рок">Рок</option>
                             <option value="Герои III">Герои III</option>
                         </select>
-                    </div>
+                    </label>
                     <label class="main-form__form-input form__field" for="service-form-email">
                         <input class="main-form__form-input form__input js-input" type="email" name="email"
 							   id="modal-form-email" required>
@@ -1036,24 +1044,27 @@
                                 E&#8212;mail
                             </span>
                     </label>
-                    <div class="main-form__form-input form__field form__field--type" style="overflow: visible">
-<!--						<select class="form__select js-select-form" id="modal-form-type">-->
-<!--							<option data-placeholder="true">Тип лазера</option>-->
-<!--							<option value="Обжигающий">Обжигающий</option>-->
-<!--							<option value="Сжигающий">Сжигающий</option>-->
-<!--							<option value="Пронзающий">Пронзающий</option>-->
-<!--							<option value="Испепеляющий">Испепеляющий</option>-->
-<!--						</select>-->
-                        <select id="type"
-								name="type"
-								data-placeholder="Тип лазера"
-								data-multi-select>
-                            <option value="Обжигающий">Обжигающий</option>
-                            <option value="Сжигающий">Сжигающий</option>
-                            <option value="Пронзающий">Пронзающий</option>
-                            <option value="Испепеляющий">Испепеляющий</option>
+                    <label class="main-form__form-input form__field form__field--type" style="border-radius: 0;">
+                        <select class="form__select js-select-form" id="modal-form-type" multiple>
+                            <option data-placeholder="true">Тип лазера</option>
+                            <option value="Обжигающий"
+									data-html='<span class="form__radio"></span><span class="form__select-text">Обжигающий</span>'>
+                                    Обжигающий
+                            </option>
+                            <option value="Сжигающий"
+									data-html='<span class="form__radio"></span><span class="form__select-text">Сжигающий</span>'>
+                                    Сжигающий
+                            </option>
+                            <option value="Пронзающий"
+									data-html='<span class="form__radio"></span><span class="form__select-text">Пронзающий</span>'>
+                                    Пронзающий
+                            </option>
+                            <option value="Испепеляющий"
+									data-html='<span class="form__radio"></span><span class="form__select-text">Испепеляющий</span>'>
+                                    Испепеляющий
+                            </option>
                         </select>
-                    </div>
+                    </label>
                     <label class="main-form__form-input form__field" for="modal-form-textarea">
                             <textarea class="main-form__text-area form__input form__input--textarea" name="message"
 									  id="modal-form-textarea"
