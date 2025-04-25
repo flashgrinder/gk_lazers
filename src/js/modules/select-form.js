@@ -12,6 +12,8 @@ function selectForm () {
                 focusSearch: false,
                 allowDeselect: true,
                 maxValuesShown: 0 - 1,
+                closeOnSelect: false,
+                showOptionTooltips: true,
                 maxValuesMessage: 'Выбрано: {number}',
             }
         });
