@@ -643,18 +643,50 @@
 	</div>
 </section>
 
-<div class="video-about js-reveal gs-reveal">
-	<div class="video-about__body">
-		<a href="https://kinescope.io/embed/hSGMJedU3HHZqwQwKvk1PT"
-		   class="video-about__look title title--large title--white title--w-bold"
-		   data-fancybox="video"
-		   data-type="iframe">
-			Смотреть видео
-		</a>
+<div class="video-about bg-primary js-reveal gs-reveal">
+	<div class="video-about__body container">
+		<div class="video-about__wrap">
+			<div id="player" class="video-about__video"></div>
+		</div>
 	</div>
+	<script>
+		// 1. Этот код асинхронно загрузит IFrame Player API (скрипт IFrame Player API).
+		let tag = document.createElement('script');
+		tag.src = 'https://player.kinescope.io/latest/iframe.player.js';
+		let firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		// 3. Эта функция создаст <iframe> (и Kinescope Player).
+		//    Она будет вызвана автоматически когда скрипт API будет загружен.
+		function onKinescopeIframeAPIReady(playerFactory) {
+			playerFactory
+				.create('player', {
+					url: 'https://kinescope.io/kUCUaaRNjFRvcztvrhjWiN',
+					size: { width: '100%', height: '100%' },
+					behavior: {
+						autoPlay: true,
+						playsInline: true,
+						controls: true,
+						muted: true,
+						loop: true,
+					},
+				})
+				.then(function (player) {
+					player
+						// 4. Этот обработчик будет вызван когда плеер загрузит необходимые данные для воспроизведения.
+						.once(player.Events.Ready, function (event) {
+							event.target.play();
+						})
+						// 5. Этот обработчик будет вызван когда начнется воспроизведение.
+						.on(player.Events.Playing, function (event) {
+							// 	event.target.muted();
+						});
+				});
+		}
+	</script>
 </div>
 
-<section class="industry bg-primary b-padding-80 js-reveal gs-reveal">
+<section class="industry bg-secondary b-padding-80 js-reveal gs-reveal">
 	<div class="industry__heading-wrap d-flex flex-justify-sb flex-align-center container">
 		<h3 class="industry__heading title title--big title--primary title--w-regular title--decor">
 			Отрасли применения
@@ -854,7 +886,7 @@
 	</div>
 </section>
 
-<section class="news b-padding-80 bg-secondary js-reveal gs-reveal">
+<section class="news b-padding-80 bg-primary js-reveal gs-reveal">
 	<div class="news__body container">
 		<div class="news__heading-wrap d-flex flex-justify-sb flex-align-center">
 			<h3 class="news__heading title title--big title--primary title--w-regular title--decor">
@@ -1145,7 +1177,7 @@
 	</div>
 </section>
 
-<section class="purchase b-padding-80 bg-primary js-reveal gs-reveal prevFooterEl" id="purchase">
+<section class="purchase b-padding-80 bg-secondary js-reveal gs-reveal prevFooterEl" id="purchase">
 	<div class="purchase__body container">
 		<h3 class="purchase__heading title title--big title--primary title--w-regular title--decor">
 			Порядок покупки
