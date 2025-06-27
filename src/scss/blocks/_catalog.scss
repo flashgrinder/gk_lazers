@@ -46,7 +46,7 @@
   }
 }
 
-.catalog__splide.splide .splide__list {
+.catalog__splide.splide.is-initialized:not(.is-active) .splide__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 32px;

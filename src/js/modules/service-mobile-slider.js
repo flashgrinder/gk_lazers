@@ -1,8 +1,6 @@
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 
-const mediaQuery = window.matchMedia('(max-width: 768px)')
-
 function serviceMobileSlider () {
 
     const serviceMobileSliderTrue = document.querySelector('.js-service-mobile-slider-init');
@@ -15,17 +13,19 @@ function serviceMobileSlider () {
             gap: '16px',
             autoplay: true,
             arrows: false,
+            destroy: true,
             classes: {
                 pagination: 'splide__pagination slider-pagination-dotted',
                 page      : 'splide__pagination__page slider-pagination-dotted__page',
             },
+            breakpoints: {
+                768: {
+                    destroy: false,
+                }
+            }
         } );
 
-        if(mediaQuery.matches) {
-            serviceMobileSlider.mount();
-        } else {
-            serviceMobileSlider.destroy();
-        }
+        serviceMobileSlider.mount();
     }
 
 }

@@ -1,8 +1,6 @@
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 
-const mediaQuery = window.matchMedia('(max-width: 768px)')
-
 function catalogMobileSlider () {
     const allSliders = document.querySelectorAll('.js-catalog-slider-init');
     if (allSliders) {
@@ -16,25 +14,22 @@ function catalogMobileSlider () {
                 gap: '16px',
                 autoplay: true,
                 arrows: false,
+                destroy: true,
                 classes: {
                     pagination: 'splide__pagination slider-pagination-dotted',
                     page      : 'splide__pagination__page slider-pagination-dotted__page',
                 },
                 breakpoints: {
-                    576: {
+                    768: {
+                        destroy: false,
                         perPage: 1,
                     }
                 }
             } );
         }
 
-        const allSliders = document.querySelectorAll('.js-catalog-slider-init');
+        allSliders.forEach(slider => buildCatalogSlider(slider).mount());
 
-        if(mediaQuery.matches) {
-            allSliders.forEach(slider => buildCatalogSlider(slider).mount());
-        } else {
-            allSliders.forEach(slider => buildCatalogSlider(slider).destroy());
-        }
     }
 
 }

@@ -29,7 +29,6 @@ function industryMobileSliders () {
             } );
         }
 
-
         allSliders.forEach(slider => buildCatalogSlider(slider).mount());
 
     }

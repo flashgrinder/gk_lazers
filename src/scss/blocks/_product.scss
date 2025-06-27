@@ -35,11 +35,14 @@
 
 .product__splide .splide__track--fade>.splide__list>.splide__slide.product__splide-slide {
 	aspect-ratio: 4/4;
-	@include tablet {
-		aspect-ratio: 16/9;
-	}
+	//@include tablet {
+	//	aspect-ratio: 16/9;
+	//}
+	//@include mobile {
+	//	aspect-ratio: 4/4;
+	//}
 	@include mobile {
-		aspect-ratio: 4/4;
+		aspect-ratio: auto;
 	}
 }
 
@@ -84,8 +87,8 @@
 	overflow: hidden;
 	border-radius: 10px;
 	@include mobile {
-		min-height: 477px;
-		max-height: 477px;
+		min-height: 375px;
+		max-height: 375px;
 	}
 }
 

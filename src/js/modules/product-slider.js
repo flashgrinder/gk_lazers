@@ -26,6 +26,9 @@ function productSlider () {
                     height: 'auto',
                     arrows: false,
                 },
+                576: {
+                    height: 343,
+                }
             }
         } );
 

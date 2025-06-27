@@ -1,8 +1,6 @@
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 
-const mediaQuery = window.matchMedia('(max-width: 768px)')
-
 function featuresSlider () {
 
     const featuresSliderTrue = document.querySelector('.js-features-slider-init');
@@ -29,12 +27,7 @@ function featuresSlider () {
                 }
             }
         } );
-
-        // if(mediaQuery.matches) {
-            featuresSlider.mount();
-        // } else {
-        //     featuresSlider.destroy();
-        // }
+        featuresSlider.mount();
     }
 
 }

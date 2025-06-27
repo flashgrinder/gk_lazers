@@ -1,7 +1,6 @@
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css';
 
-const mediaQuery = window.matchMedia('(max-width: 576px)');
 function industrySliders () {
 
     const industrySliderTrue = document.querySelector('.js-industry-slider-init');
@@ -18,6 +17,7 @@ function industrySliders () {
             autoplay: false,
             arrows: true,
             gap: '32px',
+            destroy: false,
             classes: {
                 arrows: 'splide__arrows slider-nav__splide-arrows',
                 arrow : 'splide__arrow slider-nav__splide-arrow',
@@ -31,6 +31,9 @@ function industrySliders () {
                     perPage: 1,
                     gap: '16px',
                     arrows: false
+                },
+                576: {
+                    destroy: true,
                 },
             }
         } );
@@ -46,11 +49,8 @@ function industrySliders () {
             }
         });
 
-        if(mediaQuery.matches) {
-            industrySlider.destroy();
-        } else {
-            industrySlider.mount();
-        }
+        industrySlider.mount();
+
     }
     if (industryMobileSliderTrue) {
         const industryMobileSlider = new Splide( '.js-industry-mobile-slider-init', {
@@ -64,17 +64,20 @@ function industrySliders () {
             autoplay: false,
             arrows: false,
             gap: '8px',
+            destroy: true,
             classes: {
                 pagination: 'splide__pagination slider-pagination-line',
                 page      : 'splide__pagination__page slider-pagination-line__page',
             },
+            breakpoints: {
+                576: {
+                    destroy: false,
+                },
+            }
         } );
 
-        if(mediaQuery.matches) {
-            industryMobileSlider.mount();
-        } else {
-            industryMobileSlider.destroy();
-        }
+        industryMobileSlider.mount();
+
     }
 
 }

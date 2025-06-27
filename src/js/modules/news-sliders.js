@@ -18,6 +18,7 @@ function newsSliders () {
                 gap: '8px',
                 pagination: true,
                 isNavigation: false,
+                destroy: false,
                 classes: {
                     arrows: 'splide__arrows slider-nav__splide-arrows',
                     arrow: 'splide__arrow slider-nav__splide-arrow',
@@ -27,6 +28,9 @@ function newsSliders () {
                     page      : 'splide__pagination__page slider-pagination-dotted__page',
                 },
                 breakpoints: {
+                    1024: {
+                        destroy: false,
+                    },
                     576: {
                         perPage: 1,
                     }
@@ -52,6 +56,11 @@ function newsSliders () {
                     pagination: 'splide__pagination slider-pagination-dotted',
                     page      : 'splide__pagination__page slider-pagination-dotted__page',
                 },
+                breakpoints: {
+                    1024: {
+                        destroy: true,
+                    }
+                }
             });
 
             const newsMiniSlider = new Splide( '.js-news-mini-slider-init', {
