@@ -285,11 +285,13 @@
 	//backdrop-filter: blur(6px);
 }
 
+.header.header--dark .menu__sub-menu > .menu__item.menu_is-active,
 .header.header--dark .menu__sub-menu > .menu__item:hover {
 	color: var(--primary-font-color);
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
+.header.header--dark .menu__sub-menu > .menu__item.menu_is-active .menu__link,
 .header.header--dark .menu__sub-menu > .menu__item:hover .menu__link {
 	color: var(--primary-font-color);
 }
