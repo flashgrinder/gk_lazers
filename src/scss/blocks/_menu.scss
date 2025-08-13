@@ -31,7 +31,8 @@
   }
 }
 
-.menu__list > .menu__item:hover:before {
+.menu__list > .menu__item:hover:before,
+.menu__list > .menu__item.menu_is-active:hover:before {
   opacity: 1;
 }
 
@@ -42,6 +43,7 @@
   transition: transform var(--hover-time) ease-out;
 }
 
+.menu__list > .menu__item.menu_is-active:hover .menu__link,
 .menu__list > .menu__item:hover .menu__link {
   transform: translateX(10px);
   @include mobile {
@@ -95,6 +97,7 @@
   transition: background-color var(--hover-time) ease-out;
 }
 
+.menu__sub-menu > .menu__item.menu_is-active:hover,
 .menu__sub-menu > .menu__item:hover {
   background-color: #E5EDEB;
 }
