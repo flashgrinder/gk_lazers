@@ -32,7 +32,7 @@
 }
 
 .menu__list > .menu__item:hover:before,
-.menu__list > .menu__item.menu_is-active:hover:before {
+.menu__list > .menu_is-active.menu__item:hover:before {
   opacity: 1;
 }
 
@@ -97,7 +97,7 @@
   transition: background-color var(--hover-time) ease-out;
 }
 
-.menu__sub-menu > .menu__item.menu_is-active:hover,
+.menu__sub-menu > .menu_is-active.menu__item:hover,
 .menu__sub-menu > .menu__item:hover {
   background-color: #E5EDEB;
 }
